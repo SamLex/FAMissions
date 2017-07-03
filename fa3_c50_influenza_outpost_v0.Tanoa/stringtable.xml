@@ -153,15 +153,6 @@
         <Spanish> Habilidad de la IA (BLUFOR): </Spanish>
         <French> Capacité IA (BLUFOR) </French>
       </Key>
-      <Key ID="STR_f_param_AISkill_OPFOR">
-        <English> AI Skill (OPFOR) </English>
-        <Czech> Úroveň AI (OPFOR) </Czech>
-        <German> KI Stärke (OPFOR) </German>
-        <Polish> Umiejętności SI (OPFOR) </Polish>
-        <Russian> Навык ИИ (OPFOR) </Russian>
-        <Spanish> Habilidad de la IA (OPFOR) </Spanish>
-        <French> Capacité IA (OPFOR) </French>
-      </Key>
        <Key ID="STR_f_param_AISkill_INDP">
         <English> AI Skill (INDEPENDENT) </English>
         <Czech> Úroveň AI (INDEPENDENT) </Czech>
@@ -216,51 +207,11 @@
         <Spanish> ¡No estás autorizado a utilizar este vehículo! </Spanish>
         <French> Vous n’êtes pas autorisé à acceder à ce véhicule! </French>
       </Key>
-      <Key ID="STR_f_mapClickTeleportAction">
-        <English> Teleport </English>
-      </Key>
-      <Key ID="STR_f_mapClickTeleportSelect">
-        <English> Click on the map to set teleport coordinates. </English>
-      </Key>
-      <Key ID="STR_f_mapClickTeleportDone">
-        <English> You have been moved to the selected location. </English>
-      </Key>
-       <Key ID="STR_f_mapClickHALOAction">
-        <English> HALO </English>
-      </Key>
-      <Key ID="STR_f_mapClickHALOSelect">
-        <English> Click on the map to set HALO coordinates. </English>
-      </Key>
-      <Key ID="STR_f_mapClickHALODone">
-        <English> You have been moved to the selected location. </English>
-      </Key>
       <Key ID="STR_f_param_mission_timer">
         <English> Safe Start (mins) </English>
       </Key>
       <Key ID="STR_f_param_mission_timer_off">
         <English> Off </English>
-      </Key>
-      <Key ID="STR_f_param_caching">
-        <English> AI Caching</English>
-      </Key>
-      <Key ID="STR_f_param_caching_Option0">
-        <English> Off </English>
-        <German> Aus </German>
-      </Key>
-       <Key ID="STR_f_param_caching_Option1">
-        <English> Outside 600m </English>
-      </Key>
-      <Key ID="STR_f_param_caching_Option2">
-        <English> Outside 800m </English>
-      </Key>
-      <Key ID="STR_f_param_caching_Option3">
-        <English> Outside 1000m </English>
-      </Key>
-       <Key ID="STR_f_param_caching_Option4">
-        <English> Outside 1500m </English>
-      </Key>
-       <Key ID="STR_f_param_caching_Option5">
-        <English> Outside 2000m </English>
       </Key>
     </Container>
   </Package>

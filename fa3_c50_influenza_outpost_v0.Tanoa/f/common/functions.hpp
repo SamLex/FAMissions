@@ -54,12 +54,6 @@ class F // Defines the "owner"
 		file = "f\setAISKill";
 		class setAISKill{};
 	};
-	class mapClickTeleport
-	{
-		file = "f\mapClickTeleport";
-		class mapClickTeleportUnit{};
-		class mapClickTeleportGroup{};
-	};
 	class nametag
 	{
 		file = "f\nametag";
