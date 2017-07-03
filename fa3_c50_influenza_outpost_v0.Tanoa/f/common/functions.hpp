@@ -49,11 +49,6 @@ class F // Defines the "owner"
 		class GetMarkerColor{};
 		class LocalFTMarkerSync{};
 	};
-	class bodyRemoval
-	{
-		file = "f\removeBody";
-		class removeBody{};
-	};
 	class setAISkill
 	{
 		file = "f\setAISKill";
