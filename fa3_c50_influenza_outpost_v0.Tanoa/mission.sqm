@@ -8,71 +8,91 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=1100;
+		nextID=1176;
+	};
+	class LayerIndexProvider
+	{
+		nextID=3;
 	};
 	class Camera
 	{
-		pos[]={1314.3566,25,1072.3264};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,0};
+		pos[]={12227.996,68.933441,14262.84};
+		dir[]={0,-0.70710683,0.70710671};
+		up[]={0,0.70710665,0.70710677};
+		aside[]={0.99999994,0,-0};
 	};
 };
 binarizationWanted=0;
 addons[]=
 {
-	"A3_Air_F_Heli_Heli_Transport_03",
-	"A3_Air_F_Heli_Heli_Transport_04",
-	"A3_Air_F_Beta_Heli_Transport_01",
-	"A3_Air_F_Heli_Light_02",
 	"A3_Modules_F_Curator_Curator",
+	"A3_Characters_F_Exp",
+	"A3_Data_F_Curator_Virtual",
+	"A3_Air_F_Heli_Light_01",
+	"A3_Structures_F_Mil_Helipads",
 	"A3_Characters_F",
-	"A3_Data_F_Curator_Virtual"
+	"A3_Boat_F_Jets_Carrier_01",
+	"A3_Air_F_Heli_Heli_Transport_04",
+	"A3_Air_F_Heli_Heli_Transport_03"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=6;
+		items=8;
 		class Item0
-		{
-			className="A3_Air_F_Heli";
-			name="Arma 3 Helicopters - Aircrafts";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item1
-		{
-			className="A3_Air_F_Beta";
-			name="Arma 3 Beta - Aircrafts";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item2
-		{
-			className="A3_Air_F";
-			name="Arma 3 Alpha - Aircrafts";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item3
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
+		class Item1
+		{
+			className="A3_Characters_F_Exp";
+			name="Arma 3 Apex - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item2
+		{
+			className="A3_Data_F_Curator";
+			name="Arma 3 Zeus Update - Main Configuration";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item3
+		{
+			className="A3_Air_F";
+			name="Arma 3 Alpha - Aircrafts";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
 		class Item4
+		{
+			className="A3_Structures_F_Mil";
+			name="Arma 3 - Military Buildings and Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item5
 		{
 			className="A3_Characters_F";
 			name="Arma 3 Alpha - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item5
+		class Item6
 		{
-			className="A3_Data_F_Curator";
-			name="Arma 3 Zeus Update - Main Configuration";
+			className="A3_Boat_F_Jets";
+			name="Arma 3 Jets - Boats and Submersibles";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item7
+		{
+			className="A3_Air_F_Heli";
+			name="Arma 3 Helicopters - Aircrafts";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
@@ -91,7 +111,7 @@ class ScenarioData
 	{
 		gameType="Coop";
 		minPlayers=15;
-		maxPlayers=50;
+		maxPlayers=51;
 	};
 	wreckRemovalMaxTime=3600;
 };
@@ -201,124 +221,24 @@ class Mission
 		year=2035;
 		month=8;
 		day=2;
-		hour=6;
-		minute=7;
+		minute=-12;
 		startFogDecay=0;
 		forecastFogDecay=0;
 	};
 	class Entities
 	{
-		items=22;
+		items=30;
 		class Item0
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={12165.32,52.602085,14279.005};
-			};
-			side="West";
-			flags=2;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="[""v_helo_h"",this] call f_fnc_assignGear";
-				name="VehNATO_TH1";
-			};
-			id=0;
-			type="B_Heli_Transport_03_F";
-			atlOffset=6.1201706;
-		};
-		class Item1
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={4763.8823,2.2121806,10557.032};
-			};
-			side="East";
-			flags=2;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="[""v_helo_h"",this] call f_fnc_assignGear";
-				name="VehCSAT_TH1";
-				textures="Opfor";
-			};
-			id=1;
-			type="O_Heli_Transport_04_covered_F";
-			atlOffset=24.501307;
-		};
-		class Item2
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={4712.2441,0.80266571,10577.562};
-			};
-			side="West";
-			flags=2;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="[""v_helo_m"",this] call f_fnc_assignGear";
-				name="VehNATO_TH3";
-				textures="Green";
-			};
-			id=4;
-			type="B_Heli_Transport_01_F";
-			atlOffset=29.275784;
-		};
-		class Item3
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={12249.961,52.866905,14279.936};
-			};
-			side="West";
-			flags=2;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="[""v_helo_m"",this] call f_fnc_assignGear";
-				name="VehNATO_TH5";
-				textures="Green";
-			};
-			id=6;
-			type="B_Heli_Transport_01_F";
-			atlOffset=5.0053291;
-		};
-		class Item4
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={4814.2632,7.1696434,10556.058};
-			};
-			side="East";
-			flags=2;
-			class Attributes
-			{
-				skill=0.60000002;
-				init="[""v_helo_m"",this] call f_fnc_assignGear";
-				name="VehCSAT_TH3";
-				textures="Opfor";
-			};
-			id=19;
-			type="O_Heli_Light_02_unarmed_F";
-			atlOffset=27.589134;
-		};
-		class Item5
 		{
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={4536.2231,7.5524178,11283.856};
+				position[]={4364.9028,7.5524178,10593.825};
 			};
 			init="this addEventHandler ['CuratorObjectPlaced',{{[_x] call f_fnc_setAISKill} forEach crew(_this select 1)}];this addCuratorEditableObjects [playableUnits,true];";
 			id=106;
 			type="ModuleCurator_F";
-			atlOffset=25.923157;
+			atlOffset=27.839291;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -419,7 +339,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item6
+		class Item1
 		{
 			dataType="Group";
 			side="West";
@@ -431,10 +351,11 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4723.5337,4.9635706,10642.093};
+						position[]={4441.8188,23.539261,10724.089};
+						angles[]={6.2828364,1.4406645,0.0019198621};
 					};
 					side="West";
-					flags=2;
+					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -444,12 +365,31 @@ class Mission
 						description="NATO Commander";
 						isPlayable=1;
 					};
-					id=191;
-					type="B_officer_F";
-					atlOffset=30.486938;
+					id=1157;
+					type="B_T_Officer_F";
+					atlOffset=0.00024604797;
 					class CustomAttributes
 					{
 						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male12ENG";
+								};
+							};
+						};
+						class Attribute1
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -468,7 +408,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						nAttributes=2;
 					};
 				};
 				class Item1
@@ -476,7 +416,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4733.5337,4.5913134,10637.704};
+						position[]={4438.7651,23.51969,10713.604};
+						angles[]={0,1.4406645,0};
 					};
 					side="West";
 					class Attributes
@@ -487,12 +428,31 @@ class Mission
 						description="NATO Medic";
 						isPlayable=1;
 					};
-					id=194;
-					type="B_medic_F";
-					atlOffset=29.346228;
+					id=1158;
+					type="B_T_Medic_F";
+					atlOffset=52.213001;
 					class CustomAttributes
 					{
 						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male11ENG";
+								};
+							};
+						};
+						class Attribute1
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -511,7 +471,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						nAttributes=2;
 					};
 				};
 			};
@@ -520,7 +480,7 @@ class Mission
 				name="GrpNATO_CO";
 			};
 			id=190;
-			atlOffset=30.486938;
+			atlOffset=0.00024604797;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -545,7 +505,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item7
+		class Item2
 		{
 			dataType="Group";
 			side="West";
@@ -557,50 +517,134 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={12268.893,52.024029,14279.961};
+						position[]={12218.899,43.868309,14285.592};
+						angles[]={0.010663962,4.7732663,0.039985489};
 					};
 					side="West";
-					flags=2;
+					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
 						rank="CAPTAIN";
 						init="[""dc"",this] call f_fnc_assignGear;";
-						name="UnitNATO_ASL_SL";
-						description="NATO Alpha Squad Leader";
+						name="UnitCTRG_ASL_SL";
+						description="CTRG Alpha Squad Leader";
 						isPlayable=1;
 					};
-					id=205;
-					type="B_Soldier_SL_F";
-					atlOffset=5.5570068;
+					id=1110;
+					type="B_CTRG_Soldier_TL_tna_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male06ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.05;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item1
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={12273.893,53.249569,14278.311};
+						position[]={12220.851,43.848408,14290.482};
+						angles[]={0.031991884,4.7732663,0.047961645};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
 						init="[""m"",this] call f_fnc_assignGear;";
-						name="UnitNATO_ASL_M";
-						description="NATO Alpha Medic";
+						name="UnitCTRG_ASL_M";
+						description="CTRG Alpha Medic";
 						isPlayable=1;
 					};
-					id=206;
-					type="B_medic_F";
-					atlOffset=5.8331985;
+					id=1111;
+					type="B_CTRG_Soldier_Medic_tna_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male11ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.04;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 			};
 			class Attributes
 			{
-				name="GrpNATO_ASL";
+				name="GrpCTRG_ASL";
 			};
 			id=204;
-			atlOffset=5.5570068;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -618,14 +662,14 @@ class Mission
 									"STRING"
 								};
 							};
-							value="NATO ASL -";
+							value="CTRG ASL -";
 						};
 					};
 				};
 				nAttributes=1;
 			};
 		};
-		class Item8
+		class Item3
 		{
 			dataType="Group";
 			side="West";
@@ -637,133 +681,392 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={12268.688,51.519749,14258.378};
+						position[]={12228.024,44.216454,14284.578};
+						angles[]={6.2805324,4.6926665,0.037315138};
 					};
 					side="West";
-					flags=2;
+					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
 						rank="LIEUTENANT";
 						init="[""FTL"",this] call f_fnc_assignGear;";
-						name="UnitNATO_A1_FTL";
-						description="NATO Alpha 1 Fire Team Leader";
+						name="UnitCTRG_A1_FTL";
+						description="CTRG Alpha 1 Fire Team Leader";
 						isPlayable=1;
 					};
-					id=208;
-					type="B_Soldier_TL_F";
-					atlOffset=4.9999504;
+					id=1114;
+					type="B_CTRG_Soldier_TL_tna_F";
+					atlOffset=3.8146973e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male04ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item1
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={12273.688,52.141155,14256.728};
+						position[]={12229.576,44.235031,14289.609};
+						angles[]={0.018657569,4.6926665,0.026668631};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
 						rank="SERGEANT";
 						init="[""ar"",this] call f_fnc_assignGear;";
-						name="UnitNATO_A1_AR1";
-						description="NATO Alpha 1 Automatic Rifleman";
+						name="UnitCTRG_A1_AR1";
+						description="CTRG Alpha 1 Automatic Rifleman";
 						isPlayable=1;
 					};
-					id=209;
-					type="B_soldier_AR_F";
-					atlOffset=5.2493706;
+					id=1115;
+					type="B_CTRG_Soldier_AR_tna_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male04ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.02;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item2
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={12263.688,50.872829,14256.728};
+						position[]={12229.773,44.26165,14279.611};
+						angles[]={6.2751913,4.6926665,0.042638395};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
 						rank="SERGEANT";
 						init="[""ar"",this] call f_fnc_assignGear;";
-						name="UnitNATO_A1_AR2";
-						description="NATO Alpha 1 Automatic Rifleman";
+						name="UnitCTRG_A1_AR2";
+						description="CTRG Alpha 1 Automatic Rifleman";
 						isPlayable=1;
 					};
-					id=210;
-					type="B_soldier_AR_F";
-					atlOffset=4.5291595;
+					id=1113;
+					type="B_CTRG_Soldier_AR_tna_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male10ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.03;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item3
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={12278.688,52.785992,14253.988};
+						position[]={12233.019,44.14616,14294.7};
+						angles[]={0.039985489,4.6926665,0.039985489};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						init="[""rat"",this] call f_fnc_assignGear;";
-						name="UnitNATO_A1_AT";
-						description="NATO Alpha 1 Assaultman (AT)";
+						init="[""eng"",this] call f_fnc_assignGear;";
+						name="UnitCTRG_A1_CENG";
+						description="CTRG Alpha 1 Combat Engineer";
 						isPlayable=1;
 					};
-					id=211;
-					type="B_soldier_LAT_F";
-					atlOffset=5.2625084;
+					id=1116;
+					type="B_CTRG_Soldier_Exp_tna_F";
+					atlOffset=3.8146973e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male12ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.95999998;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item4
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={12258.688,50.435741,14253.988};
+						position[]={12232.61,44.319508,14274.667};
+						angles[]={6.2538638,4.6926665,0.14301229};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
 						init="[""aar"",this] call f_fnc_assignGear;";
-						name="UnitNATO_A1_R1";
-						description="NATO Alpha 1 Rifleman";
+						name="UnitCTRG_A1_R1";
+						description="CTRG Alpha 1 Rifleman (AAR)";
 						isPlayable=1;
 					};
-					id=212;
-					type="B_Soldier_F";
-					atlOffset=4.3719978;
+					id=1112;
+					type="B_CTRG_Soldier_tna_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male03ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item5
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={12283.688,52.721691,14249.441};
+						position[]={12236.643,44.377132,14292.602};
+						angles[]={0.039985489,4.6926665,0.045308746};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
 						init="[""aar"",this] call f_fnc_assignGear;";
-						name="UnitNATO_A1_R2";
-						description="NATO Alpha 1 Rifleman";
+						name="UnitCTRG_A1_R2";
+						description="CTRG Alpha 1 Rifleman (AAR)";
 						isPlayable=1;
 					};
-					id=213;
-					type="B_Soldier_F";
-					atlOffset=4.7429695;
+					id=1117;
+					type="B_CTRG_Soldier_tna_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male09ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 			};
 			class Attributes
 			{
-				name="GrpNATO_A1";
+				name="GrpCTRG_A1";
 			};
 			id=207;
-			atlOffset=4.9999504;
+			atlOffset=3.8146973e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -781,14 +1084,14 @@ class Mission
 									"STRING"
 								};
 							};
-							value="NATO A1 -";
+							value="CTRG A1 -";
 						};
 					};
 				};
 				nAttributes=1;
 			};
 		};
-		class Item9
+		class Item4
 		{
 			dataType="Group";
 			side="West";
@@ -800,133 +1103,394 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={12268.894,50.289387,14234.824};
+						position[]={12241.502,45.26963,14277.102};
+						angles[]={0.077178456,4.6926665,0.11943288};
 					};
 					side="West";
-					flags=2;
+					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
 						rank="LIEUTENANT";
 						init="[""FTL"",this] call f_fnc_assignGear;";
-						name="UnitNATO_A2_FTL";
-						description="NATO Alpha 2 Fire Team Leader";
+						name="UnitCTRG_A2_FTL";
+						description="CTRG Alpha 2 Fire Team Leader";
 						isPlayable=1;
 					};
-					id=215;
-					type="B_Soldier_TL_F";
-					atlOffset=4.7483864;
+					id=1121;
+					type="B_CTRG_Soldier_TL_tna_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male04ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item1
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={12273.894,50.964672,14233.174};
+						position[]={12243.054,45.046143,14282.133};
+						angles[]={0.042638395,4.6926665,0.066566855};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
 						rank="SERGEANT";
 						init="[""ar"",this] call f_fnc_assignGear;";
-						name="UnitNATO_A2_AR1";
-						description="NATO Alpha 2 Automatic Rifleman";
+						name="UnitCTRG_A2_AR1";
+						description="CTRG Alpha 2 Automatic Rifleman";
 						isPlayable=1;
 					};
-					id=216;
-					type="B_soldier_AR_F";
-					atlOffset=5.1067352;
+					id=1122;
+					type="B_CTRG_Soldier_AR_tna_F";
+					atlOffset=-3.8146973e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male04ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.02;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item2
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={12263.894,49.748501,14233.174};
+						position[]={12243.251,45.67931,14272.135};
+						angles[]={6.2725215,4.6926665,0.15084881};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
 						rank="SERGEANT";
 						init="[""ar"",this] call f_fnc_assignGear;";
-						name="UnitNATO_A2_AR2";
-						description="NATO Alpha 2 Automatic Rifleman";
+						name="UnitCTRG_A2_AR2";
+						description="CTRG Alpha 2 Automatic Rifleman";
 						isPlayable=1;
 					};
-					id=217;
-					type="B_soldier_AR_F";
-					atlOffset=4.6379509;
+					id=1120;
+					type="B_CTRG_Soldier_AR_tna_F";
+					atlOffset=0.017997742;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male10ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.03;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item3
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={12278.894,51.771938,14230.435};
+						position[]={12246.496,45.059982,14287.224};
+						angles[]={0.045308746,4.6926665,0.055937801};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						init="[""rat"",this] call f_fnc_assignGear;";
-						name="UnitNATO_A2_AT";
-						description="NATO Alpha 2 Assaultman (AT)";
+						init="[""eng"",this] call f_fnc_assignGear;";
+						name="UnitCTRG_A2_CENG";
+						description="CTRG Alpha 2 Combat Engineer";
 						isPlayable=1;
 					};
-					id=218;
-					type="B_soldier_LAT_F";
-					atlOffset=5.6231575;
+					id=1123;
+					type="B_CTRG_Soldier_Exp_tna_F";
+					atlOffset=3.8146973e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male12ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.95999998;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item4
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={12258.894,48.741589,14230.435};
+						position[]={12246.088,45.917385,14267.189};
+						angles[]={6.2778444,4.6926665,0.085119702};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
 						init="[""aar"",this] call f_fnc_assignGear;";
-						name="UnitNATO_A2_R1";
-						description="NATO Alpha 2 Rifleman";
+						name="UnitCTRG_A2_R1";
+						description="CTRG Alpha 2 Rifleman (AAR)";
 						isPlayable=1;
 					};
-					id=219;
-					type="B_Soldier_F";
-					atlOffset=4.2886009;
+					id=1119;
+					type="B_CTRG_Soldier_tna_F";
+					atlOffset=0.024997711;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male03ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item5
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={12283.894,51.936306,14225.888};
+						position[]={12250.12,45.361439,14285.125};
+						angles[]={0.063913956,4.6926665,0.039985489};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
 						init="[""aar"",this] call f_fnc_assignGear;";
-						name="UnitNATO_A2_R2";
-						description="NATO Alpha 2 Rifleman";
+						name="UnitCTRG_A2_R2";
+						description="CTRG Alpha 2 Rifleman (AAR)";
 						isPlayable=1;
 					};
-					id=220;
-					type="B_Soldier_F";
-					atlOffset=5.5496178;
+					id=1124;
+					type="B_CTRG_Soldier_tna_F";
+					atlOffset=-3.8146973e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male09ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 			};
 			class Attributes
 			{
-				name="GrpNATO_A2";
+				name="GrpCTRG_A2";
 			};
-			id=214;
-			atlOffset=4.7483864;
+			id=1118;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -944,14 +1508,14 @@ class Mission
 									"STRING"
 								};
 							};
-							value="NATO A2 -";
+							value="CTRG A2 -";
 						};
 					};
 				};
 				nAttributes=1;
 			};
 		};
-		class Item10
+		class Item5
 		{
 			dataType="Group";
 			side="West";
@@ -963,10 +1527,11 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4814.1416,5.0014391,10650.204};
+						position[]={4431.5859,23.520243,10692.64};
+						angles[]={0,1.4724993,0};
 					};
 					side="West";
-					flags=2;
+					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -976,18 +1541,62 @@ class Mission
 						description="NATO Bravo Squad Leader";
 						isPlayable=1;
 					};
-					id=226;
-					type="B_Soldier_SL_F";
-					atlOffset=29.580523;
+					id=1159;
+					type="B_T_Soldier_SL_F";
+					atlOffset=0.00015640259;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male05ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item1
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4819.1416,6.2536135,10648.554};
+						position[]={4430.4351,23.520451,10687.503};
+						angles[]={0,1.4724993,0};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -996,9 +1605,51 @@ class Mission
 						description="NATO Bravo Medic";
 						isPlayable=1;
 					};
-					id=227;
-					type="B_medic_F";
-					atlOffset=30.078741;
+					id=1160;
+					type="B_T_Medic_F";
+					atlOffset=0.00036430359;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 			};
 			class Attributes
@@ -1006,7 +1657,7 @@ class Mission
 				name="GrpNATO_BSL";
 			};
 			id=225;
-			atlOffset=29.580523;
+			atlOffset=0.00015640259;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -1031,7 +1682,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item11
+		class Item6
 		{
 			dataType="Group";
 			side="West";
@@ -1043,10 +1694,11 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4814.1475,8.2537508,10628.43};
+						position[]={4435.9951,23.520668,10663.401};
+						angles[]={0,1.6631591,0};
 					};
 					side="West";
-					flags=2;
+					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -1056,16 +1708,59 @@ class Mission
 						description="NATO Bravo 1 Fire Team Leader";
 						isPlayable=1;
 					};
-					id=229;
-					type="B_Soldier_TL_F";
-					atlOffset=30.431639;
+					id=1163;
+					type="B_T_Soldier_TL_F";
+					atlOffset=0.000415802;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male09ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.05;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item1
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4819.1475,8.2395449,10626.779};
+						position[]={4433.8911,23.520159,10658.575};
+						angles[]={0,1.6631591,0};
 					};
 					side="West";
 					class Attributes
@@ -1077,16 +1772,59 @@ class Mission
 						description="NATO Bravo 1 Automatic Rifleman";
 						isPlayable=1;
 					};
-					id=230;
-					type="B_soldier_AR_F";
-					atlOffset=30.141403;
+					id=1164;
+					type="B_T_Soldier_AR_F";
+					atlOffset=44.994999;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male03ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.03;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item2
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4809.1475,8.6246157,10626.779};
+						position[]={4434.813,23.520241,10668.532};
+						angles[]={0,1.6631591,0};
 					};
 					side="West";
 					class Attributes
@@ -1098,37 +1836,124 @@ class Mission
 						description="NATO Bravo 1 Automatic Rifleman";
 						isPlayable=1;
 					};
-					id=231;
-					type="B_soldier_AR_F";
-					atlOffset=30.80352;
+					id=1162;
+					type="B_T_Soldier_AR_F";
+					atlOffset=46.118999;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male05ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item3
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4824.1475,8.4493952,10624.04};
+						position[]={4430.7021,23.520563,10653.849};
+						angles[]={0,1.6631591,0};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						init="[""rat"",this] call f_fnc_assignGear;";
-						name="UnitNATO_B1_AT";
-						description="NATO Bravo 1 Assaultman (AT)";
+						init="[""eng"",this] call f_fnc_assignGear;";
+						name="UnitNATO_B1_CENG";
+						description="NATO Bravo 1 Combat Engineer";
 						isPlayable=1;
 					};
-					id=232;
-					type="B_soldier_LAT_F";
-					atlOffset=30.087006;
+					id=1165;
+					type="B_CTRG_Soldier_Exp_tna_F";
+					atlOffset=0.00047683716;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male12ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item4
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4804.1475,8.630971,10624.04};
+						position[]={4432.5459,23.519835,10673.764};
+						angles[]={0,1.6631591,0};
 					};
 					side="West";
 					class Attributes
@@ -1136,19 +1961,62 @@ class Mission
 						skill=0.60000002;
 						init="[""aar"",this] call f_fnc_assignGear;";
 						name="UnitNATO_B1_R1";
-						description="NATO Bravo 1 Rifleman";
+						description="NATO Bravo 1 Rifleman (AAR)";
 						isPlayable=1;
 					};
-					id=233;
-					type="B_Soldier_F";
-					atlOffset=30.754976;
+					id=1161;
+					type="B_T_Soldier_AAR_F";
+					atlOffset=46.562;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male11ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.01;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item5
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4829.1475,9.2108965,10619.493};
+						position[]={4425.7129,23.519653,10649.289};
+						angles[]={0,1.6631591,0};
 					};
 					side="West";
 					class Attributes
@@ -1156,12 +2024,54 @@ class Mission
 						skill=0.60000002;
 						init="[""aar"",this] call f_fnc_assignGear;";
 						name="UnitNATO_B1_R2";
-						description="NATO Bravo 1 Rifleman";
+						description="NATO Bravo 1 Rifleman (AAR)";
 						isPlayable=1;
 					};
-					id=234;
-					type="B_Soldier_F";
-					atlOffset=30.469803;
+					id=1166;
+					type="B_T_Soldier_AAR_F";
+					atlOffset=44.304001;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male04ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.94999999;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 			};
 			class Attributes
@@ -1169,7 +2079,7 @@ class Mission
 				name="GrpNATO_B1";
 			};
 			id=228;
-			atlOffset=30.431639;
+			atlOffset=0.000415802;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -1194,7 +2104,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item12
+		class Item7
 		{
 			dataType="Group";
 			side="West";
@@ -1206,7 +2116,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4813.9668,7.3608751,10604.876};
+						position[]={4438.542,23.519728,10626.364};
+						angles[]={0,1.6273624,0};
 					};
 					side="West";
 					flags=2;
@@ -1219,16 +2130,59 @@ class Mission
 						description="NATO Bravo 2 Fire Team Leader";
 						isPlayable=1;
 					};
-					id=236;
-					type="B_Soldier_TL_F";
-					atlOffset=29.361837;
+					id=1169;
+					type="B_T_Soldier_TL_F";
+					atlOffset=42.710999;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male10ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.95999998;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item1
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4818.9668,7.1466455,10603.226};
+						position[]={4436.6118,23.51973,10621.466};
+						angles[]={0,1.6273624,0};
 					};
 					side="West";
 					class Attributes
@@ -1240,18 +2194,62 @@ class Mission
 						description="NATO Bravo 2 Automatic Rifleman";
 						isPlayable=1;
 					};
-					id=237;
-					type="B_soldier_AR_F";
-					atlOffset=29.036575;
+					id=1170;
+					type="B_T_Soldier_AR_F";
+					atlOffset=42.488998;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male04ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item2
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4808.9668,6.8771029,10603.226};
+						position[]={4437.1768,23.520164,10631.449};
+						angles[]={0,1.6273624,0};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -1261,37 +2259,124 @@ class Mission
 						description="NATO Bravo 2 Automatic Rifleman";
 						isPlayable=1;
 					};
-					id=238;
-					type="B_soldier_AR_F";
-					atlOffset=29.195326;
+					id=1168;
+					type="B_T_Soldier_AR_F";
+					atlOffset=7.8201294e-005;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male08ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.03;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item3
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4823.9668,7.0893793,10600.486};
+						position[]={4433.5952,23.52042,10616.628};
+						angles[]={0,1.6273624,0};
 					};
 					side="West";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						init="[""rat"",this] call f_fnc_assignGear;";
-						name="UnitNATO_B2_AT";
-						description="NATO Bravo 2 Assaultman (AT)";
+						init="[""eng"",this] call f_fnc_assignGear;";
+						name="UnitNATO_B2_CENG";
+						description="NATO Bravo 2 Combat Engineer";
 						isPlayable=1;
 					};
-					id=239;
-					type="B_soldier_LAT_F";
-					atlOffset=28.744417;
+					id=1171;
+					type="B_CTRG_Soldier_Exp_tna_F";
+					atlOffset=0.00033378601;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male04ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item4
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4803.9668,6.5089273,10600.486};
+						position[]={4434.7251,23.519621,10636.597};
+						angles[]={0,1.6273624,0};
 					};
 					side="West";
 					class Attributes
@@ -1299,19 +2384,62 @@ class Mission
 						skill=0.60000002;
 						init="[""aar"",this] call f_fnc_assignGear;";
 						name="UnitNATO_B2_R1";
-						description="NATO Bravo 2 Rifleman";
+						description="NATO Bravo 2 Rifleman (AAR)";
 						isPlayable=1;
 					};
-					id=240;
-					type="B_Soldier_F";
-					atlOffset=29.267822;
+					id=1167;
+					type="B_T_Soldier_AAR_F";
+					atlOffset=43.286003;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male12ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.03;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item5
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4828.9668,7.5381212,10595.939};
+						position[]={4428.772,23.519796,10611.894};
+						angles[]={0,1.6273624,0};
 					};
 					side="West";
 					class Attributes
@@ -1319,12 +2447,54 @@ class Mission
 						skill=0.60000002;
 						init="[""aar"",this] call f_fnc_assignGear;";
 						name="UnitNATO_B2_R2";
-						description="NATO Bravo 2 Rifleman";
+						description="NATO Bravo 2 Rifleman (AAR)";
 						isPlayable=1;
 					};
-					id=241;
-					type="B_Soldier_F";
-					atlOffset=28.939423;
+					id=1172;
+					type="B_T_Soldier_AAR_F";
+					atlOffset=41.484001;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male05ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.94999999;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 			};
 			class Attributes
@@ -1332,7 +2502,7 @@ class Mission
 				name="GrpNATO_B2";
 			};
 			id=235;
-			atlOffset=29.361837;
+			atlOffset=42.710999;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -1357,538 +2527,10 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item13
+		class Item8
 		{
 			dataType="Group";
 			side="West";
-			class Entities
-			{
-				items=4;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={12165.401,49.243717,14279.17};
-					};
-					side="West";
-					flags=2;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="LIEUTENANT";
-						init="[""pp"",this] call f_fnc_assignGear;";
-						name="UnitNATO_TH1_P";
-						description="NATO Transport Helo 1 Pilot";
-						isPlayable=1;
-					};
-					id=320;
-					type="B_Helipilot_F";
-					atlOffset=6.1144676;
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={12165.401,49.243717,14279.17};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="SERGEANT";
-						init="[""pp"",this] call f_fnc_assignGear;";
-						name="UnitNATO_TH1_CP";
-						description="NATO Transport Helo 1 Co-Pilot";
-						isPlayable=1;
-					};
-					id=321;
-					type="B_Helipilot_F";
-					atlOffset=6.1144676;
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={12165.401,49.243717,14279.17};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						init="[""pcc"",this] call f_fnc_assignGear;";
-						name="UnitNATO_TH1_G1";
-						description="NATO Transport Helo 1 Crew Chief (Repair)";
-						isPlayable=1;
-					};
-					id=322;
-					type="B_helicrew_F";
-					atlOffset=6.1144676;
-				};
-				class Item3
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={12165.401,49.243717,14279.17};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						init="[""pc"",this] call f_fnc_assignGear;";
-						name="UnitNATO_TH1_G2";
-						description="NATO Transport Helo 1 Gunner";
-						isPlayable=1;
-					};
-					id=323;
-					type="B_helicrew_F";
-					atlOffset=6.1144676;
-				};
-			};
-			class Attributes
-			{
-				name="GrpNATO_TH1";
-			};
-			class CrewLinks
-			{
-				class LinkIDProvider
-				{
-					nextID=4;
-				};
-				class Links
-				{
-					items=4;
-					class Item0
-					{
-						linkID=0;
-						item0=320;
-						item1=0;
-						class CustomData
-						{
-							role=1;
-						};
-					};
-					class Item1
-					{
-						linkID=1;
-						item0=321;
-						item1=0;
-						class CustomData
-						{
-							role=2;
-							turretPath[]={0};
-						};
-					};
-					class Item2
-					{
-						linkID=2;
-						item0=322;
-						item1=0;
-						class CustomData
-						{
-							role=2;
-							turretPath[]={1};
-						};
-					};
-					class Item3
-					{
-						linkID=3;
-						item0=323;
-						item1=0;
-						class CustomData
-						{
-							role=2;
-							turretPath[]={2};
-						};
-					};
-				};
-			};
-			id=319;
-			atlOffset=6.1201706;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="groupID";
-					expression="_this setGroupID [_value];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="NATO TH1 -";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item14
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=4;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={4712.4453,-1.2925255,10577.985};
-					};
-					side="West";
-					flags=2;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="LIEUTENANT";
-						init="[""pp"",this] call f_fnc_assignGear;";
-						name="UnitNATO_TH3_P";
-						description="NATO Transport Helo 3 Pilot";
-						isPlayable=1;
-					};
-					id=330;
-					type="B_Helipilot_F";
-					atlOffset=29.394537;
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={4712.4453,-1.2925255,10577.985};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="SERGEANT";
-						init="[""pp"",this] call f_fnc_assignGear;";
-						name="UnitNATO_TH3_CP";
-						description="NATO Transport Helo 3 Co-Pilot";
-						isPlayable=1;
-					};
-					id=331;
-					type="B_Helipilot_F";
-					atlOffset=29.394537;
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={4712.4453,-1.2925255,10577.985};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						init="[""pcc"",this] call f_fnc_assignGear;";
-						name="UnitNATO_TH3_G1";
-						description="NATO Transport Helo 3 Crew Chief (Repair)";
-						isPlayable=1;
-					};
-					id=332;
-					type="B_helicrew_F";
-					atlOffset=29.394537;
-				};
-				class Item3
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={4712.4453,-1.2925255,10577.985};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						init="[""pc"",this] call f_fnc_assignGear;";
-						name="UnitNATO_TH3_G2";
-						description="NATO Transport Helo 3 Gunner";
-						isPlayable=1;
-					};
-					id=333;
-					type="B_helicrew_F";
-					atlOffset=29.394537;
-				};
-			};
-			class Attributes
-			{
-				name="GrpNATO_TH3";
-			};
-			class CrewLinks
-			{
-				class LinkIDProvider
-				{
-					nextID=4;
-				};
-				class Links
-				{
-					items=4;
-					class Item0
-					{
-						linkID=0;
-						item0=330;
-						item1=4;
-						class CustomData
-						{
-							role=1;
-						};
-					};
-					class Item1
-					{
-						linkID=1;
-						item0=331;
-						item1=4;
-						class CustomData
-						{
-							role=2;
-							turretPath[]={0};
-						};
-					};
-					class Item2
-					{
-						linkID=2;
-						item0=332;
-						item1=4;
-						class CustomData
-						{
-							role=2;
-							turretPath[]={1};
-						};
-					};
-					class Item3
-					{
-						linkID=3;
-						item0=333;
-						item1=4;
-						class CustomData
-						{
-							role=2;
-							turretPath[]={2};
-						};
-					};
-				};
-			};
-			id=329;
-			atlOffset=29.275784;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="groupID";
-					expression="_this setGroupID [_value];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="NATO TH3 -";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item15
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=4;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={12250.21,50.745106,14280.064};
-					};
-					side="West";
-					flags=2;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="LIEUTENANT";
-						init="[""pp"",this] call f_fnc_assignGear;";
-						name="UnitNATO_TH5_P";
-						description="NATO Transport Helo 5 Pilot";
-						isPlayable=1;
-					};
-					id=340;
-					type="B_Helipilot_F";
-					atlOffset=5.015873;
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={12250.21,50.745106,14280.064};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="SERGEANT";
-						init="[""pp"",this] call f_fnc_assignGear;";
-						name="UnitNATO_TH5_CP";
-						description="NATO Transport Helo 5 Co-Pilot";
-						isPlayable=1;
-					};
-					id=341;
-					type="B_Helipilot_F";
-					atlOffset=5.015873;
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={12250.21,50.745106,14280.064};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						init="[""pcc"",this] call f_fnc_assignGear;";
-						name="UnitNATO_TH5_G1";
-						description="NATO Transport Helo 5 Crew Chief (Repair)";
-						isPlayable=1;
-					};
-					id=342;
-					type="B_helicrew_F";
-					atlOffset=5.015873;
-				};
-				class Item3
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={12250.21,50.745106,14280.064};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						init="[""pc"",this] call f_fnc_assignGear;";
-						name="UnitNATO_TH5_G2";
-						description="NATO Transport Helo 5 Gunner";
-						isPlayable=1;
-					};
-					id=343;
-					type="B_helicrew_F";
-					atlOffset=5.015873;
-				};
-			};
-			class Attributes
-			{
-				name="GrpNATO_TH5";
-			};
-			class CrewLinks
-			{
-				class LinkIDProvider
-				{
-					nextID=4;
-				};
-				class Links
-				{
-					items=4;
-					class Item0
-					{
-						linkID=0;
-						item0=340;
-						item1=6;
-						class CustomData
-						{
-							role=1;
-						};
-					};
-					class Item1
-					{
-						linkID=1;
-						item0=341;
-						item1=6;
-						class CustomData
-						{
-							role=2;
-							turretPath[]={0};
-						};
-					};
-					class Item2
-					{
-						linkID=2;
-						item0=342;
-						item1=6;
-						class CustomData
-						{
-							role=2;
-							turretPath[]={1};
-						};
-					};
-					class Item3
-					{
-						linkID=3;
-						item0=343;
-						item1=6;
-						class CustomData
-						{
-							role=2;
-							turretPath[]={2};
-						};
-					};
-				};
-			};
-			id=339;
-			atlOffset=5.0053291;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="groupID";
-					expression="_this setGroupID [_value];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="NATO TH5 -";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item16
-		{
-			dataType="Group";
-			side="East";
 			class Entities
 			{
 				items=2;
@@ -1897,10 +2539,11 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11049.485,355.33041,11531.326};
+						position[]={11022.676,350.40939,11528.005};
+						angles[]={6.2219415,0,0};
 					};
-					side="East";
-					flags=2;
+					side="West";
+					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -1911,12 +2554,30 @@ class Mission
 						description="CSAT Charlie Squad Leader";
 						isPlayable=1;
 					};
-					id=424;
-					type="O_Soldier_SL_F";
-					atlOffset=4.3616638;
+					id=1125;
+					type="O_T_Soldier_SL_F";
 					class CustomAttributes
 					{
 						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male02PER";
+								};
+							};
+						};
+						class Attribute1
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -1935,7 +2596,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						nAttributes=2;
 					};
 				};
 				class Item1
@@ -1943,9 +2604,11 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11054.485,355.2847,11529.676};
+						position[]={11027.676,350.57883,11526.354};
+						angles[]={6.1506276,0,0.13255775};
 					};
-					side="East";
+					side="West";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -1955,12 +2618,30 @@ class Mission
 						description="CSAT Charlie Medic";
 						isPlayable=1;
 					};
-					id=425;
-					type="O_medic_F";
-					atlOffset=4.7216187;
+					id=1126;
+					type="O_T_Medic_F";
 					class CustomAttributes
 					{
 						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01PER";
+								};
+							};
+						};
+						class Attribute1
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -1979,7 +2660,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						nAttributes=2;
 					};
 				};
 			};
@@ -1988,7 +2669,6 @@ class Mission
 				name="GrpCSAT_CSL";
 			};
 			id=423;
-			atlOffset=4.3616638;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -2013,10 +2693,10 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item17
+		class Item9
 		{
 			dataType="Group";
-			side="East";
+			side="West";
 			class Entities
 			{
 				items=6;
@@ -2025,10 +2705,11 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11050.277,355.38144,11505.344};
+						position[]={11023.468,350.46149,11502.022};
+						angles[]={6.2698507,0,6.2698507};
 					};
-					side="East";
-					flags=2;
+					side="West";
+					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -2039,12 +2720,30 @@ class Mission
 						description="CSAT Charlie 1 Fire Team Leader";
 						isPlayable=1;
 					};
-					id=427;
-					type="O_Soldier_TL_F";
-					atlOffset=5;
+					id=1129;
+					type="O_T_Soldier_TL_F";
 					class CustomAttributes
 					{
 						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male03PER";
+								};
+							};
+						};
+						class Attribute1
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -2063,7 +2762,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						nAttributes=2;
 					};
 				};
 				class Item1
@@ -2071,9 +2770,11 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11055.277,355.86484,11503.693};
+						position[]={11028.468,350.38519,11500.372};
+						angles[]={0,0,6.2698579};
 					};
-					side="East";
+					side="West";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -2084,12 +2785,30 @@ class Mission
 						description="CSAT Charlie 1 Automatic Rifleman";
 						isPlayable=1;
 					};
-					id=428;
-					type="O_Soldier_AR_F";
-					atlOffset=5.4509583;
+					id=1130;
+					type="O_T_Soldier_AR_F";
 					class CustomAttributes
 					{
 						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male02PER";
+								};
+							};
+						};
+						class Attribute1
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -2108,7 +2827,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						nAttributes=2;
 					};
 				};
 				class Item2
@@ -2116,9 +2835,11 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11045.277,355.17838,11503.693};
+						position[]={11018.468,350.4567,11500.372};
+						angles[]={6.2565165,0,0};
 					};
-					side="East";
+					side="West";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -2129,12 +2850,31 @@ class Mission
 						description="CSAT Charlie 1 Automatic Rifleman";
 						isPlayable=1;
 					};
-					id=429;
-					type="O_Soldier_AR_F";
-					atlOffset=4.796936;
+					id=1128;
+					type="O_T_Soldier_AR_F";
+					atlOffset=-3.0517578e-005;
 					class CustomAttributes
 					{
 						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male02PER";
+								};
+							};
+						};
+						class Attribute1
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -2153,7 +2893,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						nAttributes=2;
 					};
 				};
 				class Item3
@@ -2161,25 +2901,45 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11060.277,356.48691,11500.954};
+						position[]={11033.468,350.46909,11497.633};
+						angles[]={0.013334315,0,0.03996804};
 					};
-					side="East";
+					side="West";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
 						lock="UNLOCKED";
-						init="[""rat"",this] call f_fnc_assignGear;";
-						name="UnitCSAT_C1_AT";
-						description="CSAT Charlie 1 Assaultman (AT)";
+						init="[""r"",this] call f_fnc_assignGear;";
+						name="UnitCSAT_C1_R3";
+						description="CSAT Charlie 1 Rifleman";
 						isPlayable=1;
 					};
-					id=430;
-					type="O_Soldier_LAT_F";
-					atlOffset=6.0600891;
+					id=1131;
+					type="O_T_Soldier_F";
 					class CustomAttributes
 					{
 						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male03PER";
+								};
+							};
+						};
+						class Attribute1
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -2198,7 +2958,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						nAttributes=2;
 					};
 				};
 				class Item4
@@ -2206,24 +2966,44 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11040.277,355.06961,11500.954};
+						position[]={11013.468,350.42767,11497.633};
+						angles[]={0,0,0.013334315};
 					};
-					side="East";
+					side="West";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
 						lock="UNLOCKED";
 						init="[""aar"",this] call f_fnc_assignGear;";
 						name="UnitCSAT_C1_R1";
-						description="CSAT Charlie 1 Rifleman";
+						description="CSAT Charlie 1 Rifleman (AAR)";
 						isPlayable=1;
 					};
-					id=431;
-					type="O_Soldier_F";
-					atlOffset=4.6789551;
+					id=1127;
+					type="O_T_Soldier_AAR_F";
 					class CustomAttributes
 					{
 						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01PER";
+								};
+							};
+						};
+						class Attribute1
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -2242,7 +3022,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						nAttributes=2;
 					};
 				};
 				class Item5
@@ -2250,24 +3030,43 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11065.277,357.14804,11496.407};
+						position[]={11038.468,350.38144,11493.086};
 					};
-					side="East";
+					side="West";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
 						lock="UNLOCKED";
 						init="[""aar"",this] call f_fnc_assignGear;";
 						name="UnitCSAT_C1_R2";
-						description="CSAT Charlie 1 Rifleman";
+						description="CSAT Charlie 1 Rifleman (AAR)";
 						isPlayable=1;
 					};
-					id=432;
-					type="O_Soldier_F";
-					atlOffset=6.7666016;
+					id=1132;
+					type="O_T_Soldier_AAR_F";
 					class CustomAttributes
 					{
 						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male02PER";
+								};
+							};
+						};
+						class Attribute1
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -2286,7 +3085,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						nAttributes=2;
 					};
 				};
 			};
@@ -2295,7 +3094,6 @@ class Mission
 				name="GrpCSAT_C1";
 			};
 			id=426;
-			atlOffset=5;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -2320,10 +3118,10 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item18
+		class Item10
 		{
 			dataType="Group";
-			side="East";
+			side="West";
 			class Entities
 			{
 				items=6;
@@ -2332,10 +3130,11 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11050.031,356.83939,11479.505};
+						position[]={11023.222,350.22495,11476.184};
+						angles[]={0.034662239,0,6.1584988};
 					};
-					side="East";
-					flags=2;
+					side="West";
+					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -2346,12 +3145,30 @@ class Mission
 						description="CSAT Charlie 2 Fire Team Leader";
 						isPlayable=1;
 					};
-					id=434;
-					type="O_Soldier_TL_F";
-					atlOffset=6.4391174;
+					id=1135;
+					type="O_T_Soldier_TL_F";
 					class CustomAttributes
 					{
 						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male03PER";
+								};
+							};
+						};
+						class Attribute1
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -2370,7 +3187,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						nAttributes=2;
 					};
 				};
 				class Item1
@@ -2378,9 +3195,11 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11055.031,357.17117,11477.854};
+						position[]={11028.222,350.08957,11474.532};
+						angles[]={0.026668631,0,0.010663962};
 					};
-					side="East";
+					side="West";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -2391,12 +3210,31 @@ class Mission
 						description="CSAT Charlie 2 Automatic Rifleman";
 						isPlayable=1;
 					};
-					id=435;
-					type="O_Soldier_AR_F";
-					atlOffset=6.7893982;
+					id=1136;
+					type="O_T_Soldier_AR_F";
+					atlOffset=-3.0517578e-005;
 					class CustomAttributes
 					{
 						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male03PER";
+								};
+							};
+						};
+						class Attribute1
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -2415,7 +3253,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						nAttributes=2;
 					};
 				};
 				class Item2
@@ -2423,9 +3261,11 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11045.031,356.6846,11477.854};
+						position[]={11018.222,350.66049,11474.532};
+						angles[]={0.085119702,0,6.2485409};
 					};
-					side="East";
+					side="West";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -2436,12 +3276,31 @@ class Mission
 						description="CSAT Charlie 2 Automatic Rifleman";
 						isPlayable=1;
 					};
-					id=436;
-					type="O_Soldier_AR_F";
-					atlOffset=6.2476807;
+					id=1134;
+					type="O_T_Soldier_AR_F";
+					atlOffset=-3.0517578e-005;
 					class CustomAttributes
 					{
 						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01PER";
+								};
+							};
+						};
+						class Attribute1
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -2460,7 +3319,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						nAttributes=2;
 					};
 				};
 				class Item3
@@ -2468,25 +3327,45 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11060.031,357.70309,11475.115};
+						position[]={11033.222,350.74094,11471.794};
+						angles[]={0.015987216,0,0.093060948};
 					};
-					side="East";
+					side="West";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
 						lock="UNLOCKED";
-						init="[""rat"",this] call f_fnc_assignGear;";
-						name="UnitCSAT_C2_AT";
-						description="CSAT Charlie 2 Assaultman (AT)";
+						init="[""r"",this] call f_fnc_assignGear;";
+						name="UnitCSAT_C2_R3";
+						description="CSAT Charlie 2 Rifleman";
 						isPlayable=1;
 					};
-					id=437;
-					type="O_Soldier_LAT_F";
-					atlOffset=7.237915;
+					id=1137;
+					type="O_T_Soldier_F";
 					class CustomAttributes
 					{
 						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male02PER";
+								};
+							};
+						};
+						class Attribute1
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -2505,7 +3384,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						nAttributes=2;
 					};
 				};
 				class Item4
@@ -2513,24 +3392,45 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11040.031,357.19418,11475.115};
+						position[]={11013.222,351.23474,11471.794};
+						angles[]={0.13255775,0,6.1901245};
 					};
-					side="East";
+					side="West";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
 						lock="UNLOCKED";
 						init="[""aar"",this] call f_fnc_assignGear;";
 						name="UnitCSAT_C2_R1";
-						description="CSAT Charlie 2 Rifleman";
+						description="CSAT Charlie 2 Rifleman (AAR)";
 						isPlayable=1;
 					};
-					id=438;
-					type="O_Soldier_F";
-					atlOffset=6.2636414;
+					id=1133;
+					type="O_T_Soldier_F";
+					atlOffset=-0.32998657;
 					class CustomAttributes
 					{
 						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01PER";
+								};
+							};
+						};
+						class Attribute1
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -2549,7 +3449,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						nAttributes=2;
 					};
 				};
 				class Item5
@@ -2557,24 +3457,45 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11065.031,359.68497,11470.568};
+						position[]={11038.222,350.89813,11467.247};
+						angles[]={6.1323538,0,0.026651176};
 					};
-					side="East";
+					side="West";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
 						lock="UNLOCKED";
 						init="[""aar"",this] call f_fnc_assignGear;";
 						name="UnitCSAT_C2_R2";
-						description="CSAT Charlie 2 Rifleman";
+						description="CSAT Charlie 2 Rifleman (AAR)";
 						isPlayable=1;
 					};
-					id=439;
-					type="O_Soldier_F";
-					atlOffset=8.1435547;
+					id=1138;
+					type="O_T_Soldier_AAR_F";
+					atlOffset=3.0517578e-005;
 					class CustomAttributes
 					{
 						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01PER";
+								};
+							};
+						};
+						class Attribute1
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -2593,7 +3514,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						nAttributes=2;
 					};
 				};
 			};
@@ -2602,7 +3523,6 @@ class Mission
 				name="GrpCSAT_C2";
 			};
 			id=433;
-			atlOffset=6.4391174;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -2627,79 +3547,55 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item19
+		class Item11
 		{
 			dataType="Group";
-			side="East";
+			side="West";
 			class Entities
 			{
-				items=3;
+				items=2;
 				class Item0
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4763.6685,-0.65118337,10557.015};
+						position[]={4399.4829,23.61809,10655.241};
+						angles[]={0,2.499294,0};
 					};
-					side="East";
-					flags=2;
+					side="West";
+					flags=6;
 					class Attributes
 					{
-						skill=0.60000002;
-						rank="LIEUTENANT";
 						init="[""pp"",this] call f_fnc_assignGear;";
-						name="UnitCSAT_TH1_P";
-						description="CSAT Transport Helo 1 Pilot";
+						name="UnitCSAT_EVAC1_P";
+						description="CSAT Medevac Helo 1 Taru Pilot (Repair)";
 						isPlayable=1;
 					};
-					id=497;
-					type="O_helipilot_F";
-					atlOffset=24.515661;
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={4763.6685,-0.65118337,10557.015};
-					};
-					side="East";
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="SERGEANT";
-						init="[""pcc"",this] call f_fnc_assignGear;";
-						name="UnitCSAT_TH1_CP";
-						description="CSAT Transport Helo 1 Co-Pilot (Repair)";
-						isPlayable=1;
-					};
-					id=498;
-					type="O_helipilot_F";
-					atlOffset=24.515661;
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={4763.6685,-0.65118337,10557.015};
-					};
-					side="East";
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						init="[""pc"",this] call f_fnc_assignGear;";
-						name="UnitCSAT_TH1_LM";
-						description="CSAT Transport Helo 1 Loadmaster";
-						isPlayable=1;
-					};
-					id=499;
-					type="O_helicrew_F";
-					atlOffset=24.515661;
+					id=1147;
+					type="O_T_Helipilot_F";
+					atlOffset=0.098003387;
 					class CustomAttributes
 					{
 						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male03PER";
+								};
+							};
+						};
+						class Attribute1
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -2714,141 +3610,80 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.99000001;
+									value=1.03;
 								};
 							};
 						};
-						nAttributes=1;
+						nAttributes=2;
 					};
-				};
-			};
-			class Attributes
-			{
-				name="GrpCSAT_TH1";
-			};
-			class CrewLinks
-			{
-				class LinkIDProvider
-				{
-					nextID=3;
-				};
-				class Links
-				{
-					items=3;
-					class Item0
-					{
-						linkID=0;
-						item0=497;
-						item1=1;
-						class CustomData
-						{
-							role=1;
-						};
-					};
-					class Item1
-					{
-						linkID=1;
-						item0=498;
-						item1=1;
-						class CustomData
-						{
-							role=2;
-							turretPath[]={0};
-						};
-					};
-					class Item2
-					{
-						linkID=2;
-						item0=499;
-						item1=1;
-						class CustomData
-						{
-							role=2;
-							turretPath[]={1};
-						};
-					};
-				};
-			};
-			id=496;
-			atlOffset=24.501307;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="groupID";
-					expression="_this setGroupID [_value];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="CSAT TH1 -";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item20
-		{
-			dataType="Group";
-			side="East";
-			class Entities
-			{
-				items=2;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={4814.1655,5.0178919,10556.379};
-					};
-					side="East";
-					flags=2;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="LIEUTENANT";
-						init="[""pp"",this] call f_fnc_assignGear;";
-						name="UnitCSAT_TH3_P";
-						description="CSAT Transport Helo 3 Pilot";
-						isPlayable=1;
-					};
-					id=505;
-					type="O_helipilot_F";
-					atlOffset=27.629007;
 				};
 				class Item1
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4814.1655,5.0178919,10556.379};
+						position[]={4399.4829,23.61809,10655.241};
+						angles[]={0,2.499294,0};
 					};
-					side="East";
+					side="West";
+					flags=4;
 					class Attributes
 					{
-						skill=0.60000002;
-						rank="SERGEANT";
-						init="[""pcc"",this] call f_fnc_assignGear;";
-						name="UnitCSAT_TH3_CP";
-						description="CSAT Transport Helo 3 Co-Pilot (Repair)";
+						init="[""pc"",this] call f_fnc_assignGear;";
+						name="UnitCSAT_EVAC1_LM";
+						description="CSAT Medevac Helo 1 Taru Loadmaster";
 						isPlayable=1;
 					};
-					id=506;
-					type="O_helipilot_F";
-					atlOffset=27.629007;
+					id=1148;
+					type="O_T_Helicrew_F";
+					atlOffset=0.098003387;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01PER";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.95999998;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 			};
 			class Attributes
 			{
-				name="GrpCSAT_TH3";
+				name="GrpCSAT_EVAC1";
 			};
 			class CrewLinks
 			{
@@ -2862,8 +3697,8 @@ class Mission
 					class Item0
 					{
 						linkID=0;
-						item0=505;
-						item1=19;
+						item0=1147;
+						item1=1140;
 						class CustomData
 						{
 							role=1;
@@ -2872,18 +3707,18 @@ class Mission
 					class Item1
 					{
 						linkID=1;
-						item0=506;
-						item1=19;
+						item0=1148;
+						item1=1140;
 						class CustomData
 						{
 							role=2;
-							turretPath[]={0};
+							turretPath[]={1};
 						};
 					};
 				};
 			};
-			id=504;
-			atlOffset=27.589134;
+			id=496;
+			atlOffset=0.098003387;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -2901,25 +3736,1181 @@ class Mission
 									"STRING"
 								};
 							};
-							value="CSAT TH3 -";
+							value="CSAT EVAC1 -";
 						};
 					};
 				};
 				nAttributes=1;
 			};
 		};
-		class Item21
+		class Item12
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4398.894,23.784069,10570.914};
+						angles[]={0,2.499294,0};
+					};
+					side="West";
+					flags=2;
+					class Attributes
+					{
+						init="[""pp"",this] call f_fnc_assignGear;";
+						name="UnitCSAT_EVAC2_P";
+						description="CSAT Medevac Helo 2 Taru Pilot (Repair)";
+						isPlayable=1;
+					};
+					id=1150;
+					type="O_T_Helipilot_F";
+					atlOffset=0.26398277;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male03PER";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.03;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4398.894,23.784069,10570.914};
+						angles[]={0,2.499294,0};
+					};
+					side="West";
+					class Attributes
+					{
+						init="[""pc"",this] call f_fnc_assignGear;";
+						name="UnitCSAT_EVAC2_LM";
+						description="CSAT Medevac Helo 2 Taru Loadmaster";
+						isPlayable=1;
+					};
+					id=1151;
+					type="O_T_Helicrew_F";
+					atlOffset=0.26398277;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01PER";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.95999998;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+				name="GrpCSAT_EVAC2";
+			};
+			class CrewLinks
+			{
+				class LinkIDProvider
+				{
+					nextID=2;
+				};
+				class Links
+				{
+					items=2;
+					class Item0
+					{
+						linkID=0;
+						item0=1150;
+						item1=1152;
+						class CustomData
+						{
+							role=1;
+						};
+					};
+					class Item1
+					{
+						linkID=1;
+						item0=1151;
+						item1=1152;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={1};
+						};
+					};
+				};
+			};
+			id=1149;
+			atlOffset=0.26398277;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupID [_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="CSAT EVAC2 -";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item13
 		{
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={4518.9146,7.5027428,11283.677};
+				position[]={4347.5942,7.3944244,10593.646};
 			};
 			name="F3_Zeus";
 			isPlayable=1;
 			id=793;
 			type="VirtualCurator_F";
-			atlOffset=27.149645;
+			atlOffset=29.065714;
+		};
+		class Item14
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12171.72,45.032963,14288.317};
+				angles[]={0,3.2637656,0.0079936078};
+			};
+			side="West";
+			flags=6;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="[""v_helo_l"",this] call f_fnc_assignGear";
+				name="VehCTRG_TH1";
+			};
+			id=1102;
+			type="B_Heli_Light_01_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="VehicleCustomization";
+					expression="if (local _this) then {([_this] + _value) call (uinamespace getvariable 'bis_fnc_initVehicle');};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"ARRAY"
+								};
+							};
+							class value
+							{
+								items=2;
+								class Item0
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"ARRAY"
+											};
+										};
+									};
+								};
+								class Item1
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"ARRAY"
+											};
+										};
+										class value
+										{
+											items=4;
+											class Item0
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="AddHoldingFrame";
+												};
+											};
+											class Item1
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"SCALAR"
+														};
+													};
+													value=1;
+												};
+											};
+											class Item2
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="AddCargoHook_COver";
+												};
+											};
+											class Item3
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"SCALAR"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+									};
+								};
+							};
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item15
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12171.793,43.254345,14288.282};
+				angles[]={0,0,0.0079935296};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1105;
+			type="Land_HelipadCircle_F";
+		};
+		class Item16
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12205.009,43.44606,14289.232};
+				angles[]={0.0080009829,0,6.2751846};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1106;
+			type="Land_HelipadCircle_F";
+		};
+		class Item17
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12171.734,43.255314,14288.366};
+						angles[]={0,3.2637656,0.0079936078};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						init="[""pp"",this] call f_fnc_assignGear;";
+						name="UnitCTRG_TH1_P";
+						description="CTRG Transport Helo 1 MH-9 Pilot (Repair)";
+						isPlayable=1;
+					};
+					id=1103;
+					type="B_Helipilot_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male04ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.98000002;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+				name="GrpCTRG_TH1";
+			};
+			class CrewLinks
+			{
+				class LinkIDProvider
+				{
+					nextID=1;
+				};
+				class Links
+				{
+					items=1;
+					class Item0
+					{
+						linkID=0;
+						item0=1103;
+						item1=1102;
+						class CustomData
+						{
+							role=1;
+						};
+					};
+				};
+			};
+			id=319;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupID [_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="CTRG TH1 -";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item18
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12204.961,45.223499,14288.883};
+				angles[]={0.0079936078,3.2637656,6.2751913};
+			};
+			side="West";
+			flags=6;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="[""v_helo_l"",this] call f_fnc_assignGear";
+				name="VehCTRG_TH2";
+			};
+			id=1109;
+			type="B_Heli_Light_01_F";
+			atlOffset=-0.0050010681;
+		};
+		class Item19
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={12204.946,43.445915,14288.917};
+						angles[]={0.0079936078,3.2637656,6.2751913};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						init="[""pp"",this] call f_fnc_assignGear;";
+						name="UnitCTRG_TH2_P";
+						description="CTRG Transport Helo 2 MH-9 Pilot (Repair)";
+						isPlayable=1;
+					};
+					id=1108;
+					type="B_Helipilot_F";
+					atlOffset=-0.0050010681;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male04ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.98000002;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+				name="GrpCTRG_TH2";
+			};
+			class CrewLinks
+			{
+				class LinkIDProvider
+				{
+					nextID=1;
+				};
+				class Links
+				{
+					items=1;
+					class Item0
+					{
+						linkID=0;
+						item0=1108;
+						item1=1109;
+						class CustomData
+						{
+							role=1;
+						};
+					};
+				};
+			};
+			id=1107;
+			atlOffset=-0.0050010681;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupID [_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="CTRG TH2 -";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item20
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4431.3047,0,10581.54};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1139;
+			type="Land_Carrier_01_base_F";
+			atlOffset=25.610016;
+		};
+		class Item21
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4399.5156,26.677465,10654.644};
+				angles[]={0,2.499294,0};
+			};
+			side="West";
+			flags=6;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="[""v_helo_h"",this] call f_fnc_assignGear";
+				name="VehCSAT_EVAC1";
+				textures="Black";
+			};
+			id=1140;
+			type="O_Heli_Transport_04_F";
+			atlOffset=0.098003387;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="VehicleCustomization";
+					expression="if (local _this) then {([_this] + _value) call (uinamespace getvariable 'bis_fnc_initVehicle');};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"ARRAY"
+								};
+							};
+							class value
+							{
+								items=2;
+								class Item0
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"ARRAY"
+											};
+										};
+									};
+								};
+								class Item1
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"ARRAY"
+											};
+										};
+										class value
+										{
+											items=2;
+											class Item0
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="AddCargoHook_COver";
+												};
+											};
+											class Item1
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"SCALAR"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+									};
+								};
+							};
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item22
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4399.6177,24.998125,10632.456};
+				angles[]={0,1.4838777,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				textures="Black";
+			};
+			id=1145;
+			type="Land_Pod_Heli_Transport_04_bench_F";
+			atlOffset=0.2295742;
+		};
+		class Item23
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4401.626,25.171608,10598.33};
+				angles[]={0,1.4838777,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				textures="Black";
+			};
+			id=1146;
+			type="Land_Pod_Heli_Transport_04_bench_F";
+			atlOffset=0.44963646;
+		};
+		class Item24
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4467.751,23.648388,10706.019};
+						angles[]={0,2.8081996,0};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						init="[""pp"",this] call f_fnc_assignGear;";
+						name="UnitNATO_TH3_P";
+						description="NATO Transport Helo 3 Huron Pilot (Repair)";
+						isPlayable=1;
+					};
+					id=1156;
+					type="B_T_Helipilot_F";
+					atlOffset=0.12830162;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male08ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.98000002;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+				name="GrpNATO_TH3";
+			};
+			class CrewLinks
+			{
+				class LinkIDProvider
+				{
+					nextID=1;
+				};
+				class Links
+				{
+					items=1;
+					class Item0
+					{
+						linkID=0;
+						item0=1156;
+						item1=1153;
+						class CustomData
+						{
+							role=1;
+						};
+					};
+				};
+			};
+			id=329;
+			atlOffset=0.12830162;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupID [_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="NATO TH3 -";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item25
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4399.7993,26.676476,10569.979};
+				angles[]={0,2.499294,0};
+			};
+			side="West";
+			flags=2;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="[""v_helo_h"",this] call f_fnc_assignGear";
+				name="VehCSAT_EVAC2";
+				textures="Black";
+			};
+			id=1152;
+			type="O_Heli_Transport_04_F";
+			atlOffset=0.26398277;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="VehicleCustomization";
+					expression="if (local _this) then {([_this] + _value) call (uinamespace getvariable 'bis_fnc_initVehicle');};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"ARRAY"
+								};
+							};
+							class value
+							{
+								items=2;
+								class Item0
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"ARRAY"
+											};
+										};
+									};
+								};
+								class Item1
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"ARRAY"
+											};
+										};
+										class value
+										{
+											items=2;
+											class Item0
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="AddCargoHook_COver";
+												};
+											};
+											class Item1
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"SCALAR"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+									};
+								};
+							};
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item26
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4467.2617,26.951813,10705.172};
+				angles[]={0,2.8081996,0};
+			};
+			side="West";
+			flags=6;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="[""v_helo_h"",this] call f_fnc_assignGear";
+				name="VehNATO_TH3";
+				textures="Black";
+			};
+			id=1153;
+			type="B_Heli_Transport_03_unarmed_F";
+			atlOffset=0.12830162;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="VehicleCustomization";
+					expression="if (local _this) then {([_this] + _value) call (uinamespace getvariable 'bis_fnc_initVehicle');};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"ARRAY"
+								};
+							};
+							class value
+							{
+								items=2;
+								class Item0
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"ARRAY"
+											};
+										};
+									};
+								};
+								class Item1
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"ARRAY"
+											};
+										};
+										class value
+										{
+											items=4;
+											class Item0
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="Minigun_Hide_Source";
+												};
+											};
+											class Item1
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"SCALAR"
+														};
+													};
+													value=0;
+												};
+											};
+											class Item2
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="AddCargoHook_COver";
+												};
+											};
+											class Item3
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"SCALAR"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+									};
+								};
+							};
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item27
+		{
+			dataType="Layer";
+			name="Layer 1";
+			id=1173;
+			atlOffset=60.779999;
+		};
+		class Item28
+		{
+			dataType="Layer";
+			name="Layer 2";
+			id=1174;
+			atlOffset=60.779999;
+		};
+		class Item29
+		{
+			dataType="Layer";
+			name="Layer 3";
+			id=1175;
+			atlOffset=60.779999;
 		};
 	};
 };

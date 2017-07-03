@@ -19,8 +19,8 @@ private _faction = toLower (faction _unit);
 _insignia_style_NATO = _insignia_styles select 0;
 _insignia_style_CSAT = _insignia_styles select 1;
 
-_NATO_Medic_Badge = "NATO_Medic_Badge";
-_CSAT_Medic_Badge = "CSAT_Medic_Badge";
+_NATO_Medic_Badge = "NATO_Pacific_Medic_Badge";
+_CSAT_Medic_Badge = "CSAT_Pacific_Medic_Badge";
 
 if (_insignia_style_NATO == "Tanoa") then {_NATO_Medic_Badge = "NATO_Pacific_Medic_Badge"};
 
@@ -49,7 +49,7 @@ private _roleBadge = switch (_typeofUnit) do
 			case "blu_f" : {_NATO_Medic_Badge};
 			case "opf_f" : {_CSAT_Medic_Badge};
 			case "ind_f" : {"AAF_Medic_Badge"};
-			default {"NATO_Medic_Badge"};
+			default {"NATO_Pacific_Medic_Badge"};
 		};
 	};
 	default {""};
@@ -67,9 +67,9 @@ switch (_faction) do
 	case "blu_f" : {
 		if (_insignia_style_NATO == "Tanoa") then {
 			_groupBadges = [
-				["GrpNATO_ASL","NATO_Pacific_ASL_Badge"],
-				["GrpNATO_A1","NATO_Pacific_A1_Badge"],
-				["GrpNATO_A2","NATO_Pacific_A2_Badge"],
+				["GrpCTRG_ASL","NATO_Pacific_ASL_Badge"],
+				["GrpCTRG_A1","NATO_Pacific_A1_Badge"],
+				["GrpCTRG_A2","NATO_Pacific_A2_Badge"],
 				["GrpNATO_A3","NATO_Pacific_A3_Badge"],
 				["GrpNATO_BSL","NATO_Pacific_BSL_Badge"],
 				["GrpNATO_B1","NATO_Pacific_B1_Badge"],
