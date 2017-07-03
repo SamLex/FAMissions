@@ -20,13 +20,6 @@ f_wound_extraFAK = 2;
 
 // ====================================================================================
 
-// F3 - Radio Systems Support
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-
-[] execVM "f\radios\radio_init.sqf";
-
-// ====================================================================================
-
 // F3 - Disable Saving and Auto Saving
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
