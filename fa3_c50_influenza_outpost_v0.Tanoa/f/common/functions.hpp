@@ -59,11 +59,6 @@ class F // Defines the "owner"
 		file = "f\nametag";
 		class drawNameTag{};
 	};
-	class preMount
-	{
-		file = "f\preMount";
-		class mountGroups{};
-	};
 	class zeus
 	{
 		file = "f\zeus";
