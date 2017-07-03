@@ -90,14 +90,6 @@ class F // Defines the "owner"
 		class zeusAddAddons{};
 		class zeusAddObjects{};
 	};
-	class tfr
-	{
-		file = "f\radios\tfr";
-		class tfr_removeRadios{};
-		class tfr_addRadios{};
-		class tfr_setRadioFrequencies{};
-		class tfr_configureSpectatorChat{};
-	};
 	class safeStart
 	{
 		file = "f\safeStart";
