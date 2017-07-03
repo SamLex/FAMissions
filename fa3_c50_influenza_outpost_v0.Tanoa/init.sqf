@@ -27,15 +27,6 @@ f_wound_extraFAK = 2;
 
 // ====================================================================================
 
-// F3 - JIP setup
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-
-f_var_JIP_FirstMenu = false;		// Do players connecting for the first time get the JIP menu? - This only works in missions with respawn.
-f_var_JIP_RemoveCorpse = false;		// Remove the old corpse of respawning players?
-f_var_JIP_GearMenu = true;			// Can JIP/respawned players select their own gear? False will use gear assigned by F3 Gear Component if possible
-
-// ====================================================================================
-
 // F3 - Disable Saving and Auto Saving
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
