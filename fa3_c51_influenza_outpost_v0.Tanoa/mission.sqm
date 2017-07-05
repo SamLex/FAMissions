@@ -8,18 +8,22 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=1752;
+		nextID=1771;
+	};
+	class MarkerIDProvider
+	{
+		nextID=14;
 	};
 	class LayerIndexProvider
 	{
-		nextID=54;
+		nextID=99;
 	};
 	class Camera
 	{
-		pos[]={2360.3979,146.12695,13108.148};
-		dir[]={-0.11736648,-0.75268996,0.64787316};
-		up[]={-0.13417751,0.65833205,0.74067229};
-		aside[]={0.98400849,-1.3567042e-006,0.17825894};
+		pos[]={11030.595,484.28253,11462.563};
+		dir[]={-0.0099229794,-0.9785074,0.20597433};
+		up[]={-0.047085773,0.20621096,0.9773739};
+		aside[]={0.9988414,-1.7462298e-010,0.048119999};
 	};
 };
 binarizationWanted=0;
@@ -54,13 +58,15 @@ addons[]=
 	"A3_Structures_F_Exp_Military_Fortifications",
 	"A3_Static_F",
 	"A3_Structures_F_Exp_Military_ContainerBases",
-	"A3_Structures_F_Heli_Items_Airport"
+	"A3_Structures_F_Heli_Items_Airport",
+	"A3_Modules_F_Curator_Misc",
+	"A3_Ui_F"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=20;
+		items=21;
 		class Item0
 		{
 			className="A3_Modules_F_Curator";
@@ -201,6 +207,13 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
+		class Item20
+		{
+			className="A3_Ui_F";
+			name="Arma 3 - User Interface";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
 	};
 };
 randomSeed=1116085;
@@ -332,7 +345,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=235;
+		items=244;
 		class Item0
 		{
 			dataType="Logic";
@@ -8793,6 +8806,7 @@ class Mission
 			};
 			id=1710;
 			type="PortableHelipadLight_01_red_F";
+			atlOffset=-4.3869019e-005;
 		};
 		class Item195
 		{
@@ -9070,7 +9084,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11018.66,350.55676,11511.876};
-				angles[]={-0,0,6.256525};
+				angles[]={0,0,6.256525};
 			};
 			side="Empty";
 			flags=4;
@@ -9087,7 +9101,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11031.149,350.52371,11512.277};
-				angles[]={-0,0,6.256525};
+				angles[]={0,0,6.256525};
 			};
 			side="Empty";
 			flags=4;
@@ -9372,7 +9386,7 @@ class Mission
 			};
 			id=1746;
 			type="Land_Medevac_HQ_V1_F";
-			atlOffset=0.0026664734;
+			atlOffset=0.0026655197;
 		};
 		class Item230
 		{
@@ -9456,7 +9470,96 @@ class Mission
 			};
 			id=1751;
 			type="Land_Medevac_HQ_V1_F";
-			atlOffset=0.019398689;
+			atlOffset=0.019397736;
+		};
+		class Item235
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={11045.799,350.38,11504.143};
+			};
+			areaSize[]={300,0,300};
+			areaIsRectangle=1;
+			flags=1;
+			id=1756;
+			type="ModuleCoverMap_F";
+		};
+		class Item236
+		{
+			dataType="Marker";
+			position[]={2319.886,0,13177.179};
+			name="marker_5";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorRed";
+			alpha=0.34787551;
+			a=40;
+			b=13;
+			angle=54.384991;
+			id=1762;
+			atlOffset=-11.762564;
+		};
+		class Item237
+		{
+			dataType="Marker";
+			position[]={12182.077,43.234966,14303.262};
+			name="marker_7";
+			type="flag_CTRG";
+			id=1764;
+		};
+		class Item238
+		{
+			dataType="Marker";
+			position[]={4409.5708,0,10689.699};
+			name="marker_8";
+			type="flag_NATO";
+			id=1765;
+			atlOffset=21.68058;
+		};
+		class Item239
+		{
+			dataType="Marker";
+			position[]={11046.055,350.38,11504.65};
+			name="marker_9";
+			type="flag_CSAT";
+			id=1766;
+		};
+		class Item240
+		{
+			dataType="Marker";
+			position[]={2319.8359,0,13177.433};
+			name="marker_10";
+			text="Drop Zone";
+			type="mil_end";
+			colorName="ColorRed";
+			id=1767;
+			atlOffset=-11.760535;
+		};
+		class Item241
+		{
+			dataType="Marker";
+			position[]={2245.0891,0,13255.867};
+			name="marker_11";
+			type="flag_CSAT";
+			id=1768;
+			atlOffset=-13.45;
+		};
+		class Item242
+		{
+			dataType="Marker";
+			position[]={2266.2676,13.669538,13267.533};
+			name="marker_12";
+			type="flag_NATO";
+			id=1769;
+		};
+		class Item243
+		{
+			dataType="Marker";
+			position[]={2285.5425,13.453303,13280.627};
+			name="marker_13";
+			type="flag_CTRG";
+			id=1770;
 		};
 	};
 };
