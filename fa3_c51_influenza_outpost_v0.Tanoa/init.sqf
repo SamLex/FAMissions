@@ -115,8 +115,11 @@ f_var_civAI = independent; 		// Optional: The civilian AI will use this side's s
 // F3 - Authorised Crew Check
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
-// VehicleName addEventhandler ["GetIn", {[_this,[UnitName1,UnitName2],false] call f_fnc_authorisedCrewCheck}];
-// VehicleName addEventhandler ["GetIn", {[_this,["UnitClass1","UnitClass2"],false] call f_fnc_authorisedCrewCheck}];
+VehCTRG_TH1 addEventhandler ["GetIn", {[_this,["B_Helipilot_F","B_CTRG_Soldier_TL_tna_F"],false] call f_fnc_authorisedCrewCheck}];
+VehCTRG_TH2 addEventhandler ["GetIn", {[_this,["B_Helipilot_F","B_CTRG_Soldier_TL_tna_F"],false] call f_fnc_authorisedCrewCheck}];
+VehNATO_TH3 addEventhandler ["GetIn", {[_this,["B_Helipilot_F"],false] call f_fnc_authorisedCrewCheck}];
+VehCSAT_EVAC1 addEventhandler ["GetIn", {[_this,["O_T_Helipilot_F", "O_T_Helicrew_F"],false] call f_fnc_authorisedCrewCheck}];
+VehCSAT_EVAC2 addEventhandler ["GetIn", {[_this,["O_T_Helipilot_F", "O_T_Helicrew_F"],false] call f_fnc_authorisedCrewCheck}];
 
 // ====================================================================================
 
