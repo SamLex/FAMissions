@@ -96,6 +96,7 @@
 		_unit addItemCargoGlobal [_firstaid,2];
 	    _unit addBackpackCargoGlobal ["B_Parachute",2];
 		_unit addItemCargoGlobal ["Toolkit",1];
+		_unit addMagazineCargoGlobal [_satchel, 1];
 	};
 	
 //CARGO: Rotary Transport Medium
@@ -149,6 +150,7 @@
 		_unit addItemCargoGlobal [_firstaid,6];
 		_unit addBackpackCargoGlobal ["B_Parachute",4];
 		_unit addItemCargoGlobal ["Toolkit",1];
+		_unit addMagazineCargoGlobal [_satchel, 2];
 	};
 	
 //CARGO: Rotary Attack

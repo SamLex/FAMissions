@@ -151,6 +151,17 @@
 		_unit addItemCargoGlobal ["Toolkit",1];
 	};
 	
+//CARGO: Rotary Transport Medevac
+    case "v_helo_evac":
+	{
+	    clearWeaponCargoGlobal _unit;
+		clearMagazineCargoGlobal _unit;
+		clearItemCargoGlobal _unit;
+		clearBackpackCargoGlobal _unit;
+		_unit addItemCargoGlobal [_firstaid, 32];
+		_unit addItemCargoGlobal [_medkit, 4];
+	};
+	
 //CARGO: Rotary Attack
     case "v_helo_a":
 	{
