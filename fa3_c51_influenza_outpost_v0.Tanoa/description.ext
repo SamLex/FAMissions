@@ -310,7 +310,7 @@ class CfgFunctions
 	
 	class SL
 	{
-		class TaruPodActions
+		class Global
 		{
 			tag = "SL";
 			requiredAddons[] = {"A3_Air_F_Heli_Heli_Transport_04"};
@@ -319,6 +319,15 @@ class CfgFunctions
 				file = "taruPodActions.sqf";
 				postInit = 1;
 				headerType = -1;
+			};
+		};
+		class Mission
+		{
+			tag = "SL";
+			requiredAddons[] = {};
+			class callReinforcements
+			{
+				file = "callReinforcements.sqf";
 			};
 		};
 	};
