@@ -307,6 +307,21 @@ class CfgRespawnTemplates
 class CfgFunctions
 {
 	#include "f\common\functions.hpp"
+	
+	class SL
+	{
+		class TaruPodActions
+		{
+			tag = "SL";
+			requiredAddons[] = {"A3_Air_F_Heli_Heli_Transport_04"};
+			class taruPosActions
+			{
+				file = "taruPodActions.sqf";
+				postInit = 1;
+				headerType = -1;
+			};
+		};
+	};
 };
 
 // ============================================================================================
