@@ -5,7 +5,7 @@ params [["_currentStrength", 0, [0]], ["_thresholdStrength", 0, [0]], ["_reinfor
 
 private _deployed = [];
 
-while {_currentStrength < _thresholdStrength} do
+while {_currentStrength < _thresholdStrength && {count _reinforceGroups > 0}} do
 {
 	private _group = selectRandom _reinforceGroups;
 	private _strength = count (units _group);
