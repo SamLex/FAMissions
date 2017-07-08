@@ -5,25 +5,25 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=641;
+	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=2092;
+		nextID=2102;
 	};
 	class MarkerIDProvider
 	{
-		nextID=14;
+		nextID=16;
 	};
 	class LayerIndexProvider
 	{
-		nextID=135;
+		nextID=144;
 	};
 	class Camera
 	{
-		pos[]={11043.759,367.69998,11500.116};
-		dir[]={0.004389409,-0.95856017,0.28486156};
-		up[]={0.014768619,0.28488699,0.95844603};
-		aside[]={0.99988174,4.8930815e-010,-0.015407111};
+		pos[]={2035.9543,45.055229,12903.967};
+		dir[]={0,-0.70710677,0.70710683};
+		up[]={0,0.70710677,0.70710671};
+		aside[]={0.99999994,0,-0};
 	};
 };
 binarizationWanted=0;
@@ -363,7 +363,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=262;
+		items=272;
 		class Item0
 		{
 			dataType="Logic";
@@ -5088,12 +5088,13 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11041.48,351.08002,11555.848};
-				angles[]={0,1.5834243,0};
+				angles[]={0,1.5834324,0};
 			};
 			side="Empty";
 			flags=5;
 			class Attributes
 			{
+				name="cargo1";
 			};
 			id=1348;
 			type="Land_Medevac_house_V1_F";
@@ -5109,6 +5110,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
+				name="cargo4";
 			};
 			id=1350;
 			type="Land_Medevac_HQ_V1_F";
@@ -5779,12 +5781,13 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11118.36,354.28726,11504.095};
-				angles[]={0,4.7382221,0};
+				angles[]={0,4.7382202,0};
 			};
 			side="Empty";
 			flags=5;
 			class Attributes
 			{
+				name="cargo3";
 			};
 			id=1457;
 			type="Land_Medevac_HQ_V1_F";
@@ -6536,6 +6539,7 @@ class Mission
 			class Attributes
 			{
 				lock="LOCKED";
+				name="medTruck3";
 			};
 			id=1529;
 			type="O_T_Truck_03_medical_ghex_F";
@@ -6576,6 +6580,7 @@ class Mission
 			class Attributes
 			{
 				lock="LOCKED";
+				name="medTruck2";
 				presence=0.49577478;
 			};
 			id=1530;
@@ -6618,6 +6623,7 @@ class Mission
 			class Attributes
 			{
 				lock="LOCKED";
+				name="medTruck1";
 				presence=0.5000006;
 			};
 			id=1531;
@@ -6674,6 +6680,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				name="supplyPod1";
 				presence=0.50422567;
 			};
 			id=1535;
@@ -6708,18 +6715,20 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11024.674,351.88907,11503.29};
-				angles[]={6.2432094,6.1592059,0.013327583};
+				position[]={11024.674,351.88928,11503.29};
+				angles[]={6.243217,6.1591969,0.013334315};
 			};
 			side="Civilian";
 			flags=6;
 			class Attributes
 			{
 				lock="LOCKED";
+				init="this enableRopeAttach false;";
+				name="medPod1";
 			};
 			id=1536;
 			type="Land_Pod_Heli_Transport_04_medevac_F";
-			atlOffset=-0.0042419434;
+			atlOffset=-0.0040283203;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -6756,7 +6765,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11024.692,350.50696,11503.396};
+						position[]={11024.692,350.50717,11503.396};
 						angles[]={6.243217,6.1591969,0.013334315};
 					};
 					side="Civilian";
@@ -6778,7 +6787,7 @@ class Mission
 					};
 					id=1538;
 					type="C_man_w_worker_F";
-					atlOffset=-0.0042724609;
+					atlOffset=-0.0040588379;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -6849,7 +6858,7 @@ class Mission
 				};
 			};
 			id=1537;
-			atlOffset=-0.0042419434;
+			atlOffset=-0.0040283203;
 		};
 		class Item130
 		{
@@ -6857,12 +6866,13 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11098.352,354.26456,11486.756};
-				angles[]={0,3.1508222,0};
+				angles[]={0,3.1508255,0};
 			};
 			side="Empty";
 			flags=5;
 			class Attributes
 			{
+				name="cargo2";
 			};
 			id=1543;
 			type="Land_Medevac_HQ_V1_F";
@@ -7352,7 +7362,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11024.637,350.50668,11503.303};
+						position[]={11024.692,350.50717,11503.396};
 						angles[]={6.243217,6.1591969,0.013334315};
 					};
 					side="Civilian";
@@ -7374,7 +7384,7 @@ class Mission
 					};
 					id=1572;
 					type="C_man_w_worker_F";
-					atlOffset=-3.0517578e-005;
+					atlOffset=-0.0040588379;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -7445,24 +7455,24 @@ class Mission
 				};
 			};
 			id=1571;
-			atlOffset=-0.0042419434;
+			atlOffset=-0.0040283203;
 		};
 		class Item155
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11097.235,351.60382,11512.161};
+				position[]={11097.235,351.60468,11512.161};
 				angles[]={6.2565165,4.1301818,0.026668631};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				name="supplyPod3";
 			};
 			id=1582;
 			type="Land_Pod_Heli_Transport_04_box_F";
-			atlOffset=-0.00085449219;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -7492,18 +7502,19 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11002.32,351.64859,11498.921};
+				position[]={11002.32,351.64902,11498.921};
 				angles[]={0.026668631,2.3336275,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				name="supplyPod2";
 				presence=0.5000006;
 			};
 			id=1583;
 			type="Land_Pod_Heli_Transport_04_box_F";
-			atlOffset=-0.00045776367;
+			atlOffset=-3.0517578e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -7540,6 +7551,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				name="supplyPod4";
 				presence=0.5000006;
 			};
 			id=1584;
@@ -9150,7 +9162,7 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={2319.8359,0,13177.433};
-			name="marker_10";
+			name="markerDropZone";
 			text="Drop Zone";
 			type="mil_end";
 			colorName="ColorRed";
@@ -9186,7 +9198,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11024.692,350.50696,11503.396};
+						position[]={11024.692,350.50717,11503.396};
 						angles[]={6.243217,6.1591969,0.013334315};
 					};
 					side="Civilian";
@@ -9208,7 +9220,7 @@ class Mission
 					};
 					id=1786;
 					type="C_man_w_worker_F";
-					atlOffset=-0.0042724609;
+					atlOffset=-0.0040588379;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -9279,7 +9291,7 @@ class Mission
 				};
 			};
 			id=1785;
-			atlOffset=-0.0042419434;
+			atlOffset=-0.0040283203;
 		};
 		class Item239
 		{
@@ -9293,8 +9305,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11066.276,350.51614,11505.032};
-						angles[]={0.013327583,6.2277493,6.2432094};
+						position[]={11066.276,350.51657,11505.032};
+						angles[]={0.013334315,6.2277536,6.243217};
 					};
 					side="Civilian";
 					flags=7;
@@ -9315,7 +9327,7 @@ class Mission
 					};
 					id=1788;
 					type="C_man_w_worker_F";
-					atlOffset=-0.014465332;
+					atlOffset=-0.014038086;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -9386,7 +9398,7 @@ class Mission
 				};
 			};
 			id=1787;
-			atlOffset=-0.014465332;
+			atlOffset=-0.014038086;
 		};
 		class Item240
 		{
@@ -9400,8 +9412,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11066.276,350.51614,11505.032};
-						angles[]={0.013327583,6.2277493,6.2432094};
+						position[]={11066.276,350.51657,11505.032};
+						angles[]={0.013334315,6.2277536,6.243217};
 					};
 					side="Civilian";
 					flags=7;
@@ -9422,7 +9434,7 @@ class Mission
 					};
 					id=1790;
 					type="C_man_w_worker_F";
-					atlOffset=-0.014465332;
+					atlOffset=-0.014038086;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -9493,7 +9505,7 @@ class Mission
 				};
 			};
 			id=1789;
-			atlOffset=-0.014465332;
+			atlOffset=-0.014038086;
 		};
 		class Item241
 		{
@@ -9507,8 +9519,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11066.276,350.51614,11505.032};
-						angles[]={0.013327583,6.2277493,6.2432094};
+						position[]={11066.276,350.51657,11505.032};
+						angles[]={0.013334315,6.2277536,6.243217};
 					};
 					side="Civilian";
 					flags=7;
@@ -9529,7 +9541,7 @@ class Mission
 					};
 					id=1792;
 					type="C_man_w_worker_F";
-					atlOffset=-0.014465332;
+					atlOffset=-0.014038086;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -9600,25 +9612,27 @@ class Mission
 				};
 			};
 			id=1791;
-			atlOffset=-0.014465332;
+			atlOffset=-0.014038086;
 		};
 		class Item242
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={11066.239,351.8985,11504.945};
-				angles[]={0.013327583,6.2277493,6.2432094};
+				position[]={11066.239,351.89893,11504.945};
+				angles[]={0.013334315,6.2277536,6.243217};
 			};
 			side="Civilian";
 			flags=6;
 			class Attributes
 			{
 				lock="LOCKED";
+				init="this enableRopeAttach false;";
+				name="medPod2";
 			};
 			id=1793;
 			type="Land_Pod_Heli_Transport_04_medevac_F";
-			atlOffset=-0.014465332;
+			atlOffset=-0.014038086;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -9646,7 +9660,7 @@ class Mission
 		class Item243
 		{
 			dataType="Trigger";
-			position[]={11044.465,350.38,11504.538};
+			position[]={11050.561,350.80997,11473.215};
 			class Attributes
 			{
 				name="reinforceTrigger";
@@ -12172,6 +12186,144 @@ class Mission
 				};
 			};
 			id=2074;
+		};
+		class Item262
+		{
+			dataType="Trigger";
+			position[]={2320.021,11.761977,13177.252};
+			angle=0.94919717;
+			class Attributes
+			{
+				name="dropZoneTrigger";
+				condition="medPod1 inArea thisTrigger && {isNull attachedTo medPod1} && medPod2 inArea thisTrigger && {isNull attachedTo medPod2}";
+				onActivation="SL_mission_taskMedevac setTaskState ""Succeeded"";[""TaskSucceeded"",["""",""Patients evacuated!""]] call BIS_fnc_showNotification;";
+				sizeA=40;
+				sizeB=13;
+				timeout[]={5,7,15};
+				isRectangle=1;
+			};
+			id=2092;
+			type="EmptyDetector";
+			atlOffset=-9.5367432e-007;
+		};
+		class Item263
+		{
+			dataType="Trigger";
+			position[]={1845.5551,13.45,13008.222};
+			class Attributes
+			{
+				condition="!alive medPod1 || {!alive medPod2}";
+				onActivation="if (taskState SL_mission_taskMedevac == ""Failed"") exitWith {}; SL_mission_taskMedevac setTaskState ""Failed"";[""TaskFailed"",["""",""One of the pods was destroyed!""]] call BIS_fnc_showNotification;";
+				sizeA=0;
+				sizeB=0;
+			};
+			id=2093;
+			type="EmptyDetector";
+		};
+		class Item264
+		{
+			dataType="Trigger";
+			position[]={1871.379,13.45,13028.096};
+			class Attributes
+			{
+				condition="!(call {" \n " private _all = true;" \n " {" \n "  _all = _x call {alive _this};" \n "  if (!_all) exitWith {};" \n " } foreach (crew medPod1);" \n " _all;" \n "}) || {!(call {" \n " private _all = true;" \n " {" \n "  _all = _x call {alive _this};" \n "  if (!_all) exitWith {};" \n " } foreach (crew medPod2);" \n " _all;" \n "})}";
+				onActivation="if (taskState SL_mission_taskMedevac == ""Failed"") exitWith {}; SL_mission_taskMedevac setTaskState ""Failed"";[""TaskFailed"",["""",""One of the patients was killed""]] call BIS_fnc_showNotification;";
+				sizeA=0;
+				sizeB=0;
+			};
+			id=2094;
+			type="EmptyDetector";
+		};
+		class Item265
+		{
+			dataType="Trigger";
+			position[]={1889.056,13.45,13042.055};
+			class Attributes
+			{
+				text="Authorise Patient Slingload";
+				condition="this && {[player, true] call SL_fnc_isEffectiveCO}";
+				onActivation="medPod1 enableRopeAttach true;medPod2 enableRopeAttach true;SL_mission_taskSlingload setTaskState ""Failed"";[""TaskFailed"",["""",""Patient slingloading was authorised""]] call BIS_fnc_showNotification;";
+				sizeA=0;
+				sizeB=0;
+				activationBy="ALPHA";
+			};
+			id=2095;
+			type="EmptyDetector";
+		};
+		class Item266
+		{
+			dataType="Trigger";
+			position[]={1902.434,13.45,13055.408};
+			class Attributes
+			{
+				condition="(isNil ""supplyPod1"" || {!alive supplyPod1} || {supplyPod1 inArea dropZoneTrigger && {isNull attachedTo supplyPod1}}) && " \n "(isNil ""supplyPod2"" || {!alive supplyPod2} || {supplyPod2 inArea dropZoneTrigger && {isNull attachedTo supplyPod2}}) && " \n "(isNil ""supplyPod3"" || {!alive supplyPod3} || {supplyPod3 inArea dropZoneTrigger && {isNull attachedTo supplyPod3}}) && " \n "(isNil ""supplyPod4"" || {!alive supplyPod4} || {supplyPod4 inArea dropZoneTrigger && {isNull attachedTo supplyPod4}})";
+				onActivation="SL_mission_taskSupplies setTaskState ""Succeeded"";[""TaskSucceeded"",["""",""All supplies retrieved or destroyed""]] call BIS_fnc_showNotification;";
+				sizeA=0;
+				sizeB=0;
+			};
+			id=2096;
+			type="EmptyDetector";
+		};
+		class Item267
+		{
+			dataType="Trigger";
+			position[]={1917.701,13.45,13067.677};
+			class Attributes
+			{
+				condition="(isNil ""medTruck1"" || {!alive medTruck1}) && " \n "(isNil ""medTruck2"" || {!alive medTruck2}) && " \n "(isNil ""medTruck3"" || {!alive medTruck3}) && {!alive cargo1} && {!alive cargo2} && {!alive cargo3} && {!alive cargo4}";
+				onActivation="SL_mission_taskAssets setTaskState ""Succeeded"";[""TaskSucceeded"",["""",""All outpost medical assets destroyed""]] call BIS_fnc_showNotification;";
+				sizeA=0;
+				sizeB=0;
+			};
+			id=2097;
+			type="EmptyDetector";
+		};
+		class Item268
+		{
+			dataType="Trigger";
+			position[]={1942.957,13.45,13083.213};
+			class Attributes
+			{
+				condition="time > 1800";
+				onActivation="SL_mission_withdrawTimeout = true;publicVariable ""SL_mission_withdrawTimeout"";SL_mission_inbound = [0, 1000, SL_mission_reinforcements] call SL_fnc_callReinforcements; SL_mission_reinforcements = SL_mission_reinforcements - SL_mission_inbound;";
+				sizeA=0;
+				sizeB=0;
+				isServerOnly=1;
+			};
+			id=2098;
+			type="EmptyDetector";
+		};
+		class Item269
+		{
+			dataType="Trigger";
+			position[]={1961.416,13.45,13097.448};
+			class Attributes
+			{
+				condition="(!isNil ""SL_mission_withdrawTimeout"") && {SL_mission_withdrawTimeout}";
+				onActivation="SL_mission_taskWithdraw setTaskState ""Failed"";[""TaskFailed"",["""",""Failed to withdraw within 30 minutes. Prepare for quarantine!""]] call BIS_fnc_showNotification;";
+				sizeA=0;
+				sizeB=0;
+			};
+			id=2099;
+			type="EmptyDetector";
+		};
+		class Item270
+		{
+			dataType="Marker";
+			position[]={4445.27,0,10607.775};
+			name="markerUSSFreedom";
+			type="Empty";
+			id=2100;
+			atlOffset=18.980267;
+		};
+		class Item271
+		{
+			dataType="Marker";
+			position[]={11047.249,0,11503.957};
+			name="markerOutpost";
+			type="Empty";
+			id=2101;
+			atlOffset=-350.38;
 		};
 	};
 };

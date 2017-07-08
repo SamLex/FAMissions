@@ -1,9 +1,7 @@
 Endings
-Briefings and Tasks
+Briefing
 Cas cap
-Objectives
-Release all reinforcements at 30mins
-
+Remove debug printing
 
 
 DONE!: MSF (Médecins Sans Frontières/Doctors Without Borders) base

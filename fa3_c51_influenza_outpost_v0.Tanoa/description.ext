@@ -333,6 +333,16 @@ class CfgFunctions
 			{
 				file = "areReinforcementsInbound.sqf"
 			};
+			class assignTasks
+			{
+				file = "tasks.sqf";
+				postInit = 1;
+				headerType = -1;
+			};
+			class isEffectiveCO
+			{
+				file = "isEffectiveCO.sqf";
+			};
 		};
 	};
 };
