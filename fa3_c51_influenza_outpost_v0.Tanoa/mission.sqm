@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=2102;
+		nextID=2104;
 	};
 	class MarkerIDProvider
 	{
@@ -345,7 +345,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=272;
+		items=274;
 		class Item0
 		{
 			dataType="Logic";
@@ -12305,6 +12305,43 @@ class Mission
 			type="Empty";
 			id=2101;
 			atlOffset=-350.38;
+		};
+		class Item272
+		{
+			dataType="Trigger";
+			position[]={4445.7368,0.00053024292,10602.788};
+			class Attributes
+			{
+				name="freedomWithdrawTrigger";
+				condition="taskState SL_mission_taskWithdraw != ""Failed"" && {count (playableUnits inAreaArray thisTrigger) == count playableUnits}";
+				onActivation="call SL_fnc_triggerEnding";
+				sizeA=300;
+				sizeB=300;
+				repeatable=1;
+				activationBy="WEST";
+				isServerOnly=1;
+			};
+			id=2102;
+			type="EmptyDetector";
+			atlOffset=18.728001;
+		};
+		class Item273
+		{
+			dataType="Trigger";
+			position[]={2305.3999,30.776098,13162.643};
+			class Attributes
+			{
+				condition="taskState SL_mission_taskWithdraw == ""Failed"" && {count (playableUnits inAreaArray thisTrigger) == count playableUnits}";
+				onActivation="call SL_fnc_triggerEnding";
+				sizeA=300;
+				sizeB=300;
+				repeatable=1;
+				activationBy="WEST";
+				isServerOnly=1;
+			};
+			id=2103;
+			type="EmptyDetector";
+			atlOffset=18.704;
 		};
 	};
 };
