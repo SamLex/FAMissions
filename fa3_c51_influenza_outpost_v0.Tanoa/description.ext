@@ -262,9 +262,9 @@ class CfgDebriefing
 
 	class End6
 	{
-		title = "Ending #6";
-		subtitle = "";
-		description = "*** Insert debriefing #6 here. ***";
+		title = "TOTAL FAILURE";
+		subtitle = "All BLUFOR where killed";
+		description = "We may or may not have completed any objectives, but we are all dead";
 		// pictureBackground = "";
 		// picture = "";
 		// pictureColor[] = {0.0,0.3,0.6,1};
