@@ -12,12 +12,9 @@ while {_currentStrength < _thresholdStrength && {count _reinforceGroups > 0}} do
 	
 	_group setCurrentWaypoint [_group,(currentWaypoint _group)+1];
 	_deployed pushBack _group;
-	(format ["Deployed group %1", _group]) remoteExec ["systemChat"];
 	
 	_reinforceGroups = _reinforceGroups - [_group];
 	_currentStrength = _currentStrength + _strength;
 };
-
-("Finished deploying") remoteExec ["systemChat"];
 
 _deployed;

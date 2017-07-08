@@ -1,6 +1,4 @@
 Endings
 Briefing
-Remove debug printing
-
 
 DONE!: MSF (Médecins Sans Frontières/Doctors Without Borders) base

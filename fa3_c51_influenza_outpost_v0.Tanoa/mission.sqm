@@ -9642,13 +9642,12 @@ class Mission
 		class Item243
 		{
 			dataType="Trigger";
-			position[]={11050.561,350.80997,11473.215};
+			position[]={11045.963,350.38,11504.487};
 			class Attributes
 			{
 				name="reinforceTrigger";
 				condition="count thisList < 16 && {!([SL_mission_inbound, thisTrigger] call SL_fnc_areReinforcementsInbound)}";
 				onActivation="SL_mission_inbound = [count thisList, 16, SL_mission_reinforcements] call SL_fnc_callReinforcements; SL_mission_reinforcements = SL_mission_reinforcements - SL_mission_inbound;";
-				onDeactivation="(""Deactivated"") remoteExec [""systemChat""];";
 				sizeA=300;
 				sizeB=300;
 				timeout[]={5,20,60};
