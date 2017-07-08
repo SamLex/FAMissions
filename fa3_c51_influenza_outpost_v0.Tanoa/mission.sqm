@@ -371,7 +371,7 @@ class Mission
 			{
 				position[]={11190.525,290.4624,11233.116};
 			};
-			init="this addEventHandler ['CuratorObjectPlaced',{{[_x] call f_fnc_setAISKill} forEach crew(_this select 1)}];this addCuratorEditableObjects [allUnits,true];";
+			init="this addEventHandler ['CuratorObjectPlaced',{{[_x] call f_fnc_setAISKill} forEach crew(_this select 1)}];this addCuratorEditableObjects [playableUnits,true];";
 			id=106;
 			type="ModuleCurator_F";
 			atlOffset=6.1679993;
