@@ -329,6 +329,10 @@ class CfgFunctions
 			{
 				file = "callReinforcements.sqf";
 			};
+			class areReinforcementsInbound
+			{
+				file = "areReinforcementsInbound.sqf"
+			};
 		};
 	};
 };
