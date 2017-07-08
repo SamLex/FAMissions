@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=144;
+		nextID=207;
 	};
 	class Camera
 	{
-		pos[]={2035.9543,45.055229,12903.967};
+		pos[]={2330.4966,149.80159,13060.859};
 		dir[]={0,-0.70710677,0.70710683};
 		up[]={0,0.70710677,0.70710671};
-		aside[]={0.99999994,0,-0};
+		aside[]={0.99999994,0,0};
 	};
 };
 binarizationWanted=0;
@@ -12177,7 +12177,7 @@ class Mission
 			{
 				name="dropZoneTrigger";
 				condition="medPod1 inArea thisTrigger && {isNull attachedTo medPod1} && medPod2 inArea thisTrigger && {isNull attachedTo medPod2}";
-				onActivation="SL_mission_taskMedevac setTaskState ""Succeeded"";[""TaskSucceeded"",["""",""Patients evacuated!""]] call BIS_fnc_showNotification;";
+				onActivation="SL_mission_taskMedevac setTaskState ""Succeeded"";SL_mission_taskMedevacServer = ""Succeeded"";[""TaskSucceeded"",["""",""Patients evacuated!""]] call BIS_fnc_showNotification;";
 				sizeA=40;
 				sizeB=13;
 				timeout[]={5,7,15};
@@ -12194,7 +12194,7 @@ class Mission
 			class Attributes
 			{
 				condition="!alive medPod1 || {!alive medPod2}";
-				onActivation="if (taskState SL_mission_taskMedevac == ""Failed"") exitWith {}; SL_mission_taskMedevac setTaskState ""Failed"";[""TaskFailed"",["""",""One of the pods was destroyed!""]] call BIS_fnc_showNotification;";
+				onActivation="if (taskState SL_mission_taskMedevacServer == ""Failed"") exitWith {}; SL_mission_taskMedevac setTaskState ""Failed"";SL_mission_taskMedevacServer = ""Failed"";[""TaskFailed"",["""",""One of the pods was destroyed!""]] call BIS_fnc_showNotification;";
 				sizeA=0;
 				sizeB=0;
 			};
@@ -12208,7 +12208,7 @@ class Mission
 			class Attributes
 			{
 				condition="!(call {" \n " private _all = true;" \n " {" \n "  _all = _x call {alive _this};" \n "  if (!_all) exitWith {};" \n " } foreach (crew medPod1);" \n " _all;" \n "}) || {!(call {" \n " private _all = true;" \n " {" \n "  _all = _x call {alive _this};" \n "  if (!_all) exitWith {};" \n " } foreach (crew medPod2);" \n " _all;" \n "})}";
-				onActivation="if (taskState SL_mission_taskMedevac == ""Failed"") exitWith {}; SL_mission_taskMedevac setTaskState ""Failed"";[""TaskFailed"",["""",""One of the patients was killed""]] call BIS_fnc_showNotification;";
+				onActivation="if (taskState SL_mission_taskMedevacServer == ""Failed"") exitWith {}; SL_mission_taskMedevac setTaskState ""Failed"";SL_mission_taskMedevacServer = ""Failed"";[""TaskFailed"",["""",""One of the patients was killed""]] call BIS_fnc_showNotification;";
 				sizeA=0;
 				sizeB=0;
 			};
@@ -12223,7 +12223,7 @@ class Mission
 			{
 				text="Authorise Patient Slingload";
 				condition="this && {[player, true] call SL_fnc_isEffectiveCO}";
-				onActivation="medPod1 enableRopeAttach true;medPod2 enableRopeAttach true;SL_mission_taskSlingload setTaskState ""Failed"";[""TaskFailed"",["""",""Patient slingloading was authorised""]] call BIS_fnc_showNotification;";
+				onActivation="medPod1 enableRopeAttach true;medPod2 enableRopeAttach true;SL_mission_taskSlingload setTaskState ""Failed"";SL_mission_taskSlingloadServer = ""Failed"";[""TaskFailed"",["""",""Patient slingloading was authorised""]] call BIS_fnc_showNotification;";
 				sizeA=0;
 				sizeB=0;
 				activationBy="ALPHA";
@@ -12238,7 +12238,7 @@ class Mission
 			class Attributes
 			{
 				condition="(isNil ""supplyPod1"" || {!alive supplyPod1} || {supplyPod1 inArea dropZoneTrigger && {isNull attachedTo supplyPod1}}) && " \n "(isNil ""supplyPod2"" || {!alive supplyPod2} || {supplyPod2 inArea dropZoneTrigger && {isNull attachedTo supplyPod2}}) && " \n "(isNil ""supplyPod3"" || {!alive supplyPod3} || {supplyPod3 inArea dropZoneTrigger && {isNull attachedTo supplyPod3}}) && " \n "(isNil ""supplyPod4"" || {!alive supplyPod4} || {supplyPod4 inArea dropZoneTrigger && {isNull attachedTo supplyPod4}})";
-				onActivation="SL_mission_taskSupplies setTaskState ""Succeeded"";[""TaskSucceeded"",["""",""All supplies retrieved or destroyed""]] call BIS_fnc_showNotification;";
+				onActivation="SL_mission_taskSupplies setTaskState ""Succeeded"";SL_mission_taskSuppliesServer = ""Succeeded"";[""TaskSucceeded"",["""",""All supplies retrieved or destroyed""]] call BIS_fnc_showNotification;";
 				sizeA=0;
 				sizeB=0;
 			};
@@ -12252,7 +12252,7 @@ class Mission
 			class Attributes
 			{
 				condition="(isNil ""medTruck1"" || {!alive medTruck1}) && " \n "(isNil ""medTruck2"" || {!alive medTruck2}) && " \n "(isNil ""medTruck3"" || {!alive medTruck3}) && {!alive cargo1} && {!alive cargo2} && {!alive cargo3} && {!alive cargo4}";
-				onActivation="SL_mission_taskAssets setTaskState ""Succeeded"";[""TaskSucceeded"",["""",""All outpost medical assets destroyed""]] call BIS_fnc_showNotification;";
+				onActivation="SL_mission_taskAssets setTaskState ""Succeeded"";SL_mission_taskAssetsServer = ""Succeeded"";[""TaskSucceeded"",["""",""All outpost medical assets destroyed""]] call BIS_fnc_showNotification;";
 				sizeA=0;
 				sizeB=0;
 			};
@@ -12281,7 +12281,7 @@ class Mission
 			class Attributes
 			{
 				condition="(!isNil ""SL_mission_withdrawTimeout"") && {SL_mission_withdrawTimeout}";
-				onActivation="SL_mission_taskWithdraw setTaskState ""Failed"";[""TaskFailed"",["""",""Failed to withdraw within 30 minutes. Prepare for quarantine!""]] call BIS_fnc_showNotification;";
+				onActivation="SL_mission_taskWithdraw setTaskState ""Failed"";SL_mission_taskWithdrawServer = ""Failed"";[""TaskFailed"",["""",""Failed to withdraw within 30 minutes. Prepare for quarantine!""]] call BIS_fnc_showNotification;";
 				sizeA=0;
 				sizeB=0;
 			};
@@ -12313,7 +12313,7 @@ class Mission
 			class Attributes
 			{
 				name="freedomWithdrawTrigger";
-				condition="taskState SL_mission_taskWithdraw != ""Failed"" && {count (playableUnits inAreaArray thisTrigger) == count playableUnits}";
+				condition="SL_mission_taskWithdrawServer != ""Failed"" && {count (playableUnits inAreaArray thisTrigger) == count playableUnits}";
 				onActivation="call SL_fnc_triggerEnding";
 				sizeA=300;
 				sizeB=300;
@@ -12331,7 +12331,7 @@ class Mission
 			position[]={2305.3999,30.776098,13162.643};
 			class Attributes
 			{
-				condition="taskState SL_mission_taskWithdraw == ""Failed"" && {count (playableUnits inAreaArray thisTrigger) == count playableUnits}";
+				condition="SL_mission_taskWithdrawServer == ""Failed"" && {count (playableUnits inAreaArray thisTrigger) == count playableUnits}";
 				onActivation="call SL_fnc_triggerEnding";
 				sizeA=300;
 				sizeB=300;
