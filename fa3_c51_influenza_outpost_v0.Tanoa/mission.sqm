@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=641;
+	toggles=513;
 	class ItemIDProvider
 	{
 		nextID=2092;
@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=126;
+		nextID=135;
 	};
 	class Camera
 	{
@@ -9659,6 +9659,7 @@ class Mission
 				interuptable=1;
 				repeatable=1;
 				activationBy="GUER";
+				isRectangle=1;
 				isServerOnly=1;
 			};
 			id=1837;
@@ -10578,13 +10579,19 @@ class Mission
 				class Item4
 				{
 					dataType="Waypoint";
-					position[]={11358.267,309.95715,11478.285};
+					position[]={11359.84,310.12845,11478.386};
 					type="Hold";
 					class Effects
 					{
 					};
 					showWP="NEVER";
 					id=2010;
+					atlOffset=0.5;
+					class AttachedTo
+					{
+						id=2006;
+						offset[]={0,0.5,0};
+					};
 				};
 				class Item5
 				{
@@ -10623,7 +10630,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={10803.763,305.5723,11248.777};
+						position[]={10736.917,277.87009,11198.078};
 						angles[]={0,0.77953386,0};
 					};
 					side="Independent";
@@ -10634,14 +10641,13 @@ class Mission
 					};
 					id=2013;
 					type="I_C_Soldier_Bandit_4_F";
-					atlOffset=-3.0517578e-005;
 				};
 				class Item1
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={10803.804,304.72595,11241.706};
+						position[]={10736.958,273.1955,11191.007};
 						angles[]={0,0.77953386,0};
 					};
 					side="Independent";
@@ -10652,14 +10658,13 @@ class Mission
 					};
 					id=2014;
 					type="I_C_Soldier_Bandit_3_F";
-					atlOffset=-3.0517578e-005;
 				};
 				class Item2
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={10796.691,303.24542,11248.735};
+						position[]={10729.846,277.37347,11198.036};
 						angles[]={0,0.77953386,0};
 					};
 					side="Independent";
@@ -10671,13 +10676,14 @@ class Mission
 					};
 					id=2015;
 					type="I_C_Soldier_Bandit_5_F";
+					atlOffset=3.0517578e-005;
 				};
 				class Item3
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={10803.846,303.14404,11234.635};
+						position[]={10737,269.77469,11183.936};
 						angles[]={0,0.77953386,0};
 					};
 					side="Independent";
@@ -10688,17 +10694,24 @@ class Mission
 					};
 					id=2016;
 					type="I_C_Soldier_Bandit_1_F";
+					atlOffset=3.0517578e-005;
 				};
 				class Item4
 				{
 					dataType="Waypoint";
-					position[]={10806.565,306.3316,11250.78};
+					position[]={10736.917,278.36865,11198.028};
 					type="Hold";
 					class Effects
 					{
 					};
 					showWP="NEVER";
 					id=2017;
+					atlOffset=0.5;
+					class AttachedTo
+					{
+						id=2013;
+						offset[]={0,0.5,0};
+					};
 				};
 				class Item5
 				{
@@ -10725,7 +10738,6 @@ class Mission
 				init="if (isServer) then {if (isNil ""SL_mission_reinforcements"") then {SL_mission_reinforcements = [this]} else {SL_mission_reinforcements pushBack this}}";
 			};
 			id=2012;
-			atlOffset=-3.0517578e-005;
 		};
 		class Item250
 		{
