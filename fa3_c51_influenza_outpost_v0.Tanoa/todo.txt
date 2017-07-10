@@ -1,7 +1,7 @@
 Briefing
 Consolidate Tasks down to 3
 Fix endings (reason, locality et al.)
-Change slingloading to parameter and host override
+Change slingloading to parameter and host override (and to apply to all pods)
 Testing
 Change drop zone location
 
