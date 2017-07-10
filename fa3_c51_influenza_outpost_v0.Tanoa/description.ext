@@ -310,43 +310,8 @@ class CfgFunctions
 	
 	class SL
 	{
-		class General
-		{
-			tag = "SL";
-			requiredAddons[] = {"A3_Air_F_Heli_Heli_Transport_04"};
-			class taruPodActions
-			{
-				file = "taruPodActions.sqf";
-				headerType = -1;
-			};
-		};
-		class Mission
-		{
-			tag = "SL";
-			requiredAddons[] = {};
-			class callReinforcements
-			{
-				file = "callReinforcements.sqf";
-			};
-			class areReinforcementsInbound
-			{
-				file = "areReinforcementsInbound.sqf"
-			};
-			class assignTasks
-			{
-				file = "tasks.sqf";
-				postInit = 1;
-				headerType = -1;
-			};
-			class isEffectiveCO
-			{
-				file = "isEffectiveCO.sqf";
-			};
-			class triggerEnding
-			{
-				file = "triggerEnding.sqf"
-			};
-		};
+		#include "SL\General\functions.hpp"
+		#include "SL\Mission\functions.hpp"
 	};
 };
 

@@ -54,9 +54,6 @@ _restrictedUnits = [];
   if (typeName _x == typeName objNull) then {_restrictedUnits set [count _restrictedUnits,_x]};
 } forEach _restrictedList;
 
-player sideChat format ["DEBUG (f\authorisedCrew\f_isAuthorisedCrew.sqf): _restrictedTypes = %1",_restrictedTypes];
-player sideChat format ["DEBUG (f\authorisedCrew\f_isAuthorisedCrew.sqf): _restrictedUnits = %1",_restrictedUnits];
-
 // ====================================================================================
 
 // PERFORM CHECKS II

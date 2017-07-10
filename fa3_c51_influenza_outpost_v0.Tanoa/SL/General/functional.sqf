@@ -1,3 +1,16 @@
+/*
+	Author: Lexer
+
+	Description:
+	Defines a number of helper macros for functional array handling
+	
+	MAP(LAMDBA,ARRAY) - Maps code to an array
+	FILTER(COND,ARRAY) - Filters an array by a condition
+	ANY(COND,ARRAY) - Does any array element match the condition?
+	ALL(COND,ARRAY) - Do all array elements match the condition?
+	FLATTEN(ARRAY) - Flattens an array of arrays into an array
+*/
+
 #ifndef __FUNCTIONAL_SQF__
 #define __FUNCTIONAL_SQF__
 

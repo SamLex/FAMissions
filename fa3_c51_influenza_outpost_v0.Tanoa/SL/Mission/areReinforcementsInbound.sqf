@@ -1,4 +1,4 @@
-#include "functional.sqf"
+#include "..\General\functional.sqf"
 
 if (!isServer) exitWith {}; // Shouldn't be needed, but...
 
