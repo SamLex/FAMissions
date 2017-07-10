@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=207;
+		nextID=216;
 	};
 	class Camera
 	{
-		pos[]={2330.4966,149.80159,13060.859};
-		dir[]={0,-0.70710677,0.70710683};
-		up[]={0,0.70710677,0.70710671};
-		aside[]={0.99999994,0,0};
+		pos[]={2268.4512,157.19945,13191.658};
+		dir[]={-0.54942679,-0.73103505,-0.40462708};
+		up[]={-0.58863407,0.68233812,-0.43350163};
+		aside[]={-0.59299713,-4.2316969e-008,0.80520773};
 	};
 };
 binarizationWanted=0;
@@ -238,9 +238,9 @@ randomSeed=1116085;
 class ScenarioData
 {
 	author="Lexer";
-	overviewText="NATO and CTRG help evacuate a CSAT outpost under attack from Syndikat";
+	overviewText="@STR_SL_mission_overview";
 	overViewPicture="overviewLogo.jpg";
-	onLoadMission="Made with the F3 Mission Development Framework.";
+	onLoadMission="@STR_SL_mission_loading";
 	loadScreen="loadLogo.jpg";
 	saving=0;
 	class Header
@@ -271,7 +271,7 @@ class CustomAttributes
 							"SCALAR"
 						};
 					};
-					value=1;
+					value=0;
 				};
 			};
 		};
@@ -326,7 +326,7 @@ class Mission
 	class Intel
 	{
 		briefingName="Influenza Outpost";
-		overviewText="NATO and CTRG help evacuate a CSAT outpost under attack from Syndikat";
+		overviewText="@STR_SL_mission_overview";
 		resistanceWest=0;
 		timeOfChanges=28800;
 		startWeather=0;

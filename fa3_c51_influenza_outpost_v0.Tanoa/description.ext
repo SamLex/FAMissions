@@ -1,8 +1,8 @@
 // ============================================================================================
 // Loading Screen
 
-onLoadName = "Influenza Outpost";
-onLoadMission = "Made with the F3 Mission Development Framework";
+onLoadName = $STR_SL_mission_name;
+onLoadMission = $STR_SL_mission_loading;
 author = "Lexer";
 loadScreen = "loadLogo.jpg";
 overviewPicture = "overviewLogo.jpg";

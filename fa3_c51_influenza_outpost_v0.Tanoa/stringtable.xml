@@ -1,6 +1,19 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <!-- This document was created with Syntext Serna Free. -->
 <Project ID="Arma3">
+  <Package ID="SL">
+	<Container ID="Mission">
+		<Key ID="STR_SL_mission_name">
+			<English>Influenza Outpost</English>
+		</Key>
+		<Key ID="STR_SL_mission_overview">
+			<English>NATO and CTRG help evacuate a CSAT outpost under attack from Syndikat (Medevac with Loadmaster needed, both recommended, squads start in different locations, TH1&amp;2=Alpha, TH3=CO&amp;Bravo, Charlie in AO)</English>
+		</Key>
+		<Key ID="STR_SL_mission_loading">
+			<English>Made with the F3 Mission Development Framework.</English>
+		</Key>
+	</Containter>
+  </Package>
   <Package ID="Missions">
     <Container ID="">
       <Key ID="STR_f_param_debugMode">
