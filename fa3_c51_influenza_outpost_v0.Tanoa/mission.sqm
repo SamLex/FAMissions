@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=2105;
+		nextID=2115;
 	};
 	class MarkerIDProvider
 	{
