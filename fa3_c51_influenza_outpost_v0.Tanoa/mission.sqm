@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=243;
+		nextID=261;
 	};
 	class Camera
 	{
-		pos[]={10994.526,456.88589,11365.904};
-		dir[]={0.065116234,-0.63892806,0.76651013};
-		up[]={0.054083608,0.7692613,0.63663733};
-		aside[]={0.99641567,9.4762072e-008,-0.084646478};
+		pos[]={10518.724,461.40475,10614.25};
+		dir[]={-0.64296085,-0.50799131,0.57322741};
+		up[]={-0.37918609,0.86135191,0.33806086};
+		aside[]={0.66548204,1.246226e-007,0.74644035};
 	};
 };
 binarizationWanted=0;
@@ -4611,35 +4611,83 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4399.6177,24.998125,10632.456};
-				angles[]={0,1.4838777,0};
+				position[]={4399.6182,24.998579,10632.456};
+				angles[]={0,1.4838789,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				lock="UNLOCKED";
 				textures="Black";
 			};
 			id=1145;
 			type="Land_Pod_Heli_Transport_04_bench_F";
-			atlOffset=0.2295742;
+			atlOffset=0.23002815;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item23
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4401.626,25.171608,10598.33};
-				angles[]={0,1.4838777,0};
+				position[]={4401.6265,25.172108,10598.33};
+				angles[]={0,1.4838789,0};
 			};
 			side="Empty";
 			class Attributes
 			{
+				lock="UNLOCKED";
 				textures="Black";
 			};
 			id=1146;
 			type="Land_Pod_Heli_Transport_04_bench_F";
-			atlOffset=0.44963646;
+			atlOffset=0.45013618;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item24
 		{
