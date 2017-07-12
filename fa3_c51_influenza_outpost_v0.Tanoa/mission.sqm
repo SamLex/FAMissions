@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=2104;
+		nextID=2105;
 	};
 	class MarkerIDProvider
 	{
@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=261;
+		nextID=270;
 	};
 	class Camera
 	{
@@ -10124,6 +10124,7 @@ class Mission
 					combatMode="YELLOW";
 					speed="FULL";
 					combat="SAFE";
+					expActiv="SL_mission_inbound append ([group this, 3, 4, 5, true] call SL_fnc_splitGroup);";
 					visible=0;
 					class Effects
 					{
@@ -11104,18 +11105,20 @@ class Mission
 				class Item17
 				{
 					dataType="Waypoint";
-					position[]={11290.042,317.92322,11619.283};
+					position[]={11290.042,317.92319,11619.283};
 					placement=50;
 					type="GetOut";
 					combatMode="YELLOW";
 					formation="WEDGE";
 					speed="FULL";
 					combat="SAFE";
+					expActiv="SL_mission_inbound append ([group this, 3, 4, 5, true] call SL_fnc_splitGroup);";
 					class Effects
 					{
 					};
 					showWP="NEVER";
 					id=2046;
+					atlOffset=-3.0517578e-005;
 				};
 				class Item18
 				{

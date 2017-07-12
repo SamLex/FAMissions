@@ -1,10 +1,17 @@
 class General
 {
 	tag = "SL";
-	requiredAddons[] = {"A3_Air_F_Heli_Heli_Transport_04"};
+	requiredAddons[] = {};
 	class taruPodActions
 	{
 		file = "SL\General\taruPodActions.sqf";
-		headerType = -1;
+	};
+	class splitGroup
+	{
+		file = "SL\General\splitGroup.sqf";
+	};
+	class sortByRank
+	{
+		file = "SL\General\sortByRank.sqf";
 	};
 };
