@@ -14,4 +14,8 @@ class General
 	{
 		file = "SL\General\sortByRank.sqf";
 	};
+	class markerFromTrigger
+	{
+		file = "SL\General\markerFromTrigger.sqf"
+	};
 };
