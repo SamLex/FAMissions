@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=2152;
+		nextID=2153;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={2391.4517,184.60767,13124.669};
-		dir[]={-0.28588936,-0.8449865,0.4521977};
-		up[]={-0.45164147,0.53449875,0.71437091};
-		aside[]={0.84532088,-1.8248102e-007,0.53443301};
+		pos[]={12190.015,82.702812,14324.638};
+		dir[]={-0.019725922,-0.73462862,-0.67818648};
+		up[]={-0.021358348,0.67846602,-0.73431987};
+		aside[]={-0.99958062,-1.4495254e-007,0.029073475};
 	};
 };
 binarizationWanted=0;
@@ -353,7 +353,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=285;
+		items=286;
 		class Item0
 		{
 			dataType="Logic";
@@ -13542,7 +13542,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={2320.7161,11.783276,13174.59};
-			angle=5.6675715;
+			angle=5.6675706;
 			class Attributes
 			{
 				name="primaryDropZoneTrigger";
@@ -13584,11 +13584,24 @@ class Mission
 			class PositionInfo
 			{
 				position[]={2397.5049,13.435165,13283.402};
-				angles[]={0.090419561,0,0.069221549};
+				angles[]={0.090425514,0,0.069219761};
 			};
 			name="dropZoneTriggerMarkers";
-			init="[primaryDropZoneTrigger, ""ColorRed"", 0.5] call SL_fnc_markerFromTrigger;[secondaryDropZoneTrigger, ""ColorRed"", 0.5] call SL_fnc_markerFromTrigger;";
+			init="if (isServer) then {[primaryDropZoneTrigger, ""ColorRed"", 0.5] call SL_fnc_markerFromTrigger;[secondaryDropZoneTrigger, ""ColorRed"", 0.5] call SL_fnc_markerFromTrigger};";
 			id=2150;
+			type="Logic";
+		};
+		class Item285
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={12188.298,43.636936,14297.882};
+				angles[]={0.0079936078,0,0};
+			};
+			name="alphaLZRemoveTrees";
+			init="{_x hideObject true} foreach nearestTerrainObjects [this, [""Tree"", ""Small Tree""], 25];";
+			id=2152;
 			type="Logic";
 		};
 	};

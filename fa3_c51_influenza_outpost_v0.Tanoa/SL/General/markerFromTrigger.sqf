@@ -18,27 +18,27 @@
 
 params [["_trigger", objNull, [objNull]],["_colour", "Default", [""]],["_alpha", 1, [0]]];
 
-private _marker = createMarkerLocal ["marker" + str _trigger, _trigger];
+private _marker = createMarker ["marker" + str _trigger, _trigger];
 private _area = triggerArea _trigger;
 
 // Is trigger rectangular?
 if(_area select 3) then {
-	_marker setMarkerShapeLocal "RECTANGLE";
+	_marker setMarkerShape "RECTANGLE";
 } else {
-	_marker setMarkerShapeLocal "ELLIPSE";
+	_marker setMarkerShape "ELLIPSE";
 };
 
 // Set marker direction
-_marker setMarkerDirLocal (_area select 2);
+_marker setMarkerDir (_area select 2);
 
 // Set marker area
-_marker setMarkerSizeLocal [_area select 0, _area select 1];
+_marker setMarkerSize [_area select 0, _area select 1];
 
 // Set marker colour
-_marker setMarkerColorLocal _colour;
+_marker setMarkerColor _colour;
 
 // Set marker alpha
-_marker setMarkerAlphaLocal _alpha;
+_marker setMarkerAlpha _alpha;
 
 // Return marker
 _marker;
