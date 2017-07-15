@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=2153;
+		nextID=2154;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=288;
+		nextID=297;
 	};
 	class Camera
 	{
-		pos[]={11481.612,87.28772,12898.56};
+		pos[]={11481.612,208.80148,12898.56};
 		dir[]={0,-0.70710683,0.70710683};
 		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		aside[]={0.99999994,0,0};
 	};
 };
 binarizationWanted=0;
@@ -8544,7 +8544,7 @@ class Mission
 			};
 			id=1725;
 			type="PortableHelipadLight_01_red_F";
-			atlOffset=-0.00010681152;
+			atlOffset=-0.0001077652;
 		};
 		class Item195
 		{
@@ -13099,7 +13099,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={2380.939,13.555365,13329.561};
-				angles[]={-0,5.3114586,6.2805333};
+				angles[]={0,5.3114586,6.2805333};
 			};
 			side="Empty";
 			flags=4;
@@ -13116,7 +13116,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={2380.6685,13.560945,13341.487};
-				angles[]={-0,5.3114586,0};
+				angles[]={0,5.3114586,0};
 			};
 			side="Empty";
 			flags=4;
@@ -13215,7 +13215,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={2460.6919,13.56068,13344.911};
-				angles[]={-0,5.3114586,0};
+				angles[]={0,5.3114586,0};
 			};
 			side="Empty";
 			flags=4;
@@ -13257,7 +13257,7 @@ class Mission
 			};
 			id=2127;
 			type="PortableHelipadLight_01_red_F";
-			atlOffset=-5.4359436e-005;
+			atlOffset=-5.531311e-005;
 		};
 		class Item264
 		{
@@ -13365,7 +13365,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={2440.9976,13.760623,13380.896};
-				angles[]={-0,5.3114586,0};
+				angles[]={0,5.3114586,0};
 			};
 			side="Empty";
 			flags=4;
@@ -13382,7 +13382,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={2459.9473,13.56068,13418.41};
-				angles[]={-0,5.3114586,0};
+				angles[]={0,5.3114586,0};
 			};
 			side="Empty";
 			flags=4;
@@ -13398,7 +13398,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={2460.3679,13.56068,13406.512};
-				angles[]={-0,5.3114586,0};
+				angles[]={0,5.3114586,0};
 			};
 			side="Empty";
 			flags=4;
@@ -13431,7 +13431,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={2454.1333,13.45,13412.227};
-				angles[]={-0,6.2518296,0};
+				angles[]={0,6.2518296,0};
 			};
 			side="Empty";
 			flags=4;
@@ -13447,7 +13447,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={2447.9207,13.560945,13417.896};
-				angles[]={-0,5.3114586,0};
+				angles[]={0,5.3114586,0};
 			};
 			side="Empty";
 			flags=4;
@@ -13542,11 +13542,12 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={2320.7161,11.783276,13174.59};
-			angle=5.6675701;
+			angle=2.5146179;
 			class Attributes
 			{
 				name="primaryDropZoneTrigger";
-				sizeA=20;
+				sizeA=13;
+				sizeB=40;
 				isRectangle=1;
 				isServerOnly=1;
 			};
