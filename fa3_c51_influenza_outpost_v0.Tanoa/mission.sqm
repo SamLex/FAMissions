@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=2154;
+		nextID=2156;
 	};
 	class MarkerIDProvider
 	{
@@ -353,7 +353,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=286;
+		items=288;
 		class Item0
 		{
 			dataType="Logic";
@@ -13604,6 +13604,34 @@ class Mission
 			init="{_x hideObject true} foreach nearestTerrainObjects [this, [""Tree"", ""Small Tree""], 25];";
 			id=2152;
 			type="Logic";
+		};
+		class Item286
+		{
+			dataType="Trigger";
+			position[]={2318.7363,11.964234,13229.149};
+			class Attributes
+			{
+				name="msfWithdrawZone";
+				sizeA=300;
+				sizeB=300;
+				isServerOnly=1;
+			};
+			id=2154;
+			type="EmptyDetector";
+		};
+		class Item287
+		{
+			dataType="Trigger";
+			position[]={4445.5332,-18.976112,10607.411};
+			class Attributes
+			{
+				name="freedomWithdrawZone";
+				sizeA=700;
+				sizeB=700;
+				isServerOnly=1;
+			};
+			id=2155;
+			type="EmptyDetector";
 		};
 	};
 };
