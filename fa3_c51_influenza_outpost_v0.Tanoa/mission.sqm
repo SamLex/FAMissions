@@ -8,11 +8,11 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=2169;
+		nextID=2183;
 	};
 	class MarkerIDProvider
 	{
-		nextID=17;
+		nextID=18;
 	};
 	class LayerIndexProvider
 	{
@@ -353,7 +353,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=301;
+		items=314;
 		class Item0
 		{
 			dataType="Logic";
@@ -13730,7 +13730,7 @@ class Mission
 			class Attributes
 			{
 				name="medTrucksDestroyedTrigger";
-				condition="(isNil ""medTruck1"" || !alive medTruck1) && {(isNil ""medTruck2"" || !alive medTruck2)} && (isNil ""medTruck3"" || !alive medTruck3)";
+				condition="(isNil ""medTruck1"" || {!alive medTruck1}) && (isNil ""medTruck2"" || {!alive medTruck2}) && (isNil ""medTruck3"" || {!alive medTruck3})";
 				onActivation="SL_mission_medTrucksDestroyed = true;";
 				sizeA=0;
 				sizeB=0;
@@ -13863,6 +13863,224 @@ class Mission
 			};
 			id=2168;
 			type="EmptyDetector";
+		};
+		class Item301
+		{
+			dataType="Trigger";
+			position[]={1889.671,13.45,13058.26};
+			class Attributes
+			{
+				name="medevacTaskSuceedTrigger";
+				condition="SL_mission_medPod1InZone && SL_mission_medPod2InZone";
+				onActivation="[""medevac"", ""Suceed"", ""STR_SL_mission_medevacSuceed""] call SL_fnc_updateTaskGlobal;SL_mission_medevacSuceed = true;";
+				sizeA=0;
+				sizeB=0;
+				isServerOnly=1;
+			};
+			id=2170;
+			type="EmptyDetector";
+		};
+		class Item302
+		{
+			dataType="Trigger";
+			position[]={1890.0291,13.45,13045.019};
+			class Attributes
+			{
+				name="medevacTaskFailPodTrigger";
+				condition="SL_mission_medPodDeath";
+				onActivation="[""medevac"", ""Fail"", ""STR_SL_mission_medevacFailPod""] call SL_fnc_updateTaskGlobal;SL_mission_medevacFailPod = true;";
+				sizeA=0;
+				sizeB=0;
+				isServerOnly=1;
+			};
+			id=2171;
+			type="EmptyDetector";
+		};
+		class Item303
+		{
+			dataType="Trigger";
+			position[]={1890.387,13.45,13034.283};
+			class Attributes
+			{
+				name="medevacTaskFailPatientTrigger";
+				condition="SL_mission_patientDeath";
+				onActivation="[""medevac"", ""Fail"", ""STR_SL_mission_medevacFailPatient""] call SL_fnc_updateTaskGlobal;SL_mission_medevacFailPatient=true";
+				sizeA=0;
+				sizeB=0;
+				isServerOnly=1;
+			};
+			id=2172;
+			type="EmptyDetector";
+		};
+		class Item304
+		{
+			dataType="Trigger";
+			position[]={1908.28,13.45,13057.544};
+			class Attributes
+			{
+				name="assetDenialTaskSuceedTrigger";
+				condition="SL_mission_cargoBuildingsDestroyed && SL_mission_medTrucksDestroyed && SL_mission_supplyPod1Denied && SL_mission_supplyPod2Denied && SL_mission_supplyPod3Denied && SL_mission_supplyPod4Denied";
+				onActivation="[""assetDenial"", ""Suceed"", ""STR_SL_mission_assetDenialSuceed""] call SL_fnc_updateTaskGlobal;SL_mission_assetDenialSuceed = true";
+				sizeA=0;
+				sizeB=0;
+				isServerOnly=1;
+			};
+			id=2173;
+			type="EmptyDetector";
+		};
+		class Item305
+		{
+			dataType="Trigger";
+			position[]={1805.932,13.45,12941.956};
+			class Attributes
+			{
+				name="withdrawTimeoutTrigger";
+				condition="time > 1800";
+				onActivation="SL_mission_withdrawTimeout = true";
+				sizeA=0;
+				sizeB=0;
+				isServerOnly=1;
+			};
+			id=2174;
+			type="EmptyDetector";
+		};
+		class Item306
+		{
+			dataType="Trigger";
+			position[]={1924.741,13.45,13057.544};
+			class Attributes
+			{
+				name="withdrawTaskSuceedTrigger";
+				condition="SL_mission_medevacSuceed && SL_mission_freedomWithdraw && isNil ""SL_mission_withdrawTimeout""";
+				onActivation="[""withdraw"", ""Suceed"", ""STR_SL_mission_withdrawSuceed""] call SL_fnc_updateTaskGlobal;SL_mission_withdrawSuceed = true";
+				sizeA=0;
+				sizeB=0;
+				isServerOnly=1;
+			};
+			id=2175;
+			type="EmptyDetector";
+		};
+		class Item307
+		{
+			dataType="Trigger";
+			position[]={1925.099,13.45,13043.588};
+			class Attributes
+			{
+				name="withdrawTaskFailTrigger";
+				condition="SL_mission_withdrawTimeout";
+				onActivation="[""withdraw"", ""Fail"", ""STR_SL_mission_withdrawFail""] call SL_fnc_updateTaskGlobal;SL_mission_withdrawFail = true";
+				sizeA=0;
+				sizeB=0;
+				isServerOnly=1;
+			};
+			id=2176;
+			type="EmptyDetector";
+		};
+		class Item308
+		{
+			dataType="Trigger";
+			position[]={1724.699,13.880375,13099.772};
+			class Attributes
+			{
+				name="allObjectivesEndingTrigger";
+				condition="SL_mission_medevacSuceed && SL_mission_assetDenialSuceed && SL_mission_withdrawSuceed";
+				onActivation="[1,true] call f_fnc_mpEnd;";
+				sizeA=0;
+				sizeB=0;
+				timeout[]={1,2,3};
+				isServerOnly=1;
+			};
+			id=2177;
+			type="EmptyDetector";
+		};
+		class Item309
+		{
+			dataType="Trigger";
+			position[]={1742.95,12.618542,13100.847};
+			class Attributes
+			{
+				name="medevacOnlyEndingTrigger";
+				condition="SL_mission_medevacSuceed && SL_mission_withdrawFail";
+				onActivation="[2,true] call f_fnc_mpEnd;";
+				sizeA=0;
+				sizeB=0;
+				timeout[]={1,2,3};
+				isServerOnly=1;
+			};
+			id=2178;
+			type="EmptyDetector";
+			atlOffset=-0.039999962;
+		};
+		class Item310
+		{
+			dataType="Trigger";
+			position[]={1757.6219,12.279488,13100.131};
+			class Attributes
+			{
+				name="medevacAssetDenialOnlyEndingTrigger";
+				condition="SL_mission_medevacSuceed && SL_mission_assetDenialSuceed && SL_mission_withdrawFail";
+				onActivation="[3,true] call f_fnc_mpEnd;";
+				sizeA=0;
+				sizeB=0;
+				timeout[]={1,2,3};
+				isServerOnly=1;
+			};
+			id=2179;
+			type="EmptyDetector";
+			atlOffset=-0.083000183;
+		};
+		class Item311
+		{
+			dataType="Trigger";
+			position[]={1775.157,11.917248,13100.131};
+			class Attributes
+			{
+				name="medevacWithdrawOnlyEndingTrigger";
+				condition="SL_mission_medevacSuceed && SL_mission_withdrawSuceed";
+				onActivation="[4,true] call f_fnc_mpEnd;";
+				sizeA=0;
+				sizeB=0;
+				timeout[]={1,2,3};
+				isServerOnly=1;
+			};
+			id=2180;
+			type="EmptyDetector";
+			atlOffset=-0.097000122;
+		};
+		class Item312
+		{
+			dataType="Trigger";
+			position[]={1790.545,12.596845,13102.277};
+			class Attributes
+			{
+				name="medevacFailedEndingTrigger";
+				condition="SL_mission_medevacFailPod || SL_mission_medevacFailPatient";
+				onActivation="[5,false] call f_fnc_mpEnd;";
+				sizeA=0;
+				sizeB=0;
+				timeout[]={1,2,3};
+				isServerOnly=1;
+			};
+			id=2181;
+			type="EmptyDetector";
+		};
+		class Item313
+		{
+			dataType="Trigger";
+			position[]={1808.08,13.207734,13102.277};
+			class Attributes
+			{
+				name="allDeadEndingTrigger";
+				condition="SL_mission_allDead";
+				onActivation="[6,false] call f_fnc_mpEnd;";
+				sizeA=0;
+				sizeB=0;
+				timeout[]={1,2,3};
+				isServerOnly=1;
+			};
+			id=2182;
+			type="EmptyDetector";
+			atlOffset=-0.021000862;
 		};
 	};
 };

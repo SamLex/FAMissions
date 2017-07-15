@@ -212,62 +212,44 @@ class CfgDebriefing
 {
 	class End1
 	{
-		title = "TOTAL SUCESS";
-		subtitle = "All critial and optional objectives were completed";
-		description = "We evacuated the outpost, denied its assets to the enemy and withdraw before risking quarantine. Good Job!";
-		// pictureBackground = "";
-		// picture = "";
-		// pictureColor[] = {0.0,0.3,0.6,1};
+		title = $STR_SL_mission_allObjectives_title;
+		subtitle = $STR_SL_mission_allObjectives_subtitle;
+		description = $STR_SL_mission_allObjectives_description;
 	};
 
 	class End2
 	{
-		title = "MISSION SUCESS";
-		subtitle = "All critial objectives were completed";
-		description = "We evacuated the outpost sucessfully";
-		// pictureBackground = "";
-		// picture = "";
-		// pictureColor[] = {0.0,0.3,0.6,1};
+		title = $STR_SL_mission_medevacOnly_title;
+		subtitle = $STR_SL_mission_medevacOnly_subtitle;
+		description = $STR_SL_mission_medevacOnly_description;
 	};
 
 	class End3
 	{
-		title = "PARTIAL SUCESS";
-		subtitle = "All critial objectives were completed, but we are now in quarantine.";
-		description = "We evacuated the outpost sucessfully, but failed to withdraw within 30 minutes";
-		// pictureBackground = "";
-		// picture = "";
-		// pictureColor[] = {0.0,0.3,0.6,1};
+		title = $STR_SL_mission_medevacAssetDenialOnly_title;
+		subtitle = $STR_SL_mission_medevacAssetDenialOnly_subtitle;
+		description = $STR_SL_mission_medevacAssetDenialOnly_description;
 	};
 
 	class End4
 	{
-		title = "MISSION FAILURE";
-		subtitle = "Failed to evacuate the patients";
-		description = "One of the patients was killed, but we sucessfully withdrew";
-		// pictureBackground = "";
-		// picture = "";
-		// pictureColor[] = {0.0,0.3,0.6,1};
+		title = $STR_SL_mission_medevacWithdrawOnly_title;
+		subtitle = $STR_SL_mission_medevacWithdrawOnly_subtitle;
+		description = $STR_SL_mission_medevacWithdrawOnly_description;
 	};
 
 	class End5
 	{
-		title = "PARTIAL SUCESS";
-		subtitle = "All critial objectives were completed, but slingloading was used.";
-		description = "We evacuated the outpost sucessfully, but the use of slingloading has now complicated the patients' treatment";
-		// pictureBackground = "";
-		// picture = "";
-		// pictureColor[] = {0.0,0.3,0.6,1};
+		title = $STR_SL_mission_medevacFailed_title;
+		subtitle = $STR_SL_mission_medevacFailed_subtitle;
+		description = $STR_SL_mission_medevacFailed_description;
 	};
 
 	class End6
 	{
-		title = "TOTAL FAILURE";
-		subtitle = "All BLUFOR where killed";
-		description = "We may or may not have completed any objectives, but we are all dead";
-		// pictureBackground = "";
-		// picture = "";
-		// pictureColor[] = {0.0,0.3,0.6,1};
+		title = $STR_SL_mission_allDead_title;
+		subtitle = $STR_SL_mission_allDead_subtitle;
+		description = $STR_SL_mission_allDead_description;
 	};
 
 };
