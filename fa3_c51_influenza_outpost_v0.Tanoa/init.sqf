@@ -134,7 +134,7 @@ VehCSAT_EVAC2 addEventhandler ["GetIn", {[_this,["O_T_Helipilot_F", "O_T_Helicre
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
 // BLUFOR > NATO
-[BLUFOR,100,6,true] execVM "f\casualtiesCap\f_CasualtiesCapCheck.sqf";
+// [BLUFOR,100,6,true] execVM "f\casualtiesCap\f_CasualtiesCapCheck.sqf";
 
 // Add Taru pod hold actions
 [10, 2] call SL_fnc_taruPodActions;

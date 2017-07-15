@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=2168;
+		nextID=2169;
 	};
 	class MarkerIDProvider
 	{
@@ -353,7 +353,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=300;
+		items=301;
 		class Item0
 		{
 			dataType="Logic";
@@ -13846,6 +13846,22 @@ class Mission
 				isServerOnly=1;
 			};
 			id=2167;
+			type="EmptyDetector";
+		};
+		class Item300
+		{
+			dataType="Trigger";
+			position[]={1827.394,13.45,12977.694};
+			class Attributes
+			{
+				name="allDeadTrigger";
+				condition="count playableUnits == 0";
+				onActivation="SL_mission_allDead = true";
+				sizeA=0;
+				sizeB=0;
+				isServerOnly=1;
+			};
+			id=2168;
 			type="EmptyDetector";
 		};
 	};
