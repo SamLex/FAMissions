@@ -18,4 +18,12 @@ class General
 	{
 		file = "SL\General\markerFromTrigger.sqf"
 	};
+	class createTaskGlobal
+	{
+		file = "SL\General\createTaskGlobal.sqf"
+	};
+	class updateTaskGlobal
+	{
+		file = "SL\General\updateTaskGlobal.sqf"
+	};
 };

@@ -12,6 +12,24 @@
 		<Key ID="STR_SL_mission_loading">
 			<English>Made with the F3 Mission Development Framework.</English>
 		</Key>
+		<Key ID="STR_SL_mission_medevacName">
+			<English>MEDEVAC NAME TODO</English>
+		</Key>
+		<Key ID="STR_SL_mission_medevacDescription">
+			<English>MEDEVAC DESCRIPTION TODO</English>
+		</Key>
+		<Key ID="STR_SL_mission_assetDenialName">
+			<English>ASSET DENIAL NAME TODO</English>
+		</Key>
+		<Key ID="STR_SL_mission_assetDenialDescription">
+			<English>ASSET DENIAL DESCRIPTION TODO</English>
+		</Key>
+		<Key ID="STR_SL_mission_withdrawName">
+			<English>WITHDRAW NAME TODO</English>
+		</Key>
+		<Key ID="STR_SL_mission_withdrawDescription">
+			<English>WITHDRAW DESCRIPTION TODO</English>
+		</Key>
 	</Containter>
   </Package>
   <Package ID="Missions">

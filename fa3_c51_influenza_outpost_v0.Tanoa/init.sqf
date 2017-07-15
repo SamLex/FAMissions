@@ -138,3 +138,9 @@ VehCSAT_EVAC2 addEventhandler ["GetIn", {[_this,["O_T_Helipilot_F", "O_T_Helicre
 
 // Add Taru pod hold actions
 [10, 2] call SL_fnc_taruPodActions;
+
+if (isServer) then {
+	["medevac", "STR_SL_mission_medevacName", "STR_SL_mission_medevacDescription"] call SL_fnc_createTaskGlobal;
+	["assetDenial", "STR_SL_mission_assetDenialName", "STR_SL_mission_assetDenialDescription"] call SL_fnc_createTaskGlobal;
+	["withdraw", "STR_SL_mission_withdrawName", "STR_SL_mission_withdrawDescription"] call SL_fnc_createTaskGlobal;
+};
