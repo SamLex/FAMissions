@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=2156;
+		nextID=2168;
 	};
 	class MarkerIDProvider
 	{
@@ -353,7 +353,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=288;
+		items=300;
 		class Item0
 		{
 			dataType="Logic";
@@ -6791,7 +6791,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11024.692,350.50717,11503.396};
+						position[]={11024.692,350.5072,11503.396};
 						angles[]={6.243217,6.1591969,0.013334315};
 					};
 					side="Civilian";
@@ -6799,6 +6799,7 @@ class Mission
 					class Attributes
 					{
 						init="this setVariable [""BIS_enableRandomization"", false]; if(isServer) then {this setUnconscious true;};";
+						name="patient1";
 						class Inventory
 						{
 							class uniform
@@ -6813,7 +6814,7 @@ class Mission
 					};
 					id=1538;
 					type="C_man_w_worker_F";
-					atlOffset=-0.0040588379;
+					atlOffset=-0.0040283203;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -7380,7 +7381,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11024.692,350.50717,11503.396};
+						position[]={11024.692,350.5072,11503.396};
 						angles[]={6.243217,6.1591969,0.013334315};
 					};
 					side="Civilian";
@@ -7388,6 +7389,7 @@ class Mission
 					class Attributes
 					{
 						init="this setVariable [""BIS_enableRandomization"", false]; if(isServer) then {this setUnconscious true;};";
+						name="patient2";
 						class Inventory
 						{
 							class uniform
@@ -7402,7 +7404,7 @@ class Mission
 					};
 					id=1572;
 					type="C_man_w_worker_F";
-					atlOffset=-0.0040588379;
+					atlOffset=-0.0040283203;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -9034,7 +9036,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11024.692,350.50717,11503.396};
+						position[]={11024.692,350.5072,11503.396};
 						angles[]={6.243217,6.1591969,0.013334315};
 					};
 					side="Civilian";
@@ -9042,6 +9044,7 @@ class Mission
 					class Attributes
 					{
 						init="this setVariable [""BIS_enableRandomization"", false]; if(isServer) then {this setUnconscious true;};";
+						name="patient3";
 						class Inventory
 						{
 							class uniform
@@ -9056,7 +9059,7 @@ class Mission
 					};
 					id=1786;
 					type="C_man_w_worker_F";
-					atlOffset=-0.0040588379;
+					atlOffset=-0.0040283203;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -9149,6 +9152,7 @@ class Mission
 					class Attributes
 					{
 						init="this setVariable [""BIS_enableRandomization"", false]; if(isServer) then {this setUnconscious true;};";
+						name="patient4";
 						class Inventory
 						{
 							class uniform
@@ -9256,6 +9260,7 @@ class Mission
 					class Attributes
 					{
 						init="this setVariable [""BIS_enableRandomization"", false]; if(isServer) then {this setUnconscious true;};";
+						name="patient5";
 						class Inventory
 						{
 							class uniform
@@ -9363,6 +9368,7 @@ class Mission
 					class Attributes
 					{
 						init="this setVariable [""BIS_enableRandomization"", false]; if(isServer) then {this setUnconscious true;};";
+						name="patient6";
 						class Inventory
 						{
 							class uniform
@@ -13542,7 +13548,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={2320.7161,11.783276,13174.59};
-			angle=2.5146179;
+			angle=2.5146174;
 			class Attributes
 			{
 				name="primaryDropZoneTrigger";
@@ -13631,6 +13637,215 @@ class Mission
 				isServerOnly=1;
 			};
 			id=2155;
+			type="EmptyDetector";
+		};
+		class Item288
+		{
+			dataType="Trigger";
+			position[]={1767.696,14.201261,12977.18};
+			class Attributes
+			{
+				name="patientDeathTrigger";
+				condition="(!alive patient1) || {(!alive patient2)} || {(!alive patient3)} || {(!alive patient4)} || {(!alive patient5)} || {(!alive patient6)}";
+				onActivation="SL_mission_patientDeath = true;";
+				sizeA=0;
+				sizeB=0;
+				isServerOnly=1;
+			};
+			id=2156;
+			type="EmptyDetector";
+		};
+		class Item289
+		{
+			dataType="Trigger";
+			position[]={1766.1997,13.43,12958.518};
+			class Attributes
+			{
+				name="medPodDeathTrigger";
+				condition="(!alive medPod1) || {(!alive medPod2)}";
+				onActivation="SL_mission_medPodDeath = true;";
+				sizeA=0;
+				sizeB=0;
+				isServerOnly=1;
+			};
+			id=2157;
+			type="EmptyDetector";
+		};
+		class Item290
+		{
+			dataType="Trigger";
+			position[]={1767.3564,13.43,12941.169};
+			class Attributes
+			{
+				name="medPod1InZoneTrigger";
+				condition="isTouchingGround medPod1 && {medPod1 inArea primaryDropZoneTrigger || {medPod1 inArea secondaryDropZoneTrigger}}";
+				onActivation="SL_mission_medPod1InZone = true;";
+				onDeactivation="SL_mission_medPod1InZone = false;";
+				sizeA=0;
+				sizeB=0;
+				repeatable=1;
+				isServerOnly=1;
+			};
+			id=2158;
+			type="EmptyDetector";
+		};
+		class Item291
+		{
+			dataType="Trigger";
+			position[]={1766.7782,13.43,12927.288};
+			class Attributes
+			{
+				name="medPod2InZoneTrigger";
+				condition="isTouchingGround medPod2 && {medPod2 inArea primaryDropZoneTrigger || {medPod2 inArea secondaryDropZoneTrigger}}";
+				onActivation="SL_mission_medPod2InZone = true;";
+				onDeactivation="SL_mission_medPod2InZone = false;";
+				sizeA=0;
+				sizeB=0;
+				repeatable=1;
+				isServerOnly=1;
+			};
+			id=2159;
+			type="EmptyDetector";
+		};
+		class Item292
+		{
+			dataType="Trigger";
+			position[]={1787.313,13.53279,12978.777};
+			class Attributes
+			{
+				name="cargoBuildingsDestroyedTrigger";
+				condition="!alive cargo1 && {!alive cargo2} && {!alive cargo3} && {!alive cargo4}";
+				onActivation="SL_mission_cargoBuildingsDestroyed = true;";
+				sizeA=0;
+				sizeB=0;
+				isServerOnly=1;
+			};
+			id=2160;
+			type="EmptyDetector";
+		};
+		class Item293
+		{
+			dataType="Trigger";
+			position[]={1787.313,13.430141,12958.51};
+			class Attributes
+			{
+				name="medTrucksDestroyedTrigger";
+				condition="(isNil ""medTruck1"" || !alive medTruck1) && {(isNil ""medTruck2"" || !alive medTruck2)} && (isNil ""medTruck3"" || !alive medTruck3)";
+				onActivation="SL_mission_medTrucksDestroyed = true;";
+				sizeA=0;
+				sizeB=0;
+				isServerOnly=1;
+			};
+			id=2161;
+			type="EmptyDetector";
+			atlOffset=9.5367432e-007;
+		};
+		class Item294
+		{
+			dataType="Trigger";
+			position[]={1785.906,13.45,12940.494};
+			class Attributes
+			{
+				name="supplyPod1DeniedTrigger";
+				condition="isNil ""supplyPod1"" || {!alive supplyPod1} || {supplyPod1 inArea primaryDropZoneTrigger || {supplyPod1 inArea secondaryDropZoneTrigger}}";
+				onActivation="SL_mission_supplyPod1Denied = true;";
+				onDeactivation="SL_mission_supplyPod1Denied = false;";
+				sizeA=0;
+				sizeB=0;
+				repeatable=1;
+				isServerOnly=1;
+			};
+			id=2162;
+			type="EmptyDetector";
+		};
+		class Item295
+		{
+			dataType="Trigger";
+			position[]={1785.624,13.420261,12926.7};
+			class Attributes
+			{
+				name="supplyPod2DeniedTrigger";
+				condition="isNil ""supplyPod2"" || {!alive supplyPod2} || {supplyPod2 inArea primaryDropZoneTrigger || {supplyPod2 inArea secondaryDropZoneTrigger}}";
+				onActivation="SL_mission_supplyPod2Denied = true;";
+				onDeactivation="SL_mission_supplyPod2Denied = false;";
+				sizeA=0;
+				sizeB=0;
+				repeatable=1;
+				isServerOnly=1;
+			};
+			id=2163;
+			type="EmptyDetector";
+		};
+		class Item296
+		{
+			dataType="Trigger";
+			position[]={1784.78,13.396551,12914.314};
+			class Attributes
+			{
+				name="supplyPod3DeniedTrigger";
+				condition="isNil ""supplyPod3"" || {!alive supplyPod3} || {supplyPod3 inArea primaryDropZoneTrigger || {supplyPod3 inArea secondaryDropZoneTrigger}}";
+				onActivation="SL_mission_supplyPod3Denied = true";
+				onDeactivation="SL_mission_supplyPod3Denied = false";
+				sizeA=0;
+				sizeB=0;
+				isServerOnly=1;
+			};
+			id=2164;
+			type="EmptyDetector";
+			atlOffset=9.5367432e-007;
+		};
+		class Item297
+		{
+			dataType="Trigger";
+			position[]={1784.498,13.399203,12902.491};
+			class Attributes
+			{
+				name="supplyPod4DeniedTrigger";
+				condition="isNil ""supplyPod4"" || {!alive supplyPod4} || {supplyPod4 inArea primaryDropZoneTrigger || {supplyPod4 inArea secondaryDropZoneTrigger}}";
+				onActivation="SL_mission_supplyPod4Denied = true;";
+				onDeactivation="SL_mission_supplyPod4Denied = false;";
+				sizeA=0;
+				sizeB=0;
+				isServerOnly=1;
+			};
+			id=2165;
+			type="EmptyDetector";
+		};
+		class Item298
+		{
+			dataType="Trigger";
+			position[]={1805.218,13.468255,12978.619};
+			class Attributes
+			{
+				name="msfWithdrawTrigger";
+				condition="(playableUnits inAreaArray msfWithdrawZone) isEqualTo playableUnits";
+				onActivation="SL_mission_msfWithdraw = true";
+				onDeactivation="SL_mission_msfWithdraw = false";
+				sizeA=0;
+				sizeB=0;
+				repeatable=1;
+				isServerOnly=1;
+			};
+			id=2166;
+			type="EmptyDetector";
+			atlOffset=9.5367432e-007;
+		};
+		class Item299
+		{
+			dataType="Trigger";
+			position[]={1806.751,13.45,12959.745};
+			class Attributes
+			{
+				name="freedomWithdrawTrigger";
+				condition="(playableUnits inAreaArray freedomWithdrawZone) isEqualTo playableUnits";
+				onActivation="SL_mission_freedomWithdraw = true";
+				onDeactivation="SL_mission_freedomWithdraw = false";
+				sizeA=0;
+				sizeB=0;
+				repeatable=1;
+				isServerOnly=1;
+			};
+			id=2167;
 			type="EmptyDetector";
 		};
 	};
