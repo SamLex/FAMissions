@@ -201,6 +201,13 @@ class Params
 // F3 - End of Params code blocks.
 // WARNING: DO NOT DELETE OR COMMENT OUT THIS CODE BLOCK
 
+	class SL_param_podSlingloading
+    {
+            title = $STR_SL_param_podSlingloading;
+            values[] = {0,1};
+            texts[] = {"No","Yes"};
+            default = 0;
+    };
 };
 
 // ============================================================================================

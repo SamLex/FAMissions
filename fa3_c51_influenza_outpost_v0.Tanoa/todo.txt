@@ -1,5 +1,4 @@
 Briefing
-Change slingloading to parameter and host override (and to apply to all pods)
 Testing
 
 DONE!: MSF (Médecins Sans Frontières/Doctors Without Borders) base

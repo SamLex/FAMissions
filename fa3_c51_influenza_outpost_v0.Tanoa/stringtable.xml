@@ -12,6 +12,9 @@
 		<Key ID="STR_SL_mission_loading">
 			<English>Made with the F3 Mission Development Framework.</English>
 		</Key>
+		<Key ID="STR_SL_param_podSlingloading">
+			<English>Allow Taru Pod Slingloading</English>
+		</Key>
 	</Containter>
 	<Container ID="Tasks">
 		<Key ID="STR_SL_mission_medevacName">
