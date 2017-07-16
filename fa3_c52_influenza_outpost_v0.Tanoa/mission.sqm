@@ -16,11 +16,11 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=360;
+		nextID=369;
 	};
 	class Camera
 	{
-		pos[]={11018.205,400.26785,10901.229};
+		pos[]={2007.4438,38.450001,13125.706};
 		dir[]={0,-0.70710683,0.70710683};
 		up[]={0,0.70710677,0.70710677};
 		aside[]={0.99999994,0,0};
@@ -14065,7 +14065,7 @@ class Mission
 			class Attributes
 			{
 				name="medevacOnlyEndingTrigger";
-				condition="SL_mission_medevacSuceed && SL_mission_withdrawFail";
+				condition="SL_mission_medevacSuceed && SL_mission_withdrawFail && !SL_mission_assetDenialSuceed";
 				onActivation="[2,true] call f_fnc_mpEnd;";
 				sizeA=0;
 				sizeB=0;
@@ -14101,7 +14101,7 @@ class Mission
 			class Attributes
 			{
 				name="medevacWithdrawOnlyEndingTrigger";
-				condition="SL_mission_medevacSuceed && SL_mission_withdrawSuceed";
+				condition="SL_mission_medevacSuceed && SL_mission_withdrawSuceed && !SL_mission_assetDenialSuceed";
 				onActivation="[4,true] call f_fnc_mpEnd;";
 				sizeA=0;
 				sizeB=0;
