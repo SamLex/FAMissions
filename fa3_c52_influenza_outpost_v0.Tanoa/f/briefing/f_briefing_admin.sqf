@@ -8,7 +8,7 @@
 _customText = "
 <br/><br/>
 <font size='18'>MISSION CONTROL</font><br/>
-|- <execute expression=""{_x enableRopeAttach true} foreach (nearestObjects [[worldSize/2,worldSize/2,0], ['Pod_Heli_Transport_04_base_F', 'Pod_Heli_Transport_04_crewed_base_F'], worldSize/2, true])"">
+|- <execute expression=""{_x enableRopeAttach true} foreach (nearestObjects [[worldSize/2,worldSize/2,0], ['Pod_Heli_Transport_04_base_F', 'Pod_Heli_Transport_04_crewed_base_F'], worldSize/2, true]);['Alert', ['Slingloading now authorised']] remoteExec ['BIS_fnc_showNotification']"">
 Allow Taru pod slingloading</execute><br/>
 ";
 
