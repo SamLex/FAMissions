@@ -2,7 +2,7 @@
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
 
-// FACTION: CTRG
+// FACTION: NATO
 
 // ====================================================================================
 
@@ -11,7 +11,7 @@
 
 _cre = player createDiaryRecord ["diary", ["Credits","
 <br/>
-*** Insert mission credits here. ***
+*** Insert mission credits here. ***EVERYONE
 <br/><br/>
 Made with F3 (http://www.ferstaberinde.com/f3/en/)
 "]];
