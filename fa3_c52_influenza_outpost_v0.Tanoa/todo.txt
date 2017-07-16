@@ -1,4 +1,1 @@
-Briefing
 Testing
-
-DONE!: MSF (Médecins Sans Frontières/Doctors Without Borders) base

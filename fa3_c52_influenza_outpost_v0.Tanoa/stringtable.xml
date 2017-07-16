@@ -7,7 +7,7 @@
 			<English>Influenza Outpost</English>
 		</Key>
 		<Key ID="STR_SL_mission_overview">
-			<English>NATO and CTRG help evacuate a CSAT outpost under attack from Syndikat (Medevac with Loadmaster needed, both recommended, squads start in different locations, TH1&amp;2=Alpha, TH3=CO&amp;Bravo, Charlie in AO)</English>
+			<English>NATO and CTRG help evacuate a CSAT outpost under attack from Syndikat (Medevac with Loadmaster needed, both recommended, squads start in different locations, TH1&amp;2=Alpha, TH3=CO&amp;Bravo, Charlie in AO, Zeus optional)</English>
 		</Key>
 		<Key ID="STR_SL_mission_loading">
 			<English>Made with the F3 Mission Development Framework.</English>
@@ -18,103 +18,103 @@
 	</Containter>
 	<Container ID="Tasks">
 		<Key ID="STR_SL_mission_medevacName">
-			<English>MEDEVAC NAME TODO</English>
+			<English>Evacuate patients (critical)</English>
 		</Key>
 		<Key ID="STR_SL_mission_medevacDescription">
-			<English>MEDEVAC DESCRIPTION TODO</English>
+			<English>The patients are loaded in Taru medical pods within the &lt;marker name=&#39;markerOutpost&#39;&gt;outpost&lt;/marker&gt;. They must be airlifted to the &lt;marker name=&#39;markerPrimaryDropZone&#39;&gt;primary drop zone&lt;/marker&gt; or the &lt;marker name=&#39;markerSecondaryDropZone&#39;&gt;secondary drop zone&lt;/marker&gt;.</English>
 		</Key>
 		<Key ID="STR_SL_mission_medevacSuceed">
-			<English>MEDEVAC SUCEED TODO</English>
+			<English>All patients evacuated!</English>
 		</Key>
 		<Key ID="STR_SL_mission_medevacFailPod">
-			<English>MEDEVAC FAIL POD TODO</English>
+			<English>One of the pods was destroyed!</English>
 		</Key>
 		<Key ID="STR_SL_mission_medevacFailPatient">
-			<English>MEDEVAC FAIL PATIENT TODO</English>
+			<English>One of the patients was killed!</English>
 		</Key>
 		
 		<Key ID="STR_SL_mission_assetDenialName">
-			<English>ASSET DENIAL NAME TODO</English>
+			<English>Deny Assets (optional)</English>
 		</Key>
 		<Key ID="STR_SL_mission_assetDenialDescription">
-			<English>ASSET DENIAL DESCRIPTION TODO</English>
+			<English>There are a number of medical assets around the &lt;marker name=&#39;markerOutpost&#39;&gt;outpost&lt;/marker&gt;. Destroy the medical cargo bases and medical trucks. Retrieve (to the &lt;marker name=&#39;markerMSF&#39;&gt;MSF base&lt;/marker&gt;) or destroy the Taru supply pods.</English>
 		</Key>
 		<Key ID="STR_SL_mission_assetDenialSuceed">
-			<English>ASSET DENIAL SUCEED TODO</English>
+			<English>All medical assets denied!</English>
 		</Key>
 		
 		<Key ID="STR_SL_mission_withdrawName">
-			<English>WITHDRAW NAME TODO</English>
+			<English>Withdraw in 30 mins (optional)</English>
 		</Key>
 		<Key ID="STR_SL_mission_withdrawDescription">
-			<English>WITHDRAW DESCRIPTION TODO</English>
+			<English>To satify quarantine protocols, all friendly forces must be off the main island and back on the &lt;marker name=&#39;markerFreedom&#39;&gt;USS Freedom&lt;/marker&gt; within 30 minutes. Failure will result in full quarantine at the &lt;marker name=&#39;markerMSF&#39;&gt;MSF base&lt;/marker&gt;</English>
 		</Key>
 		<Key ID="STR_SL_mission_withdrawSuceed">
-			<English>WITHDRAW SUCEED TODO</English>
+			<English>Withdrawed within 30 minutes!</English>
 		</Key>
 		<Key ID="STR_SL_mission_withdrawFail">
-			<English>WITHDRAW SUCEED TODO</English>
+			<English>Prepare for quarantine!</English>
 		</Key>
 	</Containter>
 	<Container ID="Endings">
 		<Key ID="STR_SL_mission_allObjectives_title">
-			<English>STR_SL_mission_allObjectives_title</English>
+			<English>TOTAL SUCESS</English>
 		</Key>
 		<Key ID="STR_SL_mission_allObjectives_subtitle">
-			<English>STR_SL_mission_allObjectives_subtitle</English>
+			<English>All objectives complete!</English>
 		</Key>
 		<Key ID="STR_SL_mission_allObjectives_description">
-			<English>STR_SL_mission_allObjectives_description</English>
+			<English>We sucessfully evacuated the outpost, denied its assets to Syndikat and withdrew without needing quarantine. Good job!</English>
 		</Key>
 		
 		<Key ID="STR_SL_mission_medevacOnly_title">
-			<English>STR_SL_mission_medevacOnly_title</English>
+			<English>MISSION SUCESS</English>
 		</Key>
 		<Key ID="STR_SL_mission_medevacOnly_subtitle">
-			<English>STR_SL_mission_medevacOnly_subtitle</English>
+			<English>Outpost evacuated!</English>
 		</Key>
 		<Key ID="STR_SL_mission_medevacOnly_description">
-			<English>STR_SL_mission_medevacOnly_description</English>
+			<English>We sucessfully evacuated the outpost, but left the assets to Syndikat and now must endure quarantine.</English>
 		</Key>
 		
 		<Key ID="STR_SL_mission_medevacAssetDenialOnly_title">
-			<English>STR_SL_mission_medevacAssetDenialOnly_title</English>
+			<English>MISSION SUCESS</English>
 		</Key>
 		<Key ID="STR_SL_mission_medevacAssetDenialOnly_subtitle">
-			<English>STR_SL_mission_medevacAssetDenialOnly_subtitle</English>
+			<English>Outpost evacuated and assets denied!</English>
 		</Key>
 		<Key ID="STR_SL_mission_medevacAssetDenialOnly_description">
-			<English>STR_SL_mission_medevacAssetDenialOnly_description</English>
+			<English>We sucessfully evacuated the outpost and denied its assets from Syndikat. We must, however, now endure quarantine.</English>
 		</Key>
 		
 		<Key ID="STR_SL_mission_medevacWithdrawOnly_title">
-			<English>STR_SL_mission_medevacWithdrawOnly_title</English>
+			<English>MISSION SUCESS</English>
 		</Key>
 		<Key ID="STR_SL_mission_medevacWithdrawOnly_subtitle">
-			<English>STR_SL_mission_medevacWithdrawOnly_subtitle</English>
+			<English>Outpost evacuated!</English>
 		</Key>
 		<Key ID="STR_SL_mission_medevacWithdrawOnly_description">
-			<English>STR_SL_mission_medevacWithdrawOnly_description</English>
+			<English>We sucessfully evacuated the outpost and avoided quarantine, but left the assets to Syndikat.</English>
 		</Key>
 		
 		<Key ID="STR_SL_mission_medevacFailed_title">
-			<English>STR_SL_mission_medevacFailed_title</English>
+			<English>MISSION FAILURE</English>
 		</Key>
 		<Key ID="STR_SL_mission_medevacFailed_subtitle">
-			<English>STR_SL_mission_medevacFailed_subtitle</English>
+			<English>Failed to evacuate the patients</English>
 		</Key>
 		<Key ID="STR_SL_mission_medevacFailed_description">
-			<English>STR_SL_mission_medevacFailed_description</English>
+			<English>We failed to safely evacuate all the patients</English>
 		</Key>
 		
 		<Key ID="STR_SL_mission_allDead_title">
-			<English>STR_SL_mission_allDead_title</English>
+			<English>TOTAL FAILURE</English>
 		</Key>
 		<Key ID="STR_SL_mission_allDead_subtitle">
-			<English>STR_SL_mission_allDead_subtitle</English>
+			<English>We're all dead!</English>
 		</Key>
 		<Key ID="STR_SL_mission_allDead_description">
-			<English>STR_SL_mission_allDead_description</English>
+			<English>We all died. We may have completed some objectives, but this seems a little irrelevant in death.</English>
 		</Key>
 	</Containter>
   </Package>
