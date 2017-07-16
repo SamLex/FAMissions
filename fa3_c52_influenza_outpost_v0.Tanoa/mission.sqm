@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=369;
+		nextID=378;
 	};
 	class Camera
 	{
@@ -14065,7 +14065,7 @@ class Mission
 			class Attributes
 			{
 				name="medevacOnlyEndingTrigger";
-				condition="SL_mission_medevacSuceed && SL_mission_withdrawFail && !SL_mission_assetDenialSuceed";
+				condition="SL_mission_medevacSuceed && SL_mission_withdrawFail && isNil ""SL_mission_assetDenialSuceed""";
 				onActivation="[2,true] call f_fnc_mpEnd;";
 				sizeA=0;
 				sizeB=0;
@@ -14101,7 +14101,7 @@ class Mission
 			class Attributes
 			{
 				name="medevacWithdrawOnlyEndingTrigger";
-				condition="SL_mission_medevacSuceed && SL_mission_withdrawSuceed && !SL_mission_assetDenialSuceed";
+				condition="SL_mission_medevacSuceed && SL_mission_withdrawSuceed && isNil ""SL_mission_assetDenialSuceed""";
 				onActivation="[4,true] call f_fnc_mpEnd;";
 				sizeA=0;
 				sizeB=0;
