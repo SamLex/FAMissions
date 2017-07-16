@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=2189;
+		nextID=2192;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=315;
+		nextID=324;
 	};
 	class Camera
 	{
-		pos[]={11481.612,208.80148,12898.56};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,0};
+		pos[]={4393.3477,66.999603,10736.871};
+		dir[]={0.81906766,-0.55892646,-0.12936221};
+		up[]={0.55208606,0.82921606,-0.087195687};
+		aside[]={-0.15600595,9.2652044e-008,-0.98775864};
 	};
 };
 binarizationWanted=0;
@@ -255,7 +255,7 @@ class ScenarioData
 	{
 		gameType="Coop";
 		minPlayers=15;
-		maxPlayers=51;
+		maxPlayers=52;
 	};
 	wreckRemovalMaxTime=3600;
 };
@@ -471,7 +471,7 @@ class Mission
 			side="West";
 			class Entities
 			{
-				items=2;
+				items=3;
 				class Item0
 				{
 					dataType="Object";
@@ -595,6 +595,70 @@ class Mission
 										};
 									};
 									value=1;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4435.4126,23.528952,10729.355};
+						angles[]={0,1.3997121,0};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						init="[""jtac"",this] call f_fnc_assignGear;";
+						name="UnitNATO_CO_FAC";
+						description="NATO FAC";
+						isPlayable=1;
+					};
+					id=2191;
+					type="B_T_Officer_F";
+					atlOffset=52.151131;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male11ENG";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.01;
 								};
 							};
 						};
