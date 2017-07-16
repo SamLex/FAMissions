@@ -8,15 +8,15 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=2184;
+		nextID=2189;
 	};
 	class MarkerIDProvider
 	{
-		nextID=18;
+		nextID=23;
 	};
 	class LayerIndexProvider
 	{
-		nextID=306;
+		nextID=315;
 	};
 	class Camera
 	{
@@ -353,7 +353,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=315;
+		items=318;
 		class Item0
 		{
 			dataType="Logic";
@@ -6814,7 +6814,7 @@ class Mission
 					};
 					id=1538;
 					type="C_man_w_worker_F";
-					atlOffset=-0.0040283203;
+					atlOffset=-0.0040588379;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -7404,7 +7404,7 @@ class Mission
 					};
 					id=1572;
 					type="C_man_w_worker_F";
-					atlOffset=-0.0040283203;
+					atlOffset=-0.0040588379;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -8992,10 +8992,11 @@ class Mission
 		class Item223
 		{
 			dataType="Marker";
-			position[]={11046.055,350.38,11504.65};
-			name="marker_9";
+			position[]={11045.799,0,11504.144};
+			name="markerOutpost";
 			type="flag_CSAT";
 			id=1766;
+			atlOffset=-350.38;
 		};
 		class Item224
 		{
@@ -9059,7 +9060,7 @@ class Mission
 					};
 					id=1786;
 					type="C_man_w_worker_F";
-					atlOffset=-0.0040283203;
+					atlOffset=-0.0040588379;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -14097,6 +14098,33 @@ class Mission
 			};
 			id=2183;
 			type="EmptyDetector";
+		};
+		class Item315
+		{
+			dataType="Marker";
+			position[]={12215.143,0,14286.272};
+			name="markerCTRG";
+			type="Empty";
+			id=2185;
+			atlOffset=-43.70882;
+		};
+		class Item316
+		{
+			dataType="Marker";
+			position[]={4445.0889,0,10609.248};
+			name="markerFreedom";
+			type="Empty";
+			id=2186;
+			atlOffset=19.051105;
+		};
+		class Item317
+		{
+			dataType="Marker";
+			position[]={2276.469,0,13229.189};
+			name="markerMSF";
+			type="Empty";
+			id=2187;
+			atlOffset=-12.180554;
 		};
 	};
 };
