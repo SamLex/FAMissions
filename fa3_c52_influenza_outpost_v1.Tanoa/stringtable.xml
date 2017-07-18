@@ -9,6 +9,9 @@
 		<Key ID="STR_SL_mission_overview">
 			<English>NATO and CTRG help evacuate a CSAT outpost under attack from Syndikat (Medevac with Loadmaster needed, both recommended, squads start in different locations, TH1&amp;2=Alpha, TH3=CO&amp;Bravo, Charlie in AO, Zeus optional)</English>
 		</Key>
+		<Key ID="STR_SL_mission_overviewShort">
+			<English>NATO and CTRG help evacuate a CSAT outpost under attack from Syndikat</English>
+		</Key>
 		<Key ID="STR_SL_mission_loading">
 			<English>Made with the F3 Mission Development Framework.</English>
 		</Key>

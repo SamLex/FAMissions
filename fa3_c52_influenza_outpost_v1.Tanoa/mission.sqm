@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=396;
+		nextID=405;
 	};
 	class Camera
 	{
@@ -246,7 +246,7 @@ randomSeed=1116085;
 class ScenarioData
 {
 	author="Lexer";
-	overviewText="@STR_SL_mission_overview";
+	overviewText="@STR_SL_mission_overviewShort";
 	overViewPicture="overviewLogo.jpg";
 	onLoadMission="@STR_SL_mission_loading";
 	loadScreen="loadLogo.jpg";
