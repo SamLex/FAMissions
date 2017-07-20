@@ -12,10 +12,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1537.8906,302.86414,2402.9309};
-		dir[]={0.06782122,-0.27756035,-0.95832491};
-		up[]={0.019594502,0.96070743,-0.27687153};
-		aside[]={-0.99752009,4.0065061e-008,-0.070594788};
+		pos[]={437.88922,30,1439.9756};
+		dir[]={0.090669632,-0.49841511,-0.86219108};
+		up[]={0.052127246,0.86693746,-0.49568349};
+		aside[]={-0.99452221,-7.7423465e-008,-0.1045853};
 	};
 };
 binarizationWanted=0;
@@ -201,14 +201,57 @@ class AddonsMetaData
 randomSeed=1116085;
 class ScenarioData
 {
-	author="*** Insert mission author name here. ***";
+	author="@STR_author";
+	overviewText="@STR_overview";
 	overViewPicture="overviewLogo.jpg";
-	onLoadMission="Made with the F3 Mission Development Framework.";
+	onLoadMission="@STR_onLoadMission";
 	loadScreen="loadLogo.jpg";
+	wreckRemovalMaxTime=3600;
 };
 class CustomAttributes
 {
 	class Category0
+	{
+		name="Multiplayer";
+		class Attribute0
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+					class value
+					{
+						items=1;
+						class Item0
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="None";
+							};
+						};
+					};
+				};
+			};
+		};
+		nAttributes=1;
+	};
+	class Category1
 	{
 		name="Scenario";
 		class Attribute0
@@ -238,7 +281,8 @@ class Mission
 	assetType="Free";
 	class Intel
 	{
-		briefingName="f3-4-1dev_fa15_ws_140716";
+		briefingName="@STR_faMissionName";
+		overviewText="@STR_summary";
 		resistanceWest=0;
 		timeOfChanges=28800;
 		startWeather=0.50001526;

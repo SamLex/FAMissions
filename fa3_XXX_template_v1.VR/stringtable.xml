@@ -99,6 +99,26 @@
         <English>*** Insert debriefing #6 here. ***</English>
       </Key>
     </Container>
+    <Container name="General">
+      <Key ID="STR_faMissionName">
+        <Original>fa3_XXX_template_v1</Original>
+        <English>fa3_XXX_template_v1</English>
+      </Key>
+      <Key ID="STR_author">
+        <Original>*** Insert author here ***</Original>
+        <English>*** Insert author here ***</English>
+      </Key>
+      <Key ID="STR_overview">
+        <Original>*** Insert overview here ***</Original>
+        <English>*** Insert overview here ***</English>
+      </Key>
+    </Container>
+    <Container name="Multiplayer">
+      <Key ID="STR_summary">
+        <Original>*** Insert summary here ***</Original>
+        <English>*** Insert summary here ***</English>
+      </Key>
+    </Container>
   </Package>
   <Package name="F-External">
     <Container name="Briefing">
