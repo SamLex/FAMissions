@@ -46,6 +46,10 @@ _groups = _groups - _hiddenGroups;
 			_orbatText = _orbatText + format["|- %1 [M]",name _x] + "<br />";
 		};
 		
+		// Since there is no "fac" class, there is two others ways to determine a FAC:
+		// Parse allVariables for names ending in '_FAC', resolve them and check equality with _x...
+		// OR
+		// Check check if the role has FAC in it
 		if (["FAC", roleDescription _x, true] call BIS_fnc_inString && {_x != leader group _x}) then {
 			_orbatText = _orbatText + format["|- %1 [FAC]",name _x] + "<br />";
 		};

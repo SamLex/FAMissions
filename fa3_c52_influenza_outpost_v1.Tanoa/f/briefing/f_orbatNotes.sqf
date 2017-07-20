@@ -9,9 +9,9 @@ if (!hasInterface) exitWith {}; //Exit if not a player.
 
 // Define needed variables
 private ["_orbatText", "_groups", "_precompileGroups","_maxSlots","_freeSlots"];
-_orbatText = "<br />NOTE: The ORBAT below is only accurate at mission start.<br />
+_orbatText = "<br />" + localize "STR_f_orbatDisclaimer" + "<br />
 <br />
-<font size='18'>GROUP LEADERS + MEDICS</font><br /><br />";
+<font size='18'>" + localize "STR_f_orbatLeaders" + "</font><br /><br />";
 _groups = [];
 _hiddenGroups = [];
 
@@ -45,6 +45,18 @@ _groups = _groups - _hiddenGroups;
 		if (_x getVariable ["f_var_assignGear",""] == "m" && {_x != leader group _x}) then {
 			_orbatText = _orbatText + format["|- %1 [M]",name _x] + "<br />";
 		};
+		
+		// Since there is no "fac" class, there is two others ways to determine a FAC:
+		// Parse allVariables for names ending in '_FAC', resolve them and check equality with _x...
+		// OR
+		// Check check if the role has FAC in it
+		if (["FAC", roleDescription _x, true] call BIS_fnc_inString && {_x != leader group _x}) then {
+			_orbatText = _orbatText + format["|- %1 [FAC]",name _x] + "<br />";
+		};
+		
+		if (_x getVariable ["f_var_assignGear",""] == "jtac" && {!(["FAC", roleDescription _x, true] call BIS_fnc_inString)} && {_x != leader group _x}) then {
+			_orbatText = _orbatText + format["|- %1 [JTAC]",name _x] + "<br />";
+		};
 	} forEach units _x;
 } forEach _groups;
 
@@ -63,7 +75,7 @@ _veharray = [];
 
 if (count _veharray > 0) then {
 
-_orbatText = _orbatText + "<br />VEHICLE CREWS + PASSENGERS<br />";
+_orbatText = _orbatText + "<br />" + localize "STR_f_orbatVehicles" + "<br />";
 
 	{
 		 // Filter all characters which might break the diary entry (such as the & in Orca Black & White)

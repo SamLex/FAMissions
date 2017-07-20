@@ -122,6 +122,20 @@
 	</Container>
   </Package>
   <Package name="Missions">
+    <Container name="ORBAT">
+      <Key ID="STR_f_orbatDisclaimer">
+        <Original>NOTE: The ORBAT below is only accurate at mission start.</Original>
+        <English>NOTE: The ORBAT below is only accurate at mission start.</English>
+      </Key>
+      <Key ID="STR_f_orbatLeaders">
+        <Original>GROUP LEADERS + NOTABLE</Original>
+        <English>GROUP LEADERS + NOTABLE</English>
+      </Key>
+      <Key ID="STR_f_orbatVehicles">
+        <Original>VEHICLE CREWS + PASSENGERS</Original>
+        <English>VEHICLE CREWS + PASSENGERS</English>
+      </Key>
+    </Container>
     <Container name="">
       <Key ID="STR_f_param_debugMode">
         <English> Debug Mode </English>
