@@ -1,9 +1,9 @@
 // ============================================================================================
 // Loading Screen
 
-onLoadName = "*** Insert Mission Name Here. ***";
-onLoadMission = "Made with the F3 Mission Development Framework";
-author = "*** Insert Author Here. ***";
+onLoadName = $STR_onLoadName;
+onLoadMission = $STR_onLoadMission;
+author = $STR_author;
 loadScreen = "loadLogo.jpg";
 overviewPicture = "overviewLogo.jpg";
 
@@ -40,7 +40,7 @@ class cfgNotifications
 	// A generic warning notification
 	class Alert
 	{
-		title = "ALERT";
+		title = $STR_f_alertTitle;
 		description = "%1";
 		iconPicture="\A3\ui_f\data\map\markers\military\warning_ca.paa";
 		duration = 3;
@@ -50,7 +50,7 @@ class cfgNotifications
 	// Notifications for the F3 Safe Start Component
 	class SafeStart
 	{
-		title = "SAFE START";
+		title = $STR_f_safeStartTitle;
 		description = "%1";
 		iconPicture="\A3\UI_F\data\IGUI\Cfg\Actions\settimer_ca.paa";
 		duration = 10;
@@ -58,7 +58,7 @@ class cfgNotifications
 	};
 	class SafeStartMissionStarting
 	{
-		title = "SAFE START";
+		title = $STR_f_safeStartTitle
 		description = "%1";
 		iconPicture="\A3\UI_F\data\IGUI\Cfg\Actions\settimer_ca.paa";
 		duration = 3;
@@ -67,7 +67,7 @@ class cfgNotifications
 
 	// Notification for the F3 Authorised Crew Component
 	class UnauthorisedCrew {
-		title= "NON-AUTHORISED CREW!";
+		title= $STR_f_unauthorisedCrewTitle;
 		description= "%1";
 		iconPicture = "\A3\ui_f\data\map\markers\military\warning_ca.paa";
 		duration = 3;
@@ -76,7 +76,7 @@ class cfgNotifications
 
 	// Notification for the F3 Mapclick Teleport component
 	class MapClickTeleport {
-		title= "NOTE";
+		title= $STR_f_mapClickTeleportTitle;
 		description= "%1";
 		iconPicture = "\A3\ui_f\data\map\markers\military\start_ca.paa";
 		duration = 3;
@@ -85,7 +85,7 @@ class cfgNotifications
 
 	// Notification for the F3 JIP Component
 	class JIP {
-		title= "REINFORCEMENTS";
+		title= $STR_f_jipTitle;
 		description= "%1";
 		iconPicture = "\A3\ui_f\data\map\markers\military\flag_ca.paa";
 		duration = 3;
@@ -109,9 +109,9 @@ class Params
 
     class f_param_debugMode
     {
-            title = "$STR_f_param_debugMode";
+            title = $STR_f_debugModeTitle;
             values[] = {0,1};
-            texts[] = {"Off","On"};
+            texts[] = {$STR_f_off, $STR_f_on};
             default = 0;
     };
 
@@ -122,9 +122,9 @@ class Params
 
     class f_param_loadouts
     {
-            title = "$STR_f_param_loadouts";
+            title = STR_f_loadoutsTitle;
             values[] = {0,1};
-            texts[] = {"Light","Standard"};
+            texts[] = {$STR_f_loadoutsLight,$STR_f_loadoutsStandard};
             default = 1;
     };
 
@@ -135,9 +135,9 @@ class Params
 
     class f_param_radios
     {
-            title = "Radio System";
+            title = $STR_f_radiosTitle;
             values[] = {0,2,3};
-            texts[] = {"Off","TFR","ACRE2"};
+            texts[] = {$STR_f_off,"TFR","ACRE2"};
             default = 0;
     };
 
@@ -148,9 +148,9 @@ class Params
 
     class f_param_medical
     {
-            title = "Medical System";
+            title = $STR_f_medicalTitle;
             values[] = {0,1};
-            texts[] = {"Arma 3 Default","F3 Simple Wounding System"};
+            texts[] = {$STR_f_medicalDefault,$STR_f_medicalSWS};
             default = 1;
     };
 
@@ -161,9 +161,9 @@ class Params
 
     class f_param_mission_timer
     {
-            title = "$STR_f_param_mission_timer";
+            title = $STR_f_missionTimerTitle;
             values[] = {0,1,2,3,4,5,6,7,8,9,10,15};
-            texts[] = {"$STR_f_param_mission_timer_off","1","2","3","4","5","6","7","8","9","10","15"};
+            texts[] = {$STR_f_off,"1","2","3","4","5","6","7","8","9","10","15"};
             default = 1;
     };
 
@@ -174,34 +174,34 @@ class Params
 
 	class f_param_weather
 	{
-		title = "$STR_f_param_weather";
+		title = $STR_f_weatherTitle;
 		values[] = {0,1,2,3,4,5,6,7,8,9};
-		texts[] = {$STR_f_param_weather_Option0,$STR_f_param_weather_Option1,$STR_f_param_weather_Option2,$STR_f_param_weather_Option3,$STR_f_param_weather_Option4,$STR_f_param_weather_Option5,$STR_f_param_weather_Option6,$STR_f_param_weather_Option7,$STR_f_param_weather_Option8,$STR_f_param_weather_Option11};
-		default = 0;
+		texts[] = {$STR_f_weatherClear,$STR_f_weatherCloudy,$STR_f_weatherMostlyCloudy,$STR_f_weatherOvercast,$STR_f_weatherFoggy,$STR_f_weatherShowers,$STR_f_weatherLightRain,$STR_f_weatherHeavyRain,$STR_f_weatherStorm,$STR_f_weatherDefault};
+		default = 9;
 	};
 
 	class f_param_fog
 	{
-		title = "Override Fog";
+		title = $STR_f_fogTitle;
 		values[] = {0,1,2,4};
-		texts[] = {"No Fog","Light Fog","Heavy Fog","Use default"};
+		texts[] = {$STR_f_fogNone,$STR_f_fogLight,$STR_f_fogHeavy,$STR_f_fogDefault};
 		default = 4;
 	};
 
 	class f_param_wind
 	{
-		title = "Override Wind";
+		title = $STR_f_windTitle;
 		values[] = {0,1,2,4};
-		texts[] = {"No Wind","Light Wind","Heavy Wind","Use default"};
+		texts[] = {$STR_f_windNone,$STR_f_windLight,$STR_f_windHeavy,$STR_f_windDefault};
 		default = 4;
 	};
 
   class f_param_timeOfDay
 	{
-		title = "$STR_f_param_timeOfDay";
+		title = $STR_f_timeOfDayTitle;
 		values[] = {0,1,2,3,4,5,6,7,8};
-		texts[] = {$STR_f_param_timeOfDay_Option0,$STR_f_param_timeOfDay_Option1,$STR_f_param_timeOfDay_Option2,$STR_f_param_timeOfDay_Option3,$STR_f_param_timeOfDay_Option4,$STR_f_param_timeOfDay_Option5,$STR_f_param_timeOfDay_Option6,$STR_f_param_timeOfDay_Option7,$STR_f_param_timeOfDay_Option8};
-		default = 4;
+		texts[] = {$STR_f_timeOfDayDawn,$STR_f_timeOfDayEarlyMorning,$STR_f_timeOfDayMorning,$STR_f_timeOfDayNoon,$STR_f_timeOfDayAfternoon,$STR_f_timeOfDayEvening,$STR_f_timeOfDayDusk,$STR_f_timeOfDayNight,$STR_f_timeOfDayDefault};
+		default = 8;
 		function = "f_fnc_setTime"; // This function is called to apply the values
  		isGlobal = 0; // Execute this only on the server
 	};
@@ -213,38 +213,26 @@ class Params
 
 	class f_param_AISkill_BLUFOR
 	{
-		title = "$STR_f_param_AISkill_BLUFOR";
+		title = $STR_f_AISkillBLUFOR;
 		values[] = {0,1,2,3};
-		texts[] = {$STR_f_param_AISkill_Option0,$STR_f_param_AISkill_Option1,$STR_f_param_AISkill_Option2,$STR_f_param_AISkill_Option3};
-		default = 1;
+		texts[] = {$STR_f_AISkillSuper,$STR_f_AISkillHigh,$STR_f_AISkillMedium,$STR_f_AISkillLow};
+		default = 2;
 	};
 
 	class f_param_AISkill_OPFOR
 	{
-		title = "$STR_f_param_AISkill_OPFOR";
+		title = $STR_f_AISkillOPFOR;
 		values[] = {0,1,2,3};
-		texts[] = {$STR_f_param_AISkill_Option0,$STR_f_param_AISkill_Option1,$STR_f_param_AISkill_Option2,$STR_f_param_AISkill_Option3};
-		default = 1;
+		texts[] = {$STR_f_AISkillSuper,$STR_f_AISkillHigh,$STR_f_AISkillMedium,$STR_f_AISkillLow};
+		default = 2;
 	};
 
 	class f_param_AISkill_INDP
 	{
-		title = "$STR_f_param_AISkill_INDP";
+		title = $STR_f_AISkillINDP;
 		values[] = {0,1,2,3};
-		texts[] = {$STR_f_param_AISkill_Option0,$STR_f_param_AISkill_Option1,$STR_f_param_AISkill_Option2,$STR_f_param_AISkill_Option3};
-		default = 1;
-	};
-
-// ============================================================================================
-
-// F3 - Caching
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-
-	class f_param_caching
-	{
-		title = "Cache AI outside distance (m)";
-		values[] = {0,600,800,1000,1500,2000};
-		default = 0;
+		texts[] = {$STR_f_AISkillSuper,$STR_f_AISkillHigh,$STR_f_AISkillMedium,$STR_f_AISkillLow};
+		default = 2;
 	};
 
 // ============================================================================================
@@ -263,9 +251,9 @@ class CfgDebriefing
 {
 	class End1
 	{
-		title = "Ending #1";
-		subtitle = "";
-		description = "*** Insert debriefing #1 here. ***";
+		title = $STR_end1Title;
+		subtitle = $STR_end1Subtitle;
+		description = $STR_end1Description;
 		// pictureBackground = "";
 		// picture = "";
 		// pictureColor[] = {0.0,0.3,0.6,1};
@@ -273,9 +261,9 @@ class CfgDebriefing
 
 	class End2
 	{
-		title = "Ending #2";
-		subtitle = "";
-		description = "*** Insert debriefing #2 here. ***";
+		title = $STR_end2Title;
+		subtitle = $STR_end2Subtitle;
+		description = $STR_end2Description;
 		// pictureBackground = "";
 		// picture = "";
 		// pictureColor[] = {0.0,0.3,0.6,1};
@@ -283,9 +271,9 @@ class CfgDebriefing
 
 	class End3
 	{
-		title = "Ending #3";
-		subtitle = "";
-		description = "*** Insert debriefing #3 here. ***";
+		title = $STR_end3Title;
+		subtitle = $STR_end3Subtitle;
+		description = $STR_end3Description;
 		// pictureBackground = "";
 		// picture = "";
 		// pictureColor[] = {0.0,0.3,0.6,1};
@@ -293,9 +281,9 @@ class CfgDebriefing
 
 	class End4
 	{
-		title = "Ending #4";
-		subtitle = "";
-		description = "*** Insert debriefing #4 here. ***";
+		title = $STR_end4Title;
+		subtitle = $STR_end4Subtitle;
+		description = $STR_end4Description;
 		// pictureBackground = "";
 		// picture = "";
 		// pictureColor[] = {0.0,0.3,0.6,1};
@@ -303,9 +291,9 @@ class CfgDebriefing
 
 	class End5
 	{
-		title = "Ending #5";
-		subtitle = "";
-		description = "*** Insert debriefing #5 here. ***";
+		title = $STR_end5Title;
+		subtitle = $STR_end5Subtitle;
+		description = $STR_end5Description;
 		// pictureBackground = "";
 		// picture = "";
 		// pictureColor[] = {0.0,0.3,0.6,1};
@@ -313,9 +301,9 @@ class CfgDebriefing
 
 	class End6
 	{
-		title = "Ending #6";
-		subtitle = "";
-		description = "*** Insert debriefing #6 here. ***";
+		title = $STR_end6Title;
+		subtitle = $STR_end6Subtitle;
+		description = $STR_end6Description;
 		// pictureBackground = "";
 		// picture = "";
 		// pictureColor[] = {0.0,0.3,0.6,1};

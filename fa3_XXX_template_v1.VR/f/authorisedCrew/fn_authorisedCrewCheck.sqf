@@ -19,7 +19,7 @@ _vehicle = _fromEH select 0;
 _vehicleRole = _fromEH select 1;
 _unitToCheck = _fromEH select 2;
 
-_warningMsg = localize "STR_f_UnauthorisedCrew_Warning";
+_warningMsg = localize "STR_f_unauthorisedCrewWarning";
 
 // DEBUG
 if (f_param_debugMode == 1) then
