@@ -45,6 +45,14 @@ _groups = _groups - _hiddenGroups;
 		if (_x getVariable ["f_var_assignGear",""] == "m" && {_x != leader group _x}) then {
 			_orbatText = _orbatText + format["|- %1 [M]",name _x] + "<br />";
 		};
+		
+		if (["FAC", roleDescription _x, true] call BIS_fnc_inString && {_x != leader group _x}) then {
+			_orbatText = _orbatText + format["|- %1 [FAC]",name _x] + "<br />";
+		};
+		
+		if (_x getVariable ["f_var_assignGear",""] == "jtac" && {!(["FAC", roleDescription _x, true] call BIS_fnc_inString)} && {_x != leader group _x}) then {
+			_orbatText = _orbatText + format["|- %1 [JTAC]",name _x] + "<br />";
+		};
 	} forEach units _x;
 } forEach _groups;
 
