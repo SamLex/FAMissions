@@ -889,8 +889,8 @@
         <English>NOTE: The ORBAT below is only accurate at mission start.</English>
       </Key>
       <Key ID="STR_f_orbatLeaders">
-        <Original>GROUP LEADERS</Original>
-        <English>GROUP LEADERS</English>
+        <Original>GROUP LEADERS + NOTABLE</Original>
+        <English>GROUP LEADERS + NOTABLE</English>
       </Key>
       <Key ID="STR_f_orbatVehicles">
         <Original>VEHICLE CREWS + PASSENGERS</Original>

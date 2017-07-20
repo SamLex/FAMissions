@@ -58,7 +58,7 @@ class cfgNotifications
 	};
 	class SafeStartMissionStarting
 	{
-		title = $STR_f_safeStartTitle
+		title = $STR_f_safeStartTitle;
 		description = "%1";
 		iconPicture="\A3\UI_F\data\IGUI\Cfg\Actions\settimer_ca.paa";
 		duration = 3;
@@ -122,7 +122,7 @@ class Params
 
     class f_param_loadouts
     {
-            title = STR_f_loadoutsTitle;
+            title = $STR_f_loadoutsTitle;
             values[] = {0,1};
             texts[] = {$STR_f_loadoutsLight,$STR_f_loadoutsStandard};
             default = 1;
