@@ -5,7 +5,7 @@
 // ADD MISSION MAKER NOTES SECTIONS
 // All text added below will only be visible to the current admin
 
-_customText = "";
+_customText = localize "STR_f_missionMakerNotes";
 
 // ====================================================================================
 

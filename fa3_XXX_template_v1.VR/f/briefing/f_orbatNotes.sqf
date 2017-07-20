@@ -9,9 +9,9 @@ if (!hasInterface) exitWith {}; //Exit if not a player.
 
 // Define needed variables
 private ["_orbatText", "_groups", "_precompileGroups","_maxSlots","_freeSlots"];
-_orbatText = "<br />NOTE: The ORBAT below is only accurate at mission start.<br />
+_orbatText = "<br />" + localize "STR_f_orbatDisclaimer" + "<br />
 <br />
-<font size='18'>GROUP LEADERS + MEDICS</font><br /><br />";
+<font size='18'>" + localize "STR_f_orbatLeaders" + "</font><br /><br />";
 _groups = [];
 _hiddenGroups = [];
 
@@ -63,7 +63,7 @@ _veharray = [];
 
 if (count _veharray > 0) then {
 
-_orbatText = _orbatText + "<br />VEHICLE CREWS + PASSENGERS<br />";
+_orbatText = _orbatText + "<br />" + localize "STR_f_orbatVehicles" + "<br />";
 
 	{
 		 // Filter all characters which might break the diary entry (such as the & in Orca Black & White)

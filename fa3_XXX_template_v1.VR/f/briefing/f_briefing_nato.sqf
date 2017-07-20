@@ -9,11 +9,11 @@
 // NOTES: CREDITS
 // The code below creates the administration sub-section of notes.
 
-_cre = player createDiaryRecord ["diary", ["Credits","
+_cre = player createDiaryRecord ["diary", [localize "STR_f_creditsTitle","
 <br/>
-*** Insert mission credits here. ***
+" + localize "STR_f_credits" + "
 <br/><br/>
-Made with F3 (http://www.ferstaberinde.com/f3/en/)
+" + localize "STR_f_creditsMade" + "
 "]];
 
 // ====================================================================================
@@ -21,9 +21,9 @@ Made with F3 (http://www.ferstaberinde.com/f3/en/)
 // NOTES: ADMINISTRATION
 // The code below creates the administration sub-section of notes.
 
-_adm = player createDiaryRecord ["diary", ["Administration","
+_adm = player createDiaryRecord ["diary", [localize "STR_f_adminTitle","
 <br/>
-*** Insert information on administration and logistics here. ***
+" + localize "STR_f_briefingNATOAdmin" + "
 "]];
 
 // ====================================================================================
@@ -31,23 +31,23 @@ _adm = player createDiaryRecord ["diary", ["Administration","
 // NOTES: EXECUTION
 // The code below creates the execution sub-section of notes.
 
-_exe = player createDiaryRecord ["diary", ["Execution","
+_exe = player createDiaryRecord ["diary", [localize "STR_f_executionTitle","
 <br/>
-<font size='18'>COMMANDER'S INTENT</font>
+<font size='18'>" + localize "STR_f_commandersIntent" + "</font>
 <br/>
-*** Insert very short summary of plan here. ***
+" + localize "STR_f_briefingNATOCI" + "
 <br/><br/>
-<font size='18'>MOVEMENT PLAN</font>
+<font size='18'>" + localize "STR_f_movementPlan" + "</font>
 <br/>
-*** Insert movement instructions here. ***
+" + localize "STR_f_briefingNATOMP" + "
 <br/><br/>
-<font size='18'>FIRE SUPPORT PLAN</font>
+<font size='18'>" + localize "STR_f_fireSupportPlan" + "</font>
 <br/>
-*** Insert fire support instructions here. ***
+" + localize "STR_f_briefingNATOFSP" + "
 <br/><br/>
-<font size='18'>SPECIAL TASKS</font>
+<font size='18'>" + localize "STR_f_specialTasks" + "</font>
 <br/>
-*** Insert instructions for specific units here. ***
+" + localize "STR_f_briefingNATOST" + "
 "]];
 
 // ====================================================================================
@@ -55,9 +55,9 @@ _exe = player createDiaryRecord ["diary", ["Execution","
 // NOTES: MISSION
 // The code below creates the mission sub-section of notes.
 
-_mis = player createDiaryRecord ["diary", ["Mission","
+_mis = player createDiaryRecord ["diary", [localize "STR_f_mission","
 <br/>
-*** Insert the mission here. ***
+" + localize "STR_f_briefingNATOMission" + "
 "]];
 
 // ====================================================================================
@@ -65,17 +65,17 @@ _mis = player createDiaryRecord ["diary", ["Mission","
 // NOTES: SITUATION
 // The code below creates the situation sub-section of notes.
 
-_sit = player createDiaryRecord ["diary", ["Situation","
+_sit = player createDiaryRecord ["diary", [localize "STR_f_situationTitle","
 <br/>
-*** Insert general information about the situation here.***
+" + localize "STR_f_briefingNATOSituation" + "
 <br/><br/>
-<font size='18'>ENEMY FORCES</font>
+<font size='18'>" + localize "STR_f_enemyForces" + "</font>
 <br/>
-*** Insert information about enemy forces here.***
+" + localize "STR_f_briefingNATOEF" + "
 <br/><br/>
-<font size='18'>FRIENDLY FORCES</font>
+<font size='18'>" + localize "STR_f_friendlyForces" + "</font>
 <br/>
-*** Insert information about friendly forces here.***
+" + localize "STR_f_briefingNATOFF" + "
 "]];
 
 // ====================================================================================

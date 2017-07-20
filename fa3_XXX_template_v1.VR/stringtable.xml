@@ -100,31 +100,384 @@
       </Key>
     </Container>
   </Package>
-  <Package name="F-External" />
+  <Package name="F-External">
+    <Container name="Briefing">
+      <Key ID="STR_f_credits">
+        <Original>*** Insert mission credits here. ***</Original>
+        <English>*** Insert mission credits here. ***</English>
+      </Key>
+      <Key ID="STR_f_missionMakerNotes">
+        <Original />
+        <English />
+      </Key>
+    </Container>
+    <Container name="Briefing AAF">
+      <Key ID="STR_f_briefingAAFAdmin">
+        <Original>*** Insert information on administration and logistics here. ***</Original>
+        <English>*** Insert information on administration and logistics here. ***</English>
+      </Key>
+      <Key ID="STR_f_briefingAAFCI">
+        <Original>*** Insert very short summary of plan here. ***</Original>
+        <English>*** Insert very short summary of plan here. ***</English>
+      </Key>
+      <Key ID="STR_f_briefingAAFMP">
+        <Original>*** Insert movement instructions here. ***</Original>
+        <English>*** Insert movement instructions here. ***</English>
+      </Key>
+      <Key ID="STR_f_briefingAAFFSP">
+        <Original>*** Insert fire support instructions here. ***</Original>
+        <English>*** Insert fire support instructions here. ***</English>
+      </Key>
+      <Key ID="STR_f_briefingAAFST">
+        <Original>*** Insert instructions for specific units here. ***</Original>
+        <English>*** Insert instructions for specific units here. ***</English>
+      </Key>
+      <Key ID="STR_f_briefingAAFMission">
+        <Original>*** Insert the mission here. ***</Original>
+        <English>*** Insert the mission here. ***</English>
+      </Key>
+      <Key ID="STR_f_briefingAAFSituation">
+        <Original>*** Insert general information about the situation here.***</Original>
+        <English>*** Insert general information about the situation here.***</English>
+      </Key>
+      <Key ID="STR_f_briefingAAFEF">
+        <Original>*** Insert information about enemy forces here.***</Original>
+        <English>*** Insert information about enemy forces here.***</English>
+      </Key>
+      <Key ID="STR_f_briefingAAFFF">
+        <Original>*** Insert information about friendly forces here.***</Original>
+        <English>*** Insert information about friendly forces here.***</English>
+      </Key>
+    </Container>
+    <Container name="Briefing Civilian">
+      <Key ID="STR_f_briefingCivilianAdmin">
+        <Original>*** Insert information on administration and logistics here. ***</Original>
+        <English>*** Insert information on administration and logistics here. ***</English>
+      </Key>
+      <Key ID="STR_f_briefingCivilianCI">
+        <Original>*** Insert very short summary of plan here. ***</Original>
+        <English>*** Insert very short summary of plan here. ***</English>
+      </Key>
+      <Key ID="STR_f_briefingCivilianMP">
+        <Original>*** Insert movement instructions here. ***</Original>
+        <English>*** Insert movement instructions here. ***</English>
+      </Key>
+      <Key ID="STR_f_briefingCivilianFSP">
+        <Original>*** Insert fire support instructions here. ***</Original>
+        <English>*** Insert fire support instructions here. ***</English>
+      </Key>
+      <Key ID="STR_f_briefingCivilianST">
+        <Original>*** Insert instructions for specific units here. ***</Original>
+        <English>*** Insert instructions for specific units here. ***</English>
+      </Key>
+      <Key ID="STR_f_briefingCivilianMission">
+        <Original>*** Insert the mission here. ***</Original>
+        <English>*** Insert the mission here. ***</English>
+      </Key>
+      <Key ID="STR_f_briefingCivilianSituation">
+        <Original>*** Insert general information about the situation here.***</Original>
+        <English>*** Insert general information about the situation here.***</English>
+      </Key>
+      <Key ID="STR_f_briefingCivilianEF">
+        <Original>*** Insert information about enemy forces here.***</Original>
+        <English>*** Insert information about enemy forces here.***</English>
+      </Key>
+      <Key ID="STR_f_briefingCivilianFF">
+        <Original>*** Insert information about friendly forces here.***</Original>
+        <English>*** Insert information about friendly forces here.***</English>
+      </Key>
+    </Container>
+    <Container name="Briefing CSAT">
+      <Key ID="STR_f_briefingCSATAdmin">
+        <Original>*** Insert information on administration and logistics here. ***</Original>
+        <English>*** Insert information on administration and logistics here. ***</English>
+      </Key>
+      <Key ID="STR_f_briefingCSATCI">
+        <Original>*** Insert very short summary of plan here. ***</Original>
+        <English>*** Insert very short summary of plan here. ***</English>
+      </Key>
+      <Key ID="STR_f_briefingCSATMP">
+        <Original>*** Insert movement instructions here. ***</Original>
+        <English>*** Insert movement instructions here. ***</English>
+      </Key>
+      <Key ID="STR_f_briefingCSATFSP">
+        <Original>*** Insert fire support instructions here. ***</Original>
+        <English>*** Insert fire support instructions here. ***</English>
+      </Key>
+      <Key ID="STR_f_briefingCSATST">
+        <Original>*** Insert instructions for specific units here. ***</Original>
+        <English>*** Insert instructions for specific units here. ***</English>
+      </Key>
+      <Key ID="STR_f_briefingCSATMission">
+        <Original>*** Insert the mission here. ***</Original>
+        <English>*** Insert the mission here. ***</English>
+      </Key>
+      <Key ID="STR_f_briefingCSATSituation">
+        <Original>*** Insert general information about the situation here.***</Original>
+        <English>*** Insert general information about the situation here.***</English>
+      </Key>
+      <Key ID="STR_f_briefingCSATEF">
+        <Original>*** Insert information about enemy forces here.***</Original>
+        <English>*** Insert information about enemy forces here.***</English>
+      </Key>
+      <Key ID="STR_f_briefingCSATFF">
+        <Original>*** Insert information about friendly forces here.***</Original>
+        <English>*** Insert information about friendly forces here.***</English>
+      </Key>
+    </Container>
+    <Container name="Briefing CTRG">
+      <Key ID="STR_f_briefingCTRGAdmin">
+        <Original>*** Insert information on administration and logistics here. ***</Original>
+        <English>*** Insert information on administration and logistics here. ***</English>
+      </Key>
+      <Key ID="STR_f_briefingCTRGCI">
+        <Original>*** Insert very short summary of plan here. ***</Original>
+        <English>*** Insert very short summary of plan here. ***</English>
+      </Key>
+      <Key ID="STR_f_briefingCTRGMP">
+        <Original>*** Insert movement instructions here. ***</Original>
+        <English>*** Insert movement instructions here. ***</English>
+      </Key>
+      <Key ID="STR_f_briefingCTRGFSP">
+        <Original>*** Insert fire support instructions here. ***</Original>
+        <English>*** Insert fire support instructions here. ***</English>
+      </Key>
+      <Key ID="STR_f_briefingCTRGST">
+        <Original>*** Insert instructions for specific units here. ***</Original>
+        <English>*** Insert instructions for specific units here. ***</English>
+      </Key>
+      <Key ID="STR_f_briefingCTRGMission">
+        <Original>*** Insert the mission here. ***</Original>
+        <English>*** Insert the mission here. ***</English>
+      </Key>
+      <Key ID="STR_f_briefingCTRGSituation">
+        <Original>*** Insert general information about the situation here.***</Original>
+        <English>*** Insert general information about the situation here.***</English>
+      </Key>
+      <Key ID="STR_f_briefingCTRGEF">
+        <Original>*** Insert information about enemy forces here.***</Original>
+        <English>*** Insert information about enemy forces here.***</English>
+      </Key>
+      <Key ID="STR_f_briefingCTRGFF">
+        <Original>*** Insert information about friendly forces here.***</Original>
+        <English>*** Insert information about friendly forces here.***</English>
+      </Key>
+    </Container>
+    <Container name="Briefing FIA">
+      <Key ID="STR_f_briefingFIAAdmin">
+        <Original>*** Insert information on administration and logistics here. ***</Original>
+        <English>*** Insert information on administration and logistics here. ***</English>
+      </Key>
+      <Key ID="STR_f_briefingFIACI">
+        <Original>*** Insert very short summary of plan here. ***</Original>
+        <English>*** Insert very short summary of plan here. ***</English>
+      </Key>
+      <Key ID="STR_f_briefingFIAMP">
+        <Original>*** Insert movement instructions here. ***</Original>
+        <English>*** Insert movement instructions here. ***</English>
+      </Key>
+      <Key ID="STR_f_briefingFIAFSP">
+        <Original>*** Insert fire support instructions here. ***</Original>
+        <English>*** Insert fire support instructions here. ***</English>
+      </Key>
+      <Key ID="STR_f_briefingFIAST">
+        <Original>*** Insert instructions for specific units here. ***</Original>
+        <English>*** Insert instructions for specific units here. ***</English>
+      </Key>
+      <Key ID="STR_f_briefingFIAMission">
+        <Original>*** Insert the mission here. ***</Original>
+        <English>*** Insert the mission here. ***</English>
+      </Key>
+      <Key ID="STR_f_briefingFIASituation">
+        <Original>*** Insert general information about the situation here.***</Original>
+        <English>*** Insert general information about the situation here.***</English>
+      </Key>
+      <Key ID="STR_f_briefingFIAEF">
+        <Original>*** Insert information about enemy forces here.***</Original>
+        <English>*** Insert information about enemy forces here.***</English>
+      </Key>
+      <Key ID="STR_f_briefingFIAFF">
+        <Original>*** Insert information about friendly forces here.***</Original>
+        <English>*** Insert information about friendly forces here.***</English>
+      </Key>
+    </Container>
+    <Container name="Briefing Gendarmerie">
+      <Key ID="STR_f_briefingGendarmerieAdmin">
+        <Original>*** Insert information on administration and logistics here. ***</Original>
+        <English>*** Insert information on administration and logistics here. ***</English>
+      </Key>
+      <Key ID="STR_f_briefingGendarmerieCI">
+        <Original>*** Insert very short summary of plan here. ***</Original>
+        <English>*** Insert very short summary of plan here. ***</English>
+      </Key>
+      <Key ID="STR_f_briefingGendarmerieMP">
+        <Original>*** Insert movement instructions here. ***</Original>
+        <English>*** Insert movement instructions here. ***</English>
+      </Key>
+      <Key ID="STR_f_briefingGendarmerieFSP">
+        <Original>*** Insert fire support instructions here. ***</Original>
+        <English>*** Insert fire support instructions here. ***</English>
+      </Key>
+      <Key ID="STR_f_briefingGendarmerieST">
+        <Original>*** Insert instructions for specific units here. ***</Original>
+        <English>*** Insert instructions for specific units here. ***</English>
+      </Key>
+      <Key ID="STR_f_briefingGendarmerieMission">
+        <Original>*** Insert the mission here. ***</Original>
+        <English>*** Insert the mission here. ***</English>
+      </Key>
+      <Key ID="STR_f_briefingGendarmerieSituation">
+        <Original>*** Insert general information about the situation here.***</Original>
+        <English>*** Insert general information about the situation here.***</English>
+      </Key>
+      <Key ID="STR_f_briefingGendarmerieEF">
+        <Original>*** Insert information about enemy forces here.***</Original>
+        <English>*** Insert information about enemy forces here.***</English>
+      </Key>
+      <Key ID="STR_f_briefingGendarmerieFF">
+        <Original>*** Insert information about friendly forces here.***</Original>
+        <English>*** Insert information about friendly forces here.***</English>
+      </Key>
+    </Container>
+    <Container name="Briefing NATO">
+      <Key ID="STR_f_briefingNATOAdmin">
+        <Original>*** Insert information on administration and logistics here. ***</Original>
+        <English>*** Insert information on administration and logistics here. ***</English>
+      </Key>
+      <Key ID="STR_f_briefingNATOCI">
+        <Original>*** Insert very short summary of plan here. ***</Original>
+        <English>*** Insert very short summary of plan here. ***</English>
+      </Key>
+      <Key ID="STR_f_briefingNATOMP">
+        <Original>*** Insert movement instructions here. ***</Original>
+        <English>*** Insert movement instructions here. ***</English>
+      </Key>
+      <Key ID="STR_f_briefingNATOFSP">
+        <Original>*** Insert fire support instructions here. ***</Original>
+        <English>*** Insert fire support instructions here. ***</English>
+      </Key>
+      <Key ID="STR_f_briefingNATOST">
+        <Original>*** Insert instructions for specific units here. ***</Original>
+        <English>*** Insert instructions for specific units here. ***</English>
+      </Key>
+      <Key ID="STR_f_briefingNATOMission">
+        <Original>*** Insert the mission here. ***</Original>
+        <English>*** Insert the mission here. ***</English>
+      </Key>
+      <Key ID="STR_f_briefingNATOSituation">
+        <Original>*** Insert general information about the situation here.***</Original>
+        <English>*** Insert general information about the situation here.***</English>
+      </Key>
+      <Key ID="STR_f_briefingNATOEF">
+        <Original>*** Insert information about enemy forces here.***</Original>
+        <English>*** Insert information about enemy forces here.***</English>
+      </Key>
+      <Key ID="STR_f_briefingNATOFF">
+        <Original>*** Insert information about friendly forces here.***</Original>
+        <English>*** Insert information about friendly forces here.***</English>
+      </Key>
+    </Container>
+    <Container name="Briefing Syndikat">
+      <Key ID="STR_f_briefingSyndikatAdmin">
+        <Original>*** Insert information on administration and logistics here. ***</Original>
+        <English>*** Insert information on administration and logistics here. ***</English>
+      </Key>
+      <Key ID="STR_f_briefingSyndikatCI">
+        <Original>*** Insert very short summary of plan here. ***</Original>
+        <English>*** Insert very short summary of plan here. ***</English>
+      </Key>
+      <Key ID="STR_f_briefingSyndikatMP">
+        <Original>*** Insert movement instructions here. ***</Original>
+        <English>*** Insert movement instructions here. ***</English>
+      </Key>
+      <Key ID="STR_f_briefingSyndikatFSP">
+        <Original>*** Insert fire support instructions here. ***</Original>
+        <English>*** Insert fire support instructions here. ***</English>
+      </Key>
+      <Key ID="STR_f_briefingSyndikatST">
+        <Original>*** Insert instructions for specific units here. ***</Original>
+        <English>*** Insert instructions for specific units here. ***</English>
+      </Key>
+      <Key ID="STR_f_briefingSyndikatMission">
+        <Original>*** Insert the mission here. ***</Original>
+        <English>*** Insert the mission here. ***</English>
+      </Key>
+      <Key ID="STR_f_briefingSyndikatSituation">
+        <Original>*** Insert general information about the situation here.***</Original>
+        <English>*** Insert general information about the situation here.***</English>
+      </Key>
+      <Key ID="STR_f_briefingSyndikatEF">
+        <Original>*** Insert information about enemy forces here.***</Original>
+        <English>*** Insert information about enemy forces here.***</English>
+      </Key>
+      <Key ID="STR_f_briefingSyndikatFF">
+        <Original>*** Insert information about friendly forces here.***</Original>
+        <English>*** Insert information about friendly forces here.***</English>
+      </Key>
+    </Container>
+    <Container name="Briefing Zeus">
+      <Key ID="STR_f_briefingZeusAdmin">
+        <Original>*** Insert information on administration and logistics here. ***</Original>
+        <English>*** Insert information on administration and logistics here. ***</English>
+      </Key>
+      <Key ID="STR_f_briefingZeusCI">
+        <Original>*** Insert very short summary of plan here. ***</Original>
+        <English>*** Insert very short summary of plan here. ***</English>
+      </Key>
+      <Key ID="STR_f_briefingZeusMP">
+        <Original>*** Insert movement instructions here. ***</Original>
+        <English>*** Insert movement instructions here. ***</English>
+      </Key>
+      <Key ID="STR_f_briefingZeusFSP">
+        <Original>*** Insert fire support instructions here. ***</Original>
+        <English>*** Insert fire support instructions here. ***</English>
+      </Key>
+      <Key ID="STR_f_briefingZeusST">
+        <Original>*** Insert instructions for specific units here. ***</Original>
+        <English>*** Insert instructions for specific units here. ***</English>
+      </Key>
+      <Key ID="STR_f_briefingZeusMission">
+        <Original>*** Insert the mission here. ***</Original>
+        <English>*** Insert the mission here. ***</English>
+      </Key>
+      <Key ID="STR_f_briefingZeusSituation">
+        <Original>*** Insert general information about the situation here.***</Original>
+        <English>*** Insert general information about the situation here.***</English>
+      </Key>
+      <Key ID="STR_f_briefingZeusEF">
+        <Original>*** Insert information about enemy forces here.***</Original>
+        <English>*** Insert information about enemy forces here.***</English>
+      </Key>
+      <Key ID="STR_f_briefingZeusFF">
+        <Original>*** Insert information about friendly forces here.***</Original>
+        <English>*** Insert information about friendly forces here.***</English>
+      </Key>
+    </Container>
+  </Package>
   <Package name="F-Internal">
     <Container name="Map Click">
       <Key ID="STR_f_mapClickTeleportAction">
-	    <Original>Teleport</Original>
+        <Original>Teleport</Original>
         <English>Teleport</English>
       </Key>
       <Key ID="STR_f_mapClickTeleportSelect">
-	    <Original>Click on the map to set teleport coordinates.</Original>
+        <Original>Click on the map to set teleport coordinates.</Original>
         <English>Click on the map to set teleport coordinates.</English>
       </Key>
       <Key ID="STR_f_mapClickTeleportDone">
-	    <Original>You have been moved to the selected location.</Original>
+        <Original>You have been moved to the selected location.</Original>
         <English>You have been moved to the selected location.</English>
       </Key>
       <Key ID="STR_f_mapClickHALOAction">
-	    <Original>HALO</Original>
+        <Original>HALO</Original>
         <English>HALO</English>
       </Key>
       <Key ID="STR_f_mapClickHALOSelect">
-	    <Original>Click on the map to set HALO coordinates.</Original>
+        <Original>Click on the map to set HALO coordinates.</Original>
         <English>Click on the map to set HALO coordinates.</English>
       </Key>
       <Key ID="STR_f_mapClickHALODone">
-	    <Original>You have been moved to the selected location.</Original>
+        <Original>You have been moved to the selected location.</Original>
         <English>You have been moved to the selected location.</English>
       </Key>
     </Container>
@@ -152,7 +505,7 @@
     </Container>
     <Container name="Parameter">
       <Key ID="STR_f_debugModeTitle">
-	    <Original>Debug Mode</Original>
+        <Original>Debug Mode</Original>
         <English>Debug Mode</English>
         <Czech>Debug mód</Czech>
         <French>Mode Debug</French>
@@ -162,7 +515,7 @@
         <German>Debug-Modus</German>
       </Key>
       <Key ID="STR_f_loadoutsTitle">
-	    <Original>Loadouts</Original>
+        <Original>Loadouts</Original>
         <English>Loadouts</English>
       </Key>
       <Key ID="STR_f_loadoutsLight">
@@ -190,48 +543,48 @@
         <English>F3 Simple Wounding System</English>
       </Key>
       <Key ID="STR_f_missionTimerTitle">
-	    <Original>Safe Start (mins)</Original>
+        <Original>Safe Start (mins)</Original>
         <English>Safe Start (mins)</English>
       </Key>
       <Key ID="STR_f_weatherTitle">
-	    <Original>Weather</Original>
+        <Original>Weather</Original>
         <English>Weather</English>
         <French>Météo</French>
       </Key>
       <Key ID="STR_f_weatherClear">
-	    <Original>Clear</Original>
+        <Original>Clear</Original>
         <English>Clear</English>
       </Key>
       <Key ID="STR_f_weatherCloudy">
-	    <Original>Cloudy</Original>
+        <Original>Cloudy</Original>
         <English>Cloudy</English>
       </Key>
       <Key ID="STR_f_weatherMostlyCloudy">
-	    <Original>Mostly Cloudy</Original>
+        <Original>Mostly Cloudy</Original>
         <English>Mostly Cloudy</English>
       </Key>
       <Key ID="STR_f_weatherOvercast">
-	    <Original>Overcast</Original>
+        <Original>Overcast</Original>
         <English>Overcast</English>
       </Key>
       <Key ID="STR_f_weatherFoggy">
-	    <Original>Foggy</Original>
+        <Original>Foggy</Original>
         <English>Foggy</English>
       </Key>
       <Key ID="STR_f_weatherShowers">
-	    <Original>Showers</Original>
+        <Original>Showers</Original>
         <English>Showers</English>
       </Key>
       <Key ID="STR_f_weatherLightRain">
-	    <Original>Light Rain</Original>
+        <Original>Light Rain</Original>
         <English>Light Rain</English>
       </Key>
       <Key ID="STR_f_weatherHeavyRain">
-	    <Original>Heavy Rain</Original>
+        <Original>Heavy Rain</Original>
         <English>Heavy Rain</English>
       </Key>
       <Key ID="STR_f_weatherStorm">
-	    <Original>Storm</Original>
+        <Original>Storm</Original>
         <English>Storm</English>
         <Czech>Boure</Czech>
         <French>Averse</French>
@@ -241,7 +594,7 @@
         <German>Gewitter</German>
       </Key>
       <Key ID="STR_f_weatherDefault">
-	    <Original>Use mission setting</Original>
+        <Original>Use mission setting</Original>
         <English>Use mission setting</English>
       </Key>
       <Key ID="STR_f_fogTitle">
@@ -458,6 +811,96 @@
       <Key ID="STR_f_JIPReinforcementOptionsAction">
         <Original>Select Reinforcement Options</Original>
         <English>Select Reinforcement Options</English>
+      </Key>
+    </Container>
+    <Container name="Briefing">
+      <Key ID="STR_f_creditsMade">
+        <Original>Made with F3 (http://www.ferstaberinde.com/f3/en/)</Original>
+        <English>Made with F3 (http://www.ferstaberinde.com/f3/en/)</English>
+      </Key>
+      <Key ID="STR_f_creditsTitle">
+        <Original>Credits</Original>
+        <English>Credits</English>
+      </Key>
+      <Key ID="STR_f_commandersIntent">
+        <Original>COMMANDER'S INTENT</Original>
+        <English>COMMANDER'S INTENT</English>
+      </Key>
+      <Key ID="STR_f_movementPlan">
+        <Original>MOVEMENT PLAN</Original>
+        <English>MOVEMENT PLAN</English>
+      </Key>
+      <Key ID="STR_f_enemyForces">
+        <Original>ENEMY FORCES</Original>
+        <English>ENEMY FORCES</English>
+      </Key>
+      <Key ID="STR_f_friendlyForces">
+        <Original>FRIENDLY FORCES</Original>
+        <English>FRIENDLY FORCES</English>
+      </Key>
+      <Key ID="STR_f_fireSupportPlan">
+        <Original>FIRE SUPPORT PLAN</Original>
+        <English>FIRE SUPPORT PLAN</English>
+      </Key>
+      <Key ID="STR_f_specialTasks">
+        <Original>SPECIAL TASKS</Original>
+        <English>SPECIAL TASKS</English>
+      </Key>
+      <Key ID="STR_f_adminTitle">
+        <Original>Administration</Original>
+        <English>Administration</English>
+      </Key>
+      <Key ID="STR_f_executionTitle">
+        <Original>Execution</Original>
+        <English>Execution</English>
+      </Key>
+      <Key ID="STR_f_mission">
+        <Original>Mission</Original>
+        <English>Mission</English>
+      </Key>
+      <Key ID="STR_f_situationTitle">
+        <Original>Situation</Original>
+        <English>Situation</English>
+      </Key>
+    </Container>
+    <Container name="ORBAT">
+      <Key ID="STR_f_orbatDisclaimer">
+        <Original>NOTE: The ORBAT below is only accurate at mission start.</Original>
+        <English>NOTE: The ORBAT below is only accurate at mission start.</English>
+      </Key>
+      <Key ID="STR_f_orbatLeaders">
+        <Original>GROUP LEADERS</Original>
+        <English>GROUP LEADERS</English>
+      </Key>
+      <Key ID="STR_f_orbatVehicles">
+        <Original>VEHICLE CREWS + PASSENGERS</Original>
+        <English>VEHICLE CREWS + PASSENGERS</English>
+      </Key>
+    </Container>
+    <Container name="Loadout">
+      <Key ID="STR_f_loadoutDisclaimer">
+        <Original>NOTE: The loadout shown below is only accurate at mission start.</Original>
+        <English>NOTE: The loadout shown below is only accurate at mission start.</English>
+      </Key>
+      <Key ID="STR_f_loadoutWeapons">
+        <Original>WEAPONS [#MAGAZINES]</Original>
+        <English>WEAPONS [#MAGAZINES]</English>
+      </Key>
+      <Key ID="STR_f_loadoutOther">
+        <Original>OTHER [#]</Original>
+        <English>OTHER [#]</English>
+      </Key>
+      <Key ID="STR_f_loadoutBackpack">
+        <Original>BACKPACK [%FULL]</Original>
+        <English>BACKPACK [%FULL]</English>
+      </Key>
+      <Key ID="STR_f_loadoutItems">
+        <Original>ITEMS [#]</Original>
+        <English>ITEMS [#]</English>
+      </Key>
+      <Key ID="STR_f_loadoutEquipped">
+        <Original>Indicates an equipped item.</Original>
+        <English>Indicates an equipped item.</English>
       </Key>
     </Container>
   </Package>
