@@ -206,7 +206,14 @@ class ScenarioData
 	overViewPicture="overviewLogo.jpg";
 	onLoadMission="@STR_onLoadMission";
 	loadScreen="loadLogo.jpg";
+	wreckLimit=0;
+	wreckRemovalMinTime=3600;
 	wreckRemovalMaxTime=3600;
+	corpseManagerMode=1;
+	corpseLimit=0;
+	corpseRemovalMinTime=180;
+	corpseRemovalMaxTime=180;
+	minPlayerDistance=500;
 };
 class CustomAttributes
 {
