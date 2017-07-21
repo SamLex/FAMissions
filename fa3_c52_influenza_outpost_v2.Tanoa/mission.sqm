@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=414;
+		nextID=423;
 	};
 	class Camera
 	{
@@ -351,7 +351,7 @@ class Mission
 	appId=395180;
 	class Intel
 	{
-		briefingName="fa3_c52_influenza_outpost_v1";
+		briefingName="fa3_c52_influenza_outpost_v2";
 		overviewText="@STR_SL_mission_overview";
 		resistanceWest=0;
 		timeOfChanges=28800;
