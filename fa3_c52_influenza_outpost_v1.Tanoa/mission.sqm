@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=423;
+		nextID=432;
 	};
 	class Camera
 	{
@@ -246,7 +246,7 @@ randomSeed=1116085;
 class ScenarioData
 {
 	author="Lexer";
-	overviewText="@STR_SL_mission_overviewShort";
+	overviewText="@STR_SL_mission_overview";
 	overViewPicture="overviewLogo.jpg";
 	onLoadMission="@STR_SL_mission_loading";
 	loadScreen="loadLogo.jpg";
@@ -351,7 +351,7 @@ class Mission
 	appId=395180;
 	class Intel
 	{
-		briefingName="fa3_c52_influenza_outpost_v2";
+		briefingName="fa3_c52_influenza_outpost_v1";
 		overviewText="@STR_SL_mission_overview";
 		resistanceWest=0;
 		timeOfChanges=28800;
@@ -13971,7 +13971,7 @@ class Mission
 			{
 				name="medevacTaskFailPodTrigger";
 				condition="SL_mission_medPodDeath";
-				onActivation="[""medevac"", ""Fail"", ""STR_SL_mission_medevacFailPod""] call SL_fnc_updateTaskGlobal;SL_mission_medevacFailPod = true;";
+				onActivation="[""medevac"", ""Fail"", ""STR_SL_mission_medevacFailPod""] call SL_fnc_updateTaskGlobal;SL_mission_medevacFailPod = true;SL_mission_medevacFailPatient = false;";
 				sizeA=0;
 				sizeB=0;
 				isServerOnly=1;
@@ -13987,7 +13987,7 @@ class Mission
 			{
 				name="medevacTaskFailPatientTrigger";
 				condition="SL_mission_patientDeath";
-				onActivation="[""medevac"", ""Fail"", ""STR_SL_mission_medevacFailPatient""] call SL_fnc_updateTaskGlobal;SL_mission_medevacFailPatient=true";
+				onActivation="[""medevac"", ""Fail"", ""STR_SL_mission_medevacFailPatient""] call SL_fnc_updateTaskGlobal;SL_mission_medevacFailPatient=true;SL_mission_medevacFailPod = false;";
 				sizeA=0;
 				sizeB=0;
 				isServerOnly=1;
