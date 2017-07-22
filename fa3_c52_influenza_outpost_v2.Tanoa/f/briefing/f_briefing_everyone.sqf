@@ -25,7 +25,9 @@ _adm = player createDiaryRecord ["diary", ["Administration","
 <br/>
 <font size='18'>TARU PODS</font>
 <br/>
-Due to the sensitive nature of the patients and medical supplies being airlifted, slingloading is not authorised. Instead the Tarus must lift the pods using their underside attachment hooks. The Loadmaster's seat has a hold-action to achieve this (don't need to look at the pod), and the Tarus must land stradling a pod for this to be possible. There is a similar hold-action for detaching, which requires the Taru to be landed.
+Due to the sensitive nature of the patients and medial supplies being airlifted, slingloading is not authorised*. Instead the Tarus must lift the pods using their underside attachment hooks. The Loadmaster's seat has a hold-action to achieve this (don't need to look at the pod), and the Tarus must land stradling a pod for this to be possible. There is a similar hold-action for detaching, which requires the Taru to be landed.
+<br/><br/>
+* Hosts can override via a parameter or the F3 Admin Menu
 <br/><br/>
 <font size='18'>DROP ZONES</font>
 <br/>
@@ -34,6 +36,7 @@ Any retrieved pod can be dropped at either the <marker name='markerPrimaryDropZo
 <font size='18'>BENCH PODS</font>
 <br/>
 There are two Taru bench pods aboard the <marker name='markerFreedom'>USS Freedom</marker>, for use if the EVAC helos must fill a TH role.
+<br/><br/>
 <font size='18'>EXPLOSIVES</font>
 <br/>
 Alpha and Bravo's combat engineers have explosives to help with denying assest from Syndikat. The THs have spare explosives as well.
