@@ -3,11 +3,14 @@
 <Project name="Arma3">
   <Package name="SL">
 	<Container name="Mission">
+		<Key ID="STR_SL_faMissionName">
+			<English>fa3_c52_influenza_outpost_v1</English>
+		</Key
 		<Key ID="STR_SL_mission_name">
 			<English>Influenza Outpost</English>
 		</Key>
 		<Key ID="STR_SL_mission_overview">
-			<English>NATO and CTRG help evacuate a CSAT outpost under attack from Syndikat (Medevac with Loadmaster needed, both recommended, squads start in different locations, TH1&amp;2=Alpha, TH3=CO&amp;Bravo, Charlie in AO, Zeus optional)</English>
+			<English>NATO and CTRG help evacuate a CSAT outpost under attack from Syndikat (Medevac with Loadmaster needed, both recommended, squads start in different locations, TH1 and TH2=Alpha, TH3=CO and Bravo, Charlie in AO, Zeus optional)</English>
 		</Key>
 		<Key ID="STR_SL_mission_loading">
 			<English>Made with the F3 Mission Development Framework.</English>
