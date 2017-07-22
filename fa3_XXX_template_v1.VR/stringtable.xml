@@ -10,10 +10,6 @@
         <Original>Made with the F3 Mission Development Framework</Original>
         <English>Made with the F3 Mission Development Framework</English>
       </Key>
-      <Key ID="STR_author">
-        <Original>*** Insert Author Here. ***</Original>
-        <English>*** Insert Author Here. ***</English>
-      </Key>
     </Container>
     <Container name="Ending 1">
       <Key ID="STR_end1Title">
