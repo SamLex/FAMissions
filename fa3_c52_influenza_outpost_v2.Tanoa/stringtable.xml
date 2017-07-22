@@ -53,7 +53,7 @@
 			<English>To satify quarantine protocols, all friendly forces must be off the main island and back on the &lt;marker name=&#39;markerFreedom&#39;&gt;USS Freedom&lt;/marker&gt; within 30 minutes. Failure will result in full quarantine at the &lt;marker name=&#39;markerMSF&#39;&gt;MSF base&lt;/marker&gt;</English>
 		</Key>
 		<Key ID="STR_SL_mission_withdrawSuceed">
-			<English>Withdrawed within 30 minutes!</English>
+			<English>Withdrew within 30 minutes!</English>
 		</Key>
 		<Key ID="STR_SL_mission_withdrawFail">
 			<English>Prepare for quarantine!</English>
@@ -61,43 +61,43 @@
 	</Container>
 	<Container name="Endings">
 		<Key ID="STR_SL_mission_allObjectives_title">
-			<English>TOTAL SUCESS</English>
+			<English>TOTAL SUCCESS</English>
 		</Key>
 		<Key ID="STR_SL_mission_allObjectives_subtitle">
 			<English>All objectives complete!</English>
 		</Key>
 		<Key ID="STR_SL_mission_allObjectives_description">
-			<English>We sucessfully evacuated the outpost, denied its assets to Syndikat and withdrew without needing quarantine. Good job!</English>
+			<English>We successfully evacuated the outpost, denied its assets to Syndikat and withdrew without needing quarantine. Good job!</English>
 		</Key>
 		
 		<Key ID="STR_SL_mission_medevacOnly_title">
-			<English>MISSION SUCESS</English>
+			<English>MISSION SUCCESS</English>
 		</Key>
 		<Key ID="STR_SL_mission_medevacOnly_subtitle">
 			<English>Outpost evacuated!</English>
 		</Key>
 		<Key ID="STR_SL_mission_medevacOnly_description">
-			<English>We sucessfully evacuated the outpost, but left the assets to Syndikat and now must endure quarantine.</English>
+			<English>We successfully evacuated the outpost, but left the assets to Syndikat and now must endure quarantine.</English>
 		</Key>
 		
 		<Key ID="STR_SL_mission_medevacAssetDenialOnly_title">
-			<English>MISSION SUCESS</English>
+			<English>MISSION SUCCESS</English>
 		</Key>
 		<Key ID="STR_SL_mission_medevacAssetDenialOnly_subtitle">
 			<English>Outpost evacuated and assets denied!</English>
 		</Key>
 		<Key ID="STR_SL_mission_medevacAssetDenialOnly_description">
-			<English>We sucessfully evacuated the outpost and denied its assets from Syndikat. We must, however, now endure quarantine.</English>
+			<English>We successfully evacuated the outpost and denied its assets from Syndikat. We must, however, now endure quarantine.</English>
 		</Key>
 		
 		<Key ID="STR_SL_mission_medevacWithdrawOnly_title">
-			<English>MISSION SUCESS</English>
+			<English>MISSION SUCCESS</English>
 		</Key>
 		<Key ID="STR_SL_mission_medevacWithdrawOnly_subtitle">
 			<English>Outpost evacuated!</English>
 		</Key>
 		<Key ID="STR_SL_mission_medevacWithdrawOnly_description">
-			<English>We sucessfully evacuated the outpost and avoided quarantine, but left the assets to Syndikat.</English>
+			<English>We successfully evacuated the outpost and avoided quarantine, but left the assets to Syndikat.</English>
 		</Key>
 		
 		<Key ID="STR_SL_mission_medevacFailed_title">
