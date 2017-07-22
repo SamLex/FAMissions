@@ -11,12 +11,15 @@ private ["_missionOvercast","_MissionRain","_MissionRainbow","_MissionLightnings
 // SET KEY VARIABLES
 // We interpret the values parsed to the script. If the function was called from the parameters those values are used.
 
-params [["_weather",9,[0]],["_setFog",true,[true]],["_setWind",true,[true]]];
+params [["_weather",9,[0]],["_setFog",true,[true,0]],["_setWind",true,[true]], ["_transition", 0, [0]]];
 
 // Exit when using mission settings
 if ( _weather == 9 ) exitWith {};
 
-_transition = if (count _this > 1) then {_this select 1} else {false};
+if (typeName _setFog == typeName 0) then {
+	_transition = _setFog;
+	_setFog = true;
+};
 
 _MissionOvercast = 0;
 _MissionRain = 0;
@@ -179,9 +182,6 @@ switch (_weather) do
 // SET MISSION WEATHER
 // Use new values to set
 // mission conditions on server and all clients (including JIP clients).
-
-if (typeName _transition == typeName 0) then {
-
 _transition setOvercast  _MissionOvercast;
 _transition setRain _MissionRain;
 _transition setRainbow _MissionRainbow;
@@ -194,21 +194,6 @@ if (_setWind) then {
 if (_setFog) then {
 	_transition setFog [_MissionFogStrength,_MissionFogDecay,_MissionFogBase];
 };
-
-} else {
-	0 setOvercast  _MissionOvercast;
-	0 setRain _MissionRain;
-	0 setRainbow _MissionRainbow;
-	0 setLightnings _MissionLightnings;
-	if (_setWind) then {
-		0 setWindStr  _MissionWindStr;
-		0 setWindForce _MissionWindGusts;
-		0 setWaves _MissionWaves;
-	};
-	if (_setFog) then {
-		0 setFog [_MissionFogStrength,_MissionFogDecay,_MissionFogBase];
-	};
-	forceWeatherChange;
-};
+forceWeatherChange;
 
 // ====================================================================================
