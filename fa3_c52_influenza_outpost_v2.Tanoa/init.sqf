@@ -51,7 +51,10 @@ f_script_setMissionConditions = [] execVM "f\missionConditions\f_setMissionCondi
 // F3 - Folk ARPS Group IDs
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
-f_script_setGroupIDs = [] execVM "f\setGroupID\f_setGroupIDs.sqf";
+//f_script_setGroupIDs = [] execVM "f\setGroupID\f_setGroupIDs.sqf";
+
+// Ensure callsigns are the same as they are on the server
+// {_x setGroupIdGlobal [groupID _x]} foreach allGroups;
 
 // ====================================================================================
 
