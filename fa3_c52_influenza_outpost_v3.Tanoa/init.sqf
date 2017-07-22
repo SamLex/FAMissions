@@ -56,7 +56,7 @@ f_script_setMissionConditions = [] execVM "f\missionConditions\f_setMissionCondi
 // Ensure callsigns are the same as they are on the server
 if (isServer) then {
 	{_x setGroupIdGlobal [groupID _x]} foreach allGroups;
-}
+};
 
 // ====================================================================================
 
