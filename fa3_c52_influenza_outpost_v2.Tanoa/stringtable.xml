@@ -5,7 +5,7 @@
 	<Container name="Mission">
 		<Key ID="STR_SL_faMissionName">
 			<English>fa3_c52_influenza_outpost_v2</English>
-		</Key
+		</Key>
 		<Key ID="STR_SL_mission_name">
 			<English>Influenza Outpost</English>
 		</Key>
