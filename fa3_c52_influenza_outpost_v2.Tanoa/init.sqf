@@ -54,7 +54,9 @@ f_script_setMissionConditions = [] execVM "f\missionConditions\f_setMissionCondi
 //f_script_setGroupIDs = [] execVM "f\setGroupID\f_setGroupIDs.sqf";
 
 // Ensure callsigns are the same as they are on the server
-// {_x setGroupIdGlobal [groupID _x]} foreach allGroups;
+if (isServer) then {
+	{_x setGroupIdGlobal [groupID _x]} foreach allGroups;
+}
 
 // ====================================================================================
 
