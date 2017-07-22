@@ -16,14 +16,14 @@ class General
 	};
 	class markerFromTrigger
 	{
-		file = "SL\General\markerFromTrigger.sqf"
+		file = "SL\General\markerFromTrigger.sqf";
 	};
 	class createTaskGlobal
 	{
-		file = "SL\General\createTaskGlobal.sqf"
+		file = "SL\General\createTaskGlobal.sqf";
 	};
 	class updateTaskGlobal
 	{
-		file = "SL\General\updateTaskGlobal.sqf"
+		file = "SL\General\updateTaskGlobal.sqf";
 	};
 };

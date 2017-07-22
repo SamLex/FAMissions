@@ -8,6 +8,6 @@ class Mission
 	};
 	class areReinforcementsInbound
 	{
-		file = "SL\Mission\areReinforcementsInbound.sqf"
+		file = "SL\Mission\areReinforcementsInbound.sqf";
 	};
 };
