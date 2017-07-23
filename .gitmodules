@@ -1,4 +1,4 @@
 [submodule "fa_f3_template_dev"]
-	path = fa_f3_template_dev
+	path = fa_f3_template_dev.VR
 	url = git@github.com:SamLex/F3.git
 	branch = lexerDev
