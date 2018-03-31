@@ -4,7 +4,7 @@ fa3_version[] = {3,5,1}; // WARNING: DO NOT CHANGE THIS LINE
 // F3 - Loading Screen
 // Set Author, overview image/text, loading image/text from Eden Editor
 
-onLoadName = "*** Insert Mission Name Here. ***";
+onLoadName = "Trojan Fish";
 
 
 // ============================================================================================
@@ -166,7 +166,7 @@ class Params
 		title = "$STR_f_param_weather";
 		values[] = {0,1,2,3,4,5,6,7,8,9};
 		texts[] = {$STR_f_param_weather_Option0,$STR_f_param_weather_Option1,$STR_f_param_weather_Option2,$STR_f_param_weather_Option3,$STR_f_param_weather_Option4,$STR_f_param_weather_Option5,$STR_f_param_weather_Option6,$STR_f_param_weather_Option7,$STR_f_param_weather_Option8,$STR_f_param_weather_Option11};
-		default = 0;
+		default = 9;
 	};
 
 	class f_param_fog
@@ -190,7 +190,7 @@ class Params
 		title = "$STR_f_param_timeOfDay";
 		values[] = {0,1,2,3,4,5,6,7,8};
 		texts[] = {$STR_f_param_timeOfDay_Option0,$STR_f_param_timeOfDay_Option1,$STR_f_param_timeOfDay_Option2,$STR_f_param_timeOfDay_Option3,$STR_f_param_timeOfDay_Option4,$STR_f_param_timeOfDay_Option5,$STR_f_param_timeOfDay_Option6,$STR_f_param_timeOfDay_Option7,$STR_f_param_timeOfDay_Option8};
-		default = 4;
+		default = 8;
 		function = "f_fnc_setTime"; // This function is called to apply the values
  		isGlobal = 0; // Execute this only on the server
 	};
@@ -216,13 +216,13 @@ class Params
 		default = 1;
 	};
 
-	class f_param_AISkill_INDP
+	/* class f_param_AISkill_INDP
 	{
 		title = "$STR_f_param_AISkill_INDP";
 		values[] = {0,1,2,3};
 		texts[] = {$STR_f_param_AISkill_Option0,$STR_f_param_AISkill_Option1,$STR_f_param_AISkill_Option2,$STR_f_param_AISkill_Option3};
 		default = 1;
-	};
+	}; */
 
 // ============================================================================================
 
@@ -349,12 +349,12 @@ class CfgUnitInsignia {
 	#include "f\assignGear\insignia\define.hpp"
 };
 class CfgRemoteExec
-{        
+{
        // List of script functions allowed to be sent from client via remoteExec
        class Functions
        {
                mode = 2;
-       };        
+       };
        // List of script commands allowed to be sent from client via remoteExec
        class Commands
        {
