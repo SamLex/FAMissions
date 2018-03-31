@@ -27,6 +27,10 @@ waitUntil {!isNil "SL_taxiDone"};
 fish1 setFuel 0;
 sleep 5;
 
+// Open the door
+fish1 animateDoor ["Door_1_source", 1];
+sleep 2.5;
+
 // Move the IFV outside the 'fish and eject the players. Game on!
 VehCSAT_IFV1 setPos (fish1 modelToWorld [0,-15,-6]);
 detach VehCSAT_IFV1;
