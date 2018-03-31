@@ -207,7 +207,7 @@ f_var_viewDistance_crewOnly = true;
 
 // F3 - Disable Thermals
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-[] spawn f_fnc_disableThermals;
+// [] spawn f_fnc_disableThermals;
 // [[UnitName1, "UnitClass1"]] spawn f_fnc_disableThermals;
 
 // ====================================================================================
