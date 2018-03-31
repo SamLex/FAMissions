@@ -116,10 +116,10 @@ f_script_briefing = [] execVM "briefing.sqf";
 // F3 - Automatic Body Removal
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
-f_var_removeBodyDelay = 180;
+/* f_var_removeBodyDelay = 180;
 f_var_removeBodyDistance = 500;
 f_var_doNotRemoveBodies = [];
-[] execVM "f\removeBody\f_addRemoveBodyEH.sqf";
+[] execVM "f\removeBody\f_addRemoveBodyEH.sqf"; */
 
 // ====================================================================================
 
