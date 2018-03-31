@@ -211,3 +211,8 @@ f_var_viewDistance_crewOnly = true;
 // [[UnitName1, "UnitClass1"]] spawn f_fnc_disableThermals;
 
 // ====================================================================================
+
+if (isServer) then {
+	VehCSAT_IFV1 attachTo [fish1];
+	execVM "fish1.sqf";
+};
