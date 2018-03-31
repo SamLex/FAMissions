@@ -7,6 +7,12 @@ fish2 landAt 0;
 [missionNamespace, "SL_fish2_landDone"]
 ] spawn BIS_fnc_UnitPlay;
 
+sleep 125;
+{deleteVehicle _x} forEach units fish2Crew;
+fish2 engineOn true;
+fish2Crew createUnit ["O_Pilot_F", fish2, [], 0, "NONE"] moveInDriver fish2;
+fish2Crew createUnit ["O_Pilot_F", fish2, [], 0, "NONE"] moveInTurret [fish2, [0]];
+
 // Wait for the landing to be done
 waitUntil {!isNil "SL_fish2_landDone"};
 
