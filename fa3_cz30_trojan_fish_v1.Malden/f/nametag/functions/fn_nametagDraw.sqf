@@ -17,6 +17,8 @@ params ["_unit","_vehicle","_name","_nameColor","_locationData","_role","_groupN
 		"_drawRoleAndGroup","_isPassenger","_isCommander","_cameraPositionAGL",
 		"_zoom","_time","_startTime"];
 
+if (!isPlayer _unit) exitWith {};
+		
 // _unit (CAManBase): Unit the tag is being rendered on.
 // _vehicle (Entity): Vehicle the unit is in. Possibly the unit.
 // _name (string): Friendly name of tag to be rendered.
