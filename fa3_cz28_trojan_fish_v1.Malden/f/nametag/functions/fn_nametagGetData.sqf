@@ -67,7 +67,7 @@ private _zoom = 1;
 			_isCommander = false;
 			_isPassenger = false; // TODO : Find a smoother solution for this.
 			
-			if ( ! (isNil "_x" || {_x isEqualTo _player} ) ) then
+			if ( ! (isNil "_x" || {_x isEqualTo _player} || ! isPlayer _x ) ) then
 			{
 				//	If the unit is NOT in a vehicle...
 				if (isNull objectParent _x) then
