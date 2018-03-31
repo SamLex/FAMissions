@@ -12,10 +12,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={7896.3979,210.82428,10301.573};
-		dir[]={0.7298556,-0.68360895,0.009489296};
-		up[]={0.6835829,0.72981817,0.0088874288};
-		aside[]={0.013000315,4.3304681e-007,-0.99996269};
+		pos[]={7982.3892,102.73538,10358.08};
+		dir[]={0.65673935,-0.71420562,0.24229418};
+		up[]={0.67008376,0.69990659,0.2472173};
+		aside[]={0.34614557,5.341135e-007,-0.93823236};
 	};
 };
 binarizationWanted=0;
@@ -177,20 +177,21 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8030.2041,32.540436,10392.382};
-				angles[]={6.2824135,0,0.0015822123};
+				position[]={8030.2041,32.540024,10392.382};
+				angles[]={6.2824173,0,0.0015882496};
 			};
 			side="East";
 			flags=6;
 			class Attributes
 			{
 				skill=0.60000002;
-				init="[""v_ifv"",this] call f_fnc_assignGear;";
+				init="[""v_ifv"",this] call f_fnc_assignGear;this setObjectTexture [0,""#(rgb,8,8,3)color(0.09,0.09,0.09,1)""]; " \n "this setObjectTexture [1,""#(rgb,8,8,3)color(0.09,0.09,0.09,1)""]; " \n "this setObjectTexture [2,""#(rgb,8,8,3)color(0.09,0.09,0.09,1)""];";
 				name="VehCSAT_IFV1";
 				textures="Hex";
 			};
 			id=77;
 			type="O_APC_Tracked_02_cannon_F";
+			atlOffset=-0.084999084;
 		};
 		class Item1
 		{
@@ -1681,8 +1682,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8029.6201,30.232552,10392.204};
-						angles[]={6.2824135,0,0.0015822123};
+						position[]={8030.208,30.148678,10392.434};
+						angles[]={6.2824173,0,0.0015882496};
 					};
 					side="East";
 					flags=6;
@@ -1697,6 +1698,7 @@ class Mission
 					};
 					id=485;
 					type="O_crew_F";
+					atlOffset=-0.084999084;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1726,8 +1728,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8029.6201,30.232552,10392.204};
-						angles[]={6.2824135,0,0.0015822123};
+						position[]={8030.208,30.148678,10392.434};
+						angles[]={6.2824173,0,0.0015882496};
 					};
 					side="East";
 					flags=4;
@@ -1742,14 +1744,15 @@ class Mission
 					};
 					id=486;
 					type="O_crew_F";
+					atlOffset=-0.084999084;
 				};
 				class Item2
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8029.6201,30.232552,10392.204};
-						angles[]={6.2824135,0,0.0015822123};
+						position[]={8030.208,30.148678,10392.434};
+						angles[]={6.2824173,0,0.0015882496};
 					};
 					side="East";
 					flags=4;
@@ -1763,6 +1766,7 @@ class Mission
 					};
 					id=487;
 					type="O_crew_F";
+					atlOffset=-0.084999084;
 				};
 			};
 			class Attributes
@@ -1813,6 +1817,7 @@ class Mission
 				};
 			};
 			id=484;
+			atlOffset=-0.084999084;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -2328,7 +2333,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={8033.793,30.218472,10364.738};
-						angles[]={-0,0,0.00069053395};
+						angles[]={0,0,0.00069813168};
 					};
 					side="East";
 					flags=6;
@@ -2392,7 +2397,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={8033.793,30.218472,10364.738};
-						angles[]={-0,0,0.00069053395};
+						angles[]={0,0,0.00069813168};
 					};
 					side="East";
 					flags=4;
@@ -2456,7 +2461,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={8033.793,30.218472,10364.738};
-						angles[]={-0,0,0.00069053395};
+						angles[]={0,0,0.00069813168};
 					};
 					side="East";
 					flags=4;
@@ -2592,14 +2597,14 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8033.791,32.609818,10364.688};
-				angles[]={-0,0,0.00069053395};
+				angles[]={0,0,0.00069813168};
 			};
 			side="East";
 			flags=6;
 			class Attributes
 			{
 				skill=0.60000002;
-				init="[""v_ifv"",this] call f_fnc_assignGear;";
+				init="[""v_ifv"",this] call f_fnc_assignGear;this setObjectTexture [0,""#(rgb,8,8,3)color(0.09,0.09,0.09,1)""]; " \n "this setObjectTexture [1,""#(rgb,8,8,3)color(0.09,0.09,0.09,1)""]; " \n "this setObjectTexture [2,""#(rgb,8,8,3)color(0.09,0.09,0.09,1)""];";
 				name="VehCSAT_IFV2";
 				textures="Hex";
 			};
