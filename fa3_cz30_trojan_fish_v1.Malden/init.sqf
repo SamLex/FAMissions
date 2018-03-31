@@ -215,4 +215,7 @@ f_var_viewDistance_crewOnly = true;
 if (isServer) then {
 	VehCSAT_IFV1 attachTo [fish1];
 	execVM "fish1.sqf";
+	
+	VehCSAT_IFV2 attachTo [fish2];
+	execVM "fish2.sqf";
 };
