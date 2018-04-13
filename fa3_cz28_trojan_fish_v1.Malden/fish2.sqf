@@ -40,3 +40,5 @@ detach VehCSAT_IFV2;
 	unassignVehicle _x;
 	_x action ["getOut", fish2];
 } forEach units GrpCSAT_ASL;
+
+[fish2D, "Move it!"] remoteExec ["sideChat", 0];
