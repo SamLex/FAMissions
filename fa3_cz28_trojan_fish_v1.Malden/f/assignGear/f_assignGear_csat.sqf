@@ -63,9 +63,9 @@ _attach1 = "acc_pointer_IR";	// IR Laser
 _attach2 = "acc_flashlight";	// Flashlight
 
 _silencer1 = "muzzle_snds_M";	// 5.56 suppressor
-_silencer2 = "muzzle_snds_H";	// 6.5 suppressor
+_silencer2 = "muzzle_snds_65_TI_blk_F";	// 6.5 suppressor
 
-_scope1 = "optic_ACO_grn";		// ACO
+_scope1 = "optic_Arco_blk_F";		// ACO
 _scope2 = "optic_MRCO";			// MRCO Scope - 1x - 6x
 _scope3 = "optic_SOS";			// SOS Scope - 18x - 75x
 
@@ -73,7 +73,7 @@ _bipod1 = "bipod_02_F_hex";		// Default bipod
 _bipod2 = "bipod_02_F_blk";		// Black bipod
 
 // Default setup
-_attachments = [_scope1]; // The default attachment set for most units, overwritten in the individual unitType
+_attachments = [_scope1,_silencer1,_silencer2,_attach1]; // The default attachment set for most units, overwritten in the individual unitType
 
 // [] = remove all
 // [_attach1,_scope1,_silencer] = remove all, add items assigned in _attach1, _scope1 and _silencer1
@@ -95,14 +95,14 @@ _hg_attachments= []; // The default attachment set for handguns, overwritten in 
 // WEAPON SELECTION
 
 // Standard Riflemen ( MMG Assistant Gunner, Assistant Automatic Rifleman, MAT Assistant Gunner, MTR Assistant Gunner, Rifleman)
-_rifle = "arifle_Katiba_F";
+_rifle = "arifle_ARX_blk_F";
 _riflemag = "30Rnd_65x39_caseless_green";
-_riflemag_tr = "30Rnd_65x39_caseless_green_mag_Tracer";
+_riflemag_tr = "10Rnd_50BW_Mag_F";
 
 // Standard Carabineer (Medic, Rifleman (AT), MAT Gunner, MTR Gunner, Carabineer)
-_carbine = "arifle_Katiba_C_F";
+_carbine = "arifle_ARX_blk_F";
 _carbinemag = "30Rnd_65x39_caseless_green";
-_carbinemag_tr = "30Rnd_65x39_caseless_green_mag_Tracer";
+_carbinemag_tr = "10Rnd_50BW_Mag_F";
 
 // Standard Submachine Gun/Personal Defence Weapon (Aircraft Pilot, Submachinegunner)
 _smg = "SMG_02_F";
@@ -164,8 +164,8 @@ _chemyellow =  "Chemlight_yellow";
 _chemblue = "Chemlight_blue";
 
 // Backpacks
-_bag = "B_AssaultPack_ocamo";			// carries 120, weighs 20
-_baglarge =  "B_Carryall_ocamo"; 			// carries 320, weighs 40
+_bag = "B_ViperHarness_blk_F";			// carries 120, weighs 20
+_baglarge =  "B_ViperHarness_blk_F"; 			// carries 320, weighs 40
 _bagdiver =  "B_AssaultPack_rgr";		// used by divers
 _baguav = "O_UAV_01_backpack_F";			// used by UAV operator
 _baghmgg = "O_HMG_01_weapon_F";				// used by Heavy MG gunner
@@ -182,14 +182,14 @@ _baghsamag = "O_HMG_01_support_F";			// used by Heavy SAM assistant gunner
 // UNIQUE, ROLE-SPECIFIC EQUIPMENT
 
 // Automatic Rifleman
-_AR = "LMG_Mk200_F";
-_ARmag = "200Rnd_65x39_cased_Box";
-_ARmag_tr = "200Rnd_65x39_cased_Box_Tracer";
+_AR = "LMG_03_F";
+_ARmag = "200Rnd_556x45_Box_F";
+_ARmag_tr = "200Rnd_556x45_Box_F";
 
 // Medium MG
-_MMG = "MMG_01_hex_F";
-_MMGmag = "150Rnd_93x64_Mag";
-_MMGmag_tr = "150Rnd_93x64_Mag";
+_MMG = "LMG_03_F";
+_MMGmag = "200Rnd_556x45_Box_F";
+_MMGmag_tr = "200Rnd_556x45_Box_F";
 
 // NON-DLC ALTERNATIVE:
 //_MMG = "LMG_Zafir_F";
@@ -205,12 +205,12 @@ _DMriflemag = "10Rnd_762x54_Mag";
 // _DMriflemag = "10Rnd_127x54_Mag";
 
 // Rifleman AT
-_RAT = "launch_RPG32_F";
-_RATmag = "RPG32_F";
+_RAT = "launch_O_Titan_short_F";
+_RATmag = "Titan_AT";
 
 // Medium AT
-_MAT = "launch_NLAW_F";
-_MATmag1 = "NLAW_F";
+_MAT = "launch_O_Titan_short_F";
+_MATmag1 = "Titan_AT";
 
 // Surface Air
 _SAM = "launch_O_Titan_F";
@@ -241,9 +241,9 @@ _APmine2 = "APERSMine_Range_Mag";
 
 _diver = ["div"];
 _pilot = ["pp","pcc","pc"];
-_crew = ["vc","vg","vd"];
+_crew = [];
 _ghillie = ["sn","sp"];
-_specOp = [];
+_specOp = ["ar", "aar", "rat", "ftl", "m", "dc", "co", "hatag", "hatg", "hsamg", "hsamag", "vc","vg","vd"];
 
 // Basic clothing
 // The outfit-piece is randomly selected from the array for each unit
@@ -259,7 +259,7 @@ _baseGlasses = [];
 
 // Vests
 _lightRig = ["V_HarnessO_brn"];
-_standardRig = ["V_HarnessO_brn"];
+_standardRig = ["V_Chestrig_blk"];
 
 // Urban Vests
 // _lightRig = ["V_HarnessO_gry"];
@@ -290,8 +290,8 @@ _ghillieRig = ["V_HarnessO_brn"];
 _ghillieGlasses = [];
 
 // Spec Op
-_sfuniform = ["U_O_SpecopsUniform_ocamo"]; // Viper: ["U_O_V_Soldier_Viper_hex_F"];
-_sfhelmet = ["H_HelmetSpecO_ocamo"];	   //Viper: ["H_HelmetO_ViperSP_hex_F"]; IMPORTANT: Will be overriden if nvg is added afterwards
+_sfuniform = ["U_O_V_Soldier_Viper_hex_F"]; // Viper: ["U_O_V_Soldier_Viper_hex_F"];
+_sfhelmet = ["H_HelmetO_ViperSP_hex_F"];	   //Viper: ["H_HelmetO_ViperSP_hex_F"]; IMPORTANT: Will be overriden if nvg is added afterwards
 _sfRig = _standardRig;
 _sfGlasses = [];
 
@@ -329,7 +329,7 @@ if (_isMan) then {
 	// ADD UNIVERSAL ITEMS
 	// Add items universal to all units of this faction
 
-	_unit linkItem _nvg;			// Add and equip the faction's nvg
+	//_unit linkItem _nvg;			// Add and equip the faction's nvg
 	_unit addItem _firstaid;		// Add a single first aid kit (FAK)
 	_unit linkItem "ItemMap";		// Add and equip the map
 	_unit linkItem "ItemCompass";	// Add and equip a compass
@@ -344,7 +344,7 @@ if (_isMan) then {
 // SELECT LOADOUT
 // Pick the appropriate loadout depending on the parameter
 
-_loadout = f_param_loadouts;
+_loadout = 1;
 
 // Light Loadout
 if (_loadout == 0) then {

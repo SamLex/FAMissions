@@ -17,6 +17,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_ARmag, 1];
 		_unit addweapon _AR;
 		_attachments pushback (_bipod1); // Adds the bipod
+		_attachments pushback (_silencer1);
 		_unit addItem _firstaid;
 		_unit addmagazines [_smokegrenade, 3];
 		_unit addmagazines [_ARmag, 1];
@@ -33,7 +34,7 @@ switch (_typeofUnit) do
 		_unit addweapon _RAT;
 		_unit addItem _firstaid;
 		_unit addmagazines [_smokegrenade, 3];
-		_unit addmagazines [_carbinemag, 4];
+		_unit addmagazines [_carbinemag, 8];
 		_unit addmagazines [_carbinemag_tr, 2];
 		_unit addmagazines [_grenade, 2];
 		_unit addmagazines [_RATmag, 1];
@@ -41,11 +42,12 @@ switch (_typeofUnit) do
 // Assistant Autorifleman Loadout:
 	case "aar":
 	{
+		_unit addBackpack _bag;
 		_unit addmagazines [_riflemag, 1];
 		_unit addweapon _rifle;
 		_unit addItem _firstaid;
 		_unit addmagazines [_smokegrenade, 3];
-		_unit addmagazines [_riflemag, 4];
+		_unit addmagazines [_riflemag, 8];
 		_unit addmagazines [_riflemag_tr, 2];
 		_unit addmagazines [_grenade, 2];
 		_unit addmagazines [_ARmag, 1];
@@ -53,12 +55,13 @@ switch (_typeofUnit) do
 // Fire Team Leader Loadout:
 	case "ftl":
 	{
+		_unit addBackpack _bag;
 		_unit addmagazines [_glriflemag, 1];
 		_unit addmagazines [_glmag, 1];
 		_unit addweapon _glrifle;
 		_unit addItem _firstaid;
 		_unit addmagazines [_smokegrenade, 3];
-		_unit addmagazines [_glriflemag, 4];
+		_unit addmagazines [_glriflemag, 6];
 		_unit addmagazines [_glriflemag_tr, 2];
 		_unit addmagazines [_glmag, 5];
 		_unit addmagazines [_glsmokewhite, 3];
@@ -69,6 +72,7 @@ switch (_typeofUnit) do
 // Squad Leader / DC Loadout:
 	case "dc":
 	{
+		_unit addBackpack _bag;
 		_unit addmagazines [_glriflemag, 1];
 		_unit addmagazines [_glmag, 1];
 		_unit addweapon _glrifle;
@@ -76,7 +80,7 @@ switch (_typeofUnit) do
 		_unit addweapon _pistol;
 		_unit addItem _firstaid;
 		_unit addmagazines [_smokegrenade, 3];
-		_unit addmagazines [_glriflemag, 4];
+		_unit addmagazines [_glriflemag, 6];
 		_unit addmagazines [_glriflemag_tr, 2];
 		_unit addmagazines [_glmag, 5];
 		_unit addmagazines [_glsmokewhite, 3];
@@ -88,6 +92,7 @@ switch (_typeofUnit) do
 // Platoon CO Loadout:
 	case "co":
 	{
+		_unit addBackpack _bag;
 		_unit addmagazines [_glriflemag, 1];
 		_unit addmagazines [_glsmokewhite, 1];
 		_unit addweapon _glrifle;
@@ -95,7 +100,7 @@ switch (_typeofUnit) do
 		_unit addweapon _pistol;
 		_unit addItem _firstaid;
 		_unit addmagazines [_smokegrenade, 3];
-		_unit addmagazines [_glriflemag, 4];
+		_unit addmagazines [_glriflemag, 6];
 		_unit addmagazines [_glriflemag_tr, 2];
 		_unit addmagazines [_glsmokewhite, 5];
 		_unit addmagazines [_glsmokered, 3];
