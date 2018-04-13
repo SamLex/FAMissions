@@ -8,14 +8,14 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1211;
+		nextID=1230;
 	};
 	class Camera
 	{
-		pos[]={7638.8594,297.81378,9988.9473};
-		dir[]={0.8864916,-0.46262601,-0.010478666};
-		up[]={0.4625937,0.88655353,-0.0054680952};
-		aside[]={-0.011819581,-5.5413693e-008,-0.99993014};
+		pos[]={7898.8457,136.16127,10170.472};
+		dir[]={0.70246577,-0.65590435,-0.27634427};
+		up[]={0.61038053,0.75483447,-0.2401187};
+		aside[]={-0.36608666,-1.455046e-007,-0.93059522};
 	};
 };
 binarizationWanted=0;
@@ -187,7 +187,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=24;
+		items=40;
 		class Item0
 		{
 			dataType="Object";
@@ -3316,6 +3316,278 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item24
+		{
+			dataType="Trigger";
+			position[]={8101.8398,29.545364,10111.443};
+			class Attributes
+			{
+				condition="SL_alarmTriggered";
+				sizeA=0;
+				sizeB=0;
+				repeatable=1;
+				effectCondition="SL_alarmTriggered";
+				effectSoundTrigger="AlarmSfx";
+			};
+			id=1214;
+			type="EmptyDetector";
+			atlOffset=-1.9073486e-006;
+		};
+		class Item25
+		{
+			dataType="Trigger";
+			position[]={8102.2334,29.137447,10035.084};
+			class Attributes
+			{
+				condition="SL_alarmTriggered";
+				sizeA=0;
+				sizeB=0;
+				repeatable=1;
+				effectCondition="SL_alarmTriggered";
+				effectSoundTrigger="AlarmSfx";
+			};
+			id=1215;
+			type="EmptyDetector";
+			atlOffset=-0.0040969849;
+		};
+		class Item26
+		{
+			dataType="Trigger";
+			position[]={8094.457,29.134623,10236.298};
+			class Attributes
+			{
+				condition="SL_alarmTriggered";
+				sizeA=0;
+				sizeB=0;
+				repeatable=1;
+				effectCondition="SL_alarmTriggered";
+				effectSoundTrigger="AlarmSfx";
+			};
+			id=1216;
+			type="EmptyDetector";
+			atlOffset=-0.036014557;
+		};
+		class Item27
+		{
+			dataType="Trigger";
+			position[]={8185.8955,28.889997,10091.903};
+			class Attributes
+			{
+				condition="SL_alarmTriggered";
+				sizeA=0;
+				sizeB=0;
+				repeatable=1;
+				effectCondition="SL_alarmTriggered";
+				effectSoundTrigger="AlarmSfx";
+			};
+			id=1217;
+			type="EmptyDetector";
+			atlOffset=-1.9073486e-006;
+		};
+		class Item28
+		{
+			dataType="Trigger";
+			position[]={8261.3711,28.889997,10095.015};
+			class Attributes
+			{
+				condition="SL_alarmTriggered";
+				sizeA=0;
+				sizeB=0;
+				repeatable=1;
+				effectCondition="SL_alarmTriggered";
+				effectSoundTrigger="AlarmSfx";
+			};
+			id=1218;
+			type="EmptyDetector";
+			atlOffset=-1.9073486e-006;
+		};
+		class Item29
+		{
+			dataType="Trigger";
+			position[]={8183.8521,28.889997,10032.911};
+			class Attributes
+			{
+				condition="SL_alarmTriggered";
+				sizeA=0;
+				sizeB=0;
+				repeatable=1;
+				effectCondition="SL_alarmTriggered";
+				effectSoundTrigger="AlarmSfx";
+			};
+			id=1219;
+			type="EmptyDetector";
+			atlOffset=-1.9073486e-006;
+		};
+		class Item30
+		{
+			dataType="Trigger";
+			position[]={8170.6758,29.259882,9835.0537};
+			class Attributes
+			{
+				condition="SL_alarmTriggered";
+				sizeA=0;
+				sizeB=0;
+				repeatable=1;
+				effectCondition="SL_alarmTriggered";
+				effectSoundTrigger="AlarmSfx";
+			};
+			id=1220;
+			type="EmptyDetector";
+			atlOffset=-0.0060005188;
+		};
+		class Item31
+		{
+			dataType="Trigger";
+			position[]={8125.646,30.065231,10444.689};
+			class Attributes
+			{
+				condition="SL_alarmTriggered";
+				sizeA=0;
+				sizeB=0;
+				repeatable=1;
+				effectCondition="SL_alarmTriggered";
+				effectSoundTrigger="AlarmSfx";
+			};
+			id=1221;
+			type="EmptyDetector";
+			atlOffset=-1.9073486e-006;
+		};
+		class Item32
+		{
+			dataType="Trigger";
+			position[]={8122.604,30.270744,10512.093};
+			class Attributes
+			{
+				condition="SL_alarmTriggered";
+				sizeA=0;
+				sizeB=0;
+				repeatable=1;
+				effectCondition="SL_alarmTriggered";
+				effectSoundTrigger="AlarmSfx";
+			};
+			id=1222;
+			type="EmptyDetector";
+			atlOffset=0.0016117096;
+		};
+		class Item33
+		{
+			dataType="Trigger";
+			position[]={8186.1406,36.525139,10301.497};
+			class Attributes
+			{
+				condition="SL_alarmTriggered";
+				sizeA=0;
+				sizeB=0;
+				repeatable=1;
+				effectCondition="SL_alarmTriggered";
+				effectSoundTrigger="AlarmSfx";
+			};
+			id=1223;
+			type="EmptyDetector";
+			atlOffset=3.966053;
+		};
+		class Item34
+		{
+			dataType="Trigger";
+			position[]={8211.3867,36.748322,10227.488};
+			class Attributes
+			{
+				condition="SL_alarmTriggered";
+				sizeA=0;
+				sizeB=0;
+				repeatable=1;
+				effectCondition="SL_alarmTriggered";
+				effectSoundTrigger="AlarmSfx";
+			};
+			id=1224;
+			type="EmptyDetector";
+			atlOffset=4.0430489;
+		};
+		class Item35
+		{
+			dataType="Trigger";
+			position[]={8309.4639,28.85182,10139.665};
+			class Attributes
+			{
+				condition="SL_alarmTriggered";
+				sizeA=0;
+				sizeB=0;
+				repeatable=1;
+				effectCondition="SL_alarmTriggered";
+				effectSoundTrigger="AlarmSfx";
+			};
+			id=1225;
+			type="EmptyDetector";
+			atlOffset=-0.0013065338;
+		};
+		class Item36
+		{
+			dataType="Trigger";
+			position[]={8037.4116,30.290632,9854.6895};
+			class Attributes
+			{
+				condition="SL_alarmTriggered";
+				sizeA=0;
+				sizeB=0;
+				repeatable=1;
+				effectCondition="SL_alarmTriggered";
+				effectSoundTrigger="AlarmSfx";
+			};
+			id=1226;
+			type="EmptyDetector";
+			atlOffset=0.22174454;
+		};
+		class Item37
+		{
+			dataType="Trigger";
+			position[]={8046.6123,30.201418,9778.502};
+			class Attributes
+			{
+				condition="SL_alarmTriggered";
+				sizeA=0;
+				sizeB=0;
+				repeatable=1;
+				effectCondition="SL_alarmTriggered";
+				effectSoundTrigger="AlarmSfx";
+			};
+			id=1227;
+			type="EmptyDetector";
+			atlOffset=-0.0012016296;
+		};
+		class Item38
+		{
+			dataType="Trigger";
+			position[]={8061.2412,30.270155,9707.1719};
+			class Attributes
+			{
+				condition="SL_alarmTriggered";
+				sizeA=0;
+				sizeB=0;
+				repeatable=1;
+				effectCondition="SL_alarmTriggered";
+				effectSoundTrigger="AlarmSfx";
+			};
+			id=1228;
+			type="EmptyDetector";
+			atlOffset=-0.0023994446;
+		};
+		class Item39
+		{
+			dataType="Trigger";
+			position[]={7832.5229,37.633659,10383.154};
+			class Attributes
+			{
+				condition="SL_alarmTriggered";
+				sizeA=0;
+				sizeB=0;
+				repeatable=1;
+				effectCondition="SL_alarmTriggered";
+				effectSoundTrigger="AlarmSfx";
+			};
+			id=1229;
+			type="EmptyDetector";
+			atlOffset=0.012001038;
 		};
 	};
 	class VehicleInVehicleLinks

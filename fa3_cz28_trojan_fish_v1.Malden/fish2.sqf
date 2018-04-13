@@ -43,3 +43,6 @@ detach VehCSAT_IFV2;
 	unassignVehicle _x;
 	_x action ["getOut", fish2];
 } forEach units GrpCSAT_ASL;
+
+sleep (random [3,5,7]);
+SL_alarmTriggered = true;
