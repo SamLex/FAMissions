@@ -10,7 +10,8 @@ fish2 landAt 0;
 sleep 125;
 {deleteVehicle _x} forEach units fish2Crew;
 fish2 engineOn true;
-fish2Crew createUnit ["O_Pilot_F", fish2, [], 0, "NONE"] moveInDriver fish2;
+fish2D = fish2Crew createUnit ["O_Pilot_F", fish2, [], 0, "NONE"];
+fish2D moveInDriver fish2;
 fish2Crew createUnit ["O_Pilot_F", fish2, [], 0, "NONE"] moveInTurret [fish2, [0]];
 
 // Wait for the landing to be done
@@ -33,6 +34,8 @@ sleep 20; // 15 seconds sync time with fish1
 fish2 animateDoor ["Door_1_source", 1];
 sleep 2.5;
 
+[fish2D, "Move it!"] remoteExec ["sideChat", 0];
+
 // Move the IFV outside the 'fish and eject the players. Game on!
 VehCSAT_IFV2 setPos (fish2 modelToWorld [0,-15,-6]);
 detach VehCSAT_IFV2;
@@ -40,5 +43,3 @@ detach VehCSAT_IFV2;
 	unassignVehicle _x;
 	_x action ["getOut", fish2];
 } forEach units GrpCSAT_ASL;
-
-[fish2D, "Move it!"] remoteExec ["sideChat", 0];

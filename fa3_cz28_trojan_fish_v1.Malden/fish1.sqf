@@ -33,7 +33,8 @@ fish1 landAt 0;
 sleep 120;
 {deleteVehicle _x} forEach units fish1Crew;
 fish1 engineOn true;
-fish1Crew createUnit ["O_Pilot_F", fish1, [], 0, "NONE"] moveInDriver fish1;
+fish1D = fish1Crew createUnit ["O_Pilot_F", fish1, [], 0, "NONE"];
+fish1D moveInDriver fish1;
 fish1Crew createUnit ["O_Pilot_F", fish1, [], 0, "NONE"] moveInTurret [fish1, [0]];
 
 // Wait for the landing to be done
@@ -60,6 +61,8 @@ sleep 5;
 fish1 animateDoor ["Door_1_source", 1];
 sleep 2.5;
 
+[fish1D, "Go! Go! Go!"] remoteExec ["sideChat", 0];
+
 // Move the IFV outside the 'fish and eject the players. Game on!
 VehCSAT_IFV1 setPos (fish1 modelToWorld [0,-15,-6]);
 detach VehCSAT_IFV1;
@@ -67,5 +70,3 @@ detach VehCSAT_IFV1;
 	unassignVehicle _x;
 	_x action ["getOut", fish1];
 } forEach units GrpCSAT_CO;
-
-[fish1D, "Go! Go! Go!"] remoteExec ["sideChat", 0];
