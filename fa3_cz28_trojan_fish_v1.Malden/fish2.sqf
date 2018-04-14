@@ -37,6 +37,7 @@ fish2 animateDoor ["Door_1_source", 1];
 sleep 2.5;
 
 [fish2D, "Move it!"] remoteExec ["sideChat", 0];
+fish2 allowDamage true;
 
 // Move the IFV outside the 'fish and eject the players. Game on!
 VehCSAT_IFV2 setPos (fish2 modelToWorld [0,-15,-6]);
