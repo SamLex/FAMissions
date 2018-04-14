@@ -8,11 +8,11 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1735;
+		nextID=1748;
 	};
 	class MarkerIDProvider
 	{
-		nextID=3;
+		nextID=13;
 	};
 	class LayerIndexProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={12937.563,1287.739,8018.9731};
-		dir[]={-0.14494345,-0.46916327,0.87115413};
-		up[]={-0.077002801,0.88310897,0.46280947};
-		aside[]={0.98645681,9.8585588e-008,0.16412903};
+		pos[]={8017.4507,55.265511,10421.019};
+		dir[]={0.0080564162,-0.57429576,0.81860989};
+		up[]={0.0056517101,0.81864709,0.57426864};
+		aside[]={0.99995261,1.5868409e-009,-0.0098411152};
 	};
 };
 binarizationWanted=0;
@@ -67,7 +67,8 @@ addons[]=
 	"A3_Air_F_Heli_Heli_Transport_04",
 	"A3_Armor_F_Beta_APC_Wheeled_02",
 	"A3_Structures_F_Mil_Helipads",
-	"A3_Modules_F_Curator_Environment"
+	"A3_Modules_F_Curator_Environment",
+	"A3_Modules_F_Curator_Misc"
 };
 class AddonsMetaData
 {
@@ -367,7 +368,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=140;
+		items=149;
 		class Item0
 		{
 			dataType="Object";
@@ -13659,6 +13660,88 @@ class Mission
 			};
 			id=1734;
 			type="EmptyDetector";
+		};
+		class Item140
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={8076.7983,29.587137,10123.185};
+				angles[]={0.00077204045,1.5707964,6.2807932};
+			};
+			areaSize[]={1000,0,500};
+			areaIsRectangle=1;
+			flags=1;
+			id=1735;
+			type="ModuleCoverMap_F";
+		};
+		class Item141
+		{
+			dataType="Marker";
+			position[]={7831.0337,37.587421,10381.751};
+			name="marker_3";
+			type="b_antiair";
+			id=1736;
+		};
+		class Item142
+		{
+			dataType="Marker";
+			position[]={8011.2324,30.590231,10626.558};
+			name="marker_4";
+			type="b_antiair";
+			id=1737;
+		};
+		class Item143
+		{
+			dataType="Marker";
+			position[]={8039.7656,30.156054,10313.876};
+			name="marker_5";
+			type="b_antiair";
+			id=1738;
+		};
+		class Item144
+		{
+			dataType="Marker";
+			position[]={8165.9458,28.889999,10113.951};
+			name="marker_6";
+			type="b_inf";
+			id=1739;
+		};
+		class Item145
+		{
+			dataType="Marker";
+			position[]={8025.1035,30.347202,10465.93};
+			name="marker_7";
+			type="b_inf";
+			id=1740;
+		};
+		class Item146
+		{
+			dataType="Marker";
+			position[]={8040.5552,29.622171,10131.732};
+			name="marker_12";
+			text="Planned LZ";
+			type="mil_end";
+			colorName="ColorEAST";
+			id=1745;
+		};
+		class Item147
+		{
+			dataType="Marker";
+			position[]={8074.0547,30.072584,9753.377};
+			name="marker_13";
+			type="b_inf";
+			id=1746;
+			atlOffset=-0.0071983337;
+		};
+		class Item148
+		{
+			dataType="Marker";
+			position[]={8179.1274,29.212456,10294.914};
+			name="marker_14";
+			type="b_inf";
+			id=1747;
+			atlOffset=0.35261345;
 		};
 	};
 	class VehicleInVehicleLinks
