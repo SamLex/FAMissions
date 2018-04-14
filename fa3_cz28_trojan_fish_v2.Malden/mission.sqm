@@ -8,15 +8,15 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1748;
+		nextID=1752;
 	};
 	class MarkerIDProvider
 	{
-		nextID=13;
+		nextID=18;
 	};
 	class LayerIndexProvider
 	{
-		nextID=3;
+		nextID=6;
 	};
 	class Camera
 	{
@@ -368,7 +368,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=149;
+		items=153;
 		class Item0
 		{
 			dataType="Object";
@@ -6315,7 +6315,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8083.2651,33.32143,10634.132};
-				angles[]={-0,4.575573,6.2816415};
+				angles[]={0,4.575573,6.2816415};
 			};
 			side="Empty";
 			flags=4;
@@ -9555,7 +9555,7 @@ class Mission
 				};
 			};
 			id=1544;
-			atlOffset=150.095;
+			atlOffset=150.09503;
 		};
 		class Item105
 		{
@@ -9826,7 +9826,7 @@ class Mission
 				};
 			};
 			id=1548;
-			atlOffset=150.095;
+			atlOffset=150.09503;
 		};
 		class Item106
 		{
@@ -9845,7 +9845,7 @@ class Mission
 			};
 			id=1557;
 			type="O_Heli_Transport_04_covered_F";
-			atlOffset=150.095;
+			atlOffset=150.09503;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -13742,6 +13742,41 @@ class Mission
 			type="b_inf";
 			id=1747;
 			atlOffset=0.35261345;
+		};
+		class Item149
+		{
+			dataType="Marker";
+			position[]={7620.3003,15.84216,11306.661};
+			name="marker_15";
+			type="b_antiair";
+			id=1748;
+		};
+		class Item150
+		{
+			dataType="Marker";
+			position[]={7617.3311,21.445942,11236.362};
+			name="marker_16";
+			type="b_inf";
+			id=1749;
+		};
+		class Item151
+		{
+			dataType="Marker";
+			position[]={7626.2842,16.383129,11316.299};
+			name="marker_17";
+			text="= AA";
+			type="hd_dot";
+			id=1750;
+		};
+		class Item152
+		{
+			dataType="Marker";
+			position[]={7624.1372,19.219727,11244.606};
+			name="marker_18";
+			text="= Infantry";
+			type="hd_dot";
+			id=1751;
+			atlOffset=-0.86651993;
 		};
 	};
 	class VehicleInVehicleLinks
