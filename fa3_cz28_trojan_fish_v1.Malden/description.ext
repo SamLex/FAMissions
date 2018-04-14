@@ -224,6 +224,16 @@ class Params
 		default = 1;
 	}; */
 
+	
+	class sl_param_mission_timer
+    {
+            title = "Time till reinforcements";
+            values[] = {15, 20, 25, 30, 35, 40};
+            texts[] = {"15 minutes", "20 minutes", "25 minutes" ,"30 minutes" ,"35 minutes", "40 minutes"};
+            default = 25;
+    };
+	
+	
 // ============================================================================================
 
 // F3 - Caching
@@ -298,6 +308,11 @@ class CfgFunctions
 	#include "f\functions.hpp"
 
 	#include "ws_fnc\config.hpp"
+	
+	class SL
+	{
+		#include "SL\General\functions.hpp"
+	};
 };
 
 // ============================================================================================

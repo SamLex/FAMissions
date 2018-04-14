@@ -21,6 +21,18 @@ if (isServer) then {
 	execVM "fish2.sqf";
 	
 	execVM "reinforcements.sqf";
+	
+	["capture", "STR_SL_mission_captureName", "STR_SL_mission_captureDescription"] call SL_fnc_createTaskGlobal;
+	["aa", "STR_SL_mission_aaName", "STR_SL_mission_aaDescription"] call SL_fnc_createTaskGlobal;
+	
+	[] spawn {
+		waitUntil {sleep 1; ({alive _x} count SL_aaArray) == 0};
+		
+		sleep (random [3,5,7]);
+		SL_alarmTriggered = false;
+		["aa", "Suceed", "STR_SL_mission_aaSuceed"] call SL_fnc_updateTaskGlobal;
+		
+	};
 };
 
 // ====================================================================================

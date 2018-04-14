@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1734;
+		nextID=1735;
 	};
 	class MarkerIDProvider
 	{
@@ -367,7 +367,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=139;
+		items=140;
 		class Item0
 		{
 			dataType="Object";
@@ -3819,8 +3819,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8036.9448,30.222288,10364.724};
-						angles[]={6.2824135,5.6007643,0.0015822123};
+						position[]={8036.9448,30.22229,10364.724};
+						angles[]={6.2824173,5.6007614,0.0015882496};
 					};
 					side="West";
 					flags=6;
@@ -3829,6 +3829,7 @@ class Mission
 					};
 					id=1232;
 					type="B_UAV_AI";
+					atlOffset=1.9073486e-006;
 				};
 			};
 			class Attributes
@@ -3857,27 +3858,28 @@ class Mission
 				};
 			};
 			id=1230;
-			atlOffset=-1.9073486e-006;
+			atlOffset=1.9073486e-006;
 		};
 		class Item41
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8036.9419,32.191513,10364.672};
-				angles[]={6.2824135,5.6007643,0.0015822123};
+				position[]={8036.9419,32.191517,10364.672};
+				angles[]={6.2824173,5.6007614,0.0015882496};
 			};
 			side="West";
 			flags=6;
 			class Attributes
 			{
+				init="if (isNil ""SL_aaArray"") then {SL_aaArray = [this];} else {SL_aaArray pushBack this};";
 				reportRemoteTargets=1;
 				receiveRemoteTargets=1;
 				aiRadarUsage=1;
 			};
 			id=1231;
 			type="B_SAM_System_02_F";
-			atlOffset=-1.9073486e-006;
+			atlOffset=1.9073486e-006;
 		};
 		class Item42
 		{
@@ -3891,8 +3893,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8040.2588,30.155397,10313.713};
-						angles[]={6.2807932,4.6794705,6.2799835};
+						position[]={8040.2588,30.155401,10313.713};
+						angles[]={6.2807941,4.6794724,6.2799911};
 					};
 					side="West";
 					flags=6;
@@ -3901,7 +3903,6 @@ class Mission
 					};
 					id=1235;
 					type="B_UAV_AI";
-					atlOffset=-3.8146973e-006;
 				};
 			};
 			class Attributes
@@ -3930,27 +3931,26 @@ class Mission
 				};
 			};
 			id=1233;
-			atlOffset=-3.8146973e-006;
 		};
 		class Item43
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8040.2651,32.124611,10313.658};
-				angles[]={6.2807932,4.6794705,6.2799835};
+				position[]={8040.2651,32.124615,10313.658};
+				angles[]={6.2807941,4.6794724,6.2799911};
 			};
 			side="West";
 			flags=6;
 			class Attributes
 			{
+				init="if (isNil ""SL_aaArray"") then {SL_aaArray = [this];} else {SL_aaArray pushBack this};";
 				reportRemoteTargets=1;
 				receiveRemoteTargets=1;
 				aiRadarUsage=1;
 			};
 			id=1234;
 			type="B_SAM_System_02_F";
-			atlOffset=-3.8146973e-006;
 		};
 		class Item44
 		{
@@ -3964,8 +3964,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8040.1997,29.755758,10266.358};
-						angles[]={6.2743897,4.1192245,0.0039967569};
+						position[]={8040.2002,29.755754,10266.358};
+						angles[]={6.2743888,4.1192217,0.0039968039};
 					};
 					side="West";
 					flags=6;
@@ -3974,7 +3974,6 @@ class Mission
 					};
 					id=1238;
 					type="B_UAV_AI";
-					atlOffset=7.6293945e-006;
 				};
 			};
 			class Attributes
@@ -4003,27 +4002,26 @@ class Mission
 				};
 			};
 			id=1236;
-			atlOffset=7.6293945e-006;
 		};
 		class Item45
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8040.1919,31.724895,10266.291};
-				angles[]={6.2743897,4.1192245,0.0039967569};
+				position[]={8040.1924,31.724892,10266.291};
+				angles[]={6.2743888,4.1192217,0.0039968039};
 			};
 			side="West";
 			flags=6;
 			class Attributes
 			{
+				init="if (isNil ""SL_aaArray"") then {SL_aaArray = [this];} else {SL_aaArray pushBack this};";
 				reportRemoteTargets=1;
 				receiveRemoteTargets=1;
 				aiRadarUsage=1;
 			};
 			id=1237;
 			type="B_SAM_System_02_F";
-			atlOffset=7.6293945e-006;
 		};
 		class Item46
 		{
@@ -4037,8 +4035,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8017.5195,30.555452,10566.739};
-						angles[]={-0,3.8245823,0.00069053395};
+						position[]={8017.52,30.555454,10566.739};
+						angles[]={0,3.8245749,0.00069813168};
 					};
 					side="West";
 					flags=6;
@@ -4075,25 +4073,28 @@ class Mission
 				};
 			};
 			id=1239;
+			atlOffset=-1.9073486e-006;
 		};
 		class Item47
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8017.5181,32.524681,10566.689};
-				angles[]={-0,3.8245823,0.00069053395};
+				position[]={8017.5186,32.524681,10566.689};
+				angles[]={0,3.8245749,0.00069813168};
 			};
 			side="West";
 			flags=6;
 			class Attributes
 			{
+				init="if (isNil ""SL_aaArray"") then {SL_aaArray = [this];} else {SL_aaArray pushBack this};";
 				reportRemoteTargets=1;
 				receiveRemoteTargets=1;
 				aiRadarUsage=1;
 			};
 			id=1240;
 			type="B_SAM_System_02_F";
+			atlOffset=-1.9073486e-006;
 		};
 		class Item48
 		{
@@ -4107,8 +4108,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8011.0996,30.591572,10626.617};
-						angles[]={6.2824135,4.6603699,0.00077204045};
+						position[]={8011.1001,30.591572,10626.617};
+						angles[]={6.2824173,4.660378,0.00076794485};
 					};
 					side="West";
 					flags=6;
@@ -4117,7 +4118,6 @@ class Mission
 					};
 					id=1244;
 					type="B_UAV_AI";
-					atlOffset=1.9073486e-006;
 				};
 			};
 			class Attributes
@@ -4146,25 +4146,28 @@ class Mission
 				};
 			};
 			id=1242;
+			atlOffset=-1.9073486e-006;
 		};
 		class Item49
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8011.0981,32.560799,10626.565};
-				angles[]={6.2824135,4.6603699,0.00077204045};
+				position[]={8011.0986,32.560799,10626.565};
+				angles[]={6.2824173,4.660378,0.00076794485};
 			};
 			side="West";
 			flags=6;
 			class Attributes
 			{
+				init="if (isNil ""SL_aaArray"") then {SL_aaArray = [this];} else {SL_aaArray pushBack this};";
 				reportRemoteTargets=1;
 				receiveRemoteTargets=1;
 				aiRadarUsage=1;
 			};
 			id=1243;
 			type="B_SAM_System_02_F";
+			atlOffset=-1.9073486e-006;
 		};
 		class Item50
 		{
@@ -4178,8 +4181,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8004.522,30.541779,10683.881};
-						angles[]={0.0015822123,5.4810734,0.0032018756};
+						position[]={8004.522,30.541777,10683.881};
+						angles[]={0.0015882496,5.4810667,0.0031939524};
 					};
 					side="West";
 					flags=6;
@@ -4188,6 +4191,7 @@ class Mission
 					};
 					id=1247;
 					type="B_UAV_AI";
+					atlOffset=-1.9073486e-006;
 				};
 			};
 			class Attributes
@@ -4224,12 +4228,13 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8004.5156,32.510994,10683.834};
-				angles[]={0.0015822123,5.4810734,0.0032018756};
+				angles[]={0.0015882496,5.4810667,0.0031939524};
 			};
 			side="West";
 			flags=6;
 			class Attributes
 			{
+				init="if (isNil ""SL_aaArray"") then {SL_aaArray = [this];} else {SL_aaArray pushBack this};";
 				reportRemoteTargets=1;
 				receiveRemoteTargets=1;
 				aiRadarUsage=1;
@@ -4250,8 +4255,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7834.6582,37.672192,10396.808};
-						angles[]={0.006394445,0.99672461,0};
+						position[]={7834.6582,37.672195,10396.808};
+						angles[]={0.0063879048,0.99672264,0};
 					};
 					side="West";
 					flags=6;
@@ -4260,6 +4265,7 @@ class Mission
 					};
 					id=1250;
 					type="B_UAV_AI";
+					atlOffset=3.8146973e-006;
 				};
 			};
 			class Attributes
@@ -4288,25 +4294,28 @@ class Mission
 				};
 			};
 			id=1248;
+			atlOffset=3.8146973e-006;
 		};
 		class Item53
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={7834.6582,39.427193,10396.77};
-				angles[]={0.006394445,0.99672461,0};
+				position[]={7834.6582,39.427197,10396.77};
+				angles[]={0.0063879048,0.99672264,0};
 			};
 			side="West";
 			flags=6;
 			class Attributes
 			{
+				init="if (isNil ""SL_aaArray"") then {SL_aaArray = [this];} else {SL_aaArray pushBack this};";
 				reportRemoteTargets=1;
 				receiveRemoteTargets=1;
 				aiRadarUsage=1;
 			};
 			id=1249;
 			type="B_SAM_System_01_F";
+			atlOffset=3.8146973e-006;
 		};
 		class Item54
 		{
@@ -4375,8 +4384,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7835.5566,37.610348,10369.272};
-						angles[]={0.011198638,2.3783095,6.2655869};
+						position[]={7835.5571,37.610352,10369.272};
+						angles[]={0.011205014,2.3783078,6.2655926};
 					};
 					side="West";
 					flags=6;
@@ -4385,6 +4394,7 @@ class Mission
 					};
 					id=1256;
 					type="B_UAV_AI";
+					atlOffset=3.8146973e-006;
 				};
 			};
 			class Attributes
@@ -4413,25 +4423,28 @@ class Mission
 				};
 			};
 			id=1255;
+			atlOffset=3.8146973e-006;
 		};
 		class Item56
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={7835.5874,39.365002,10369.242};
-				angles[]={0.011198638,2.3783095,6.2655869};
+				position[]={7835.5879,39.365005,10369.242};
+				angles[]={0.011205014,2.3783078,6.2655926};
 			};
 			side="West";
 			flags=6;
 			class Attributes
 			{
+				init="if (isNil ""SL_aaArray"") then {SL_aaArray = [this];} else {SL_aaArray pushBack this};";
 				reportRemoteTargets=1;
 				receiveRemoteTargets=1;
 				aiRadarUsage=1;
 			};
 			id=1257;
 			type="B_SAM_System_01_F";
+			atlOffset=3.8146973e-006;
 		};
 		class Item57
 		{
@@ -13616,7 +13629,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={8085.2441,29.57361,10125.193};
-			angle=1.5648097;
+			angle=1.5648096;
 			class Attributes
 			{
 				condition="this && SL_reinforcementsTriggered";
@@ -13631,6 +13644,21 @@ class Mission
 			};
 			id=1733;
 			type="EmptyDetectorAreaR250";
+		};
+		class Item139
+		{
+			dataType="Trigger";
+			position[]={7764.3628,36.036022,10214.836};
+			class Attributes
+			{
+				condition="time > (sl_param_mission_timer * 60);";
+				onActivation="SL_reinforcementsTriggered = true;";
+				sizeA=0;
+				sizeB=0;
+				isServerOnly=1;
+			};
+			id=1734;
+			type="EmptyDetector";
 		};
 	};
 	class VehicleInVehicleLinks

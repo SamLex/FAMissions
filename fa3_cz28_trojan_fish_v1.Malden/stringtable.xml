@@ -1,6 +1,26 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <!-- This document was created with Syntext Serna Free. -->
 <Project name="Arma3">
+  <Package name="SL">
+	<Container name="Tasks">
+		<Key ID="STR_SL_mission_aaName">
+			<English>Destroy AA emplacements</English>
+		</Key>
+		<Key ID="STR_SL_mission_aaDescription">
+			<English>There is a number of AA emplacements around Malden Airbase. These should be destroyed to ensure the safe arrival of our reinforcements.</English>
+		</Key>
+		<Key ID="STR_SL_mission_aaSuceed">
+			<English>All AA destroyed!</English>
+		</Key>
+		
+		<Key ID="STR_SL_mission_captureName">
+			<English>Capture Malden Airbase</English>
+		</Key>
+		<Key ID="STR_SL_mission_captureDescription">
+			<English>Capture and hold Malden Airbase until reinforcements arrive.</English>
+		</Key>
+	</Container>
+  </Package>
   <Package name="Missions">
     <Container name="">
       <Key ID="STR_f_param_debugMode">
