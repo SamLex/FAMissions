@@ -1,7 +1,13 @@
 if (isServer) then {
 	SL_reinforcementsTriggered = false;
 	SL_alarmTriggered = false;
-
+	publicVariable "SL_alarmTriggered";
+	
+	// Ensure group ids (callsigns) are sync'ed between the server and clients
+	{
+		_x setGroupIdGlobal [groupId _x];
+	} forEach allGroups;
+	
 	["mkr_outpostGarrison", 40, west, 10, 0.25, "nato"] call ws_fnc_createGarrison;
 	["mkr_baseGarrison", 250, west, 30, 0.25, "nato"] call ws_fnc_createGarrison;
 	{
@@ -30,6 +36,7 @@ if (isServer) then {
 		
 		sleep (random [3,5,7]);
 		SL_alarmTriggered = false;
+		publicVariable "SL_alarmTriggered";
 		["aa", "Suceed", "STR_SL_mission_aaSuceed"] call SL_fnc_updateTaskGlobal;
 		
 	};

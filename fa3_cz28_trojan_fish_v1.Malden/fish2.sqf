@@ -49,6 +49,7 @@ detach VehCSAT_IFV2;
 
 sleep (random [3,5,7]);
 SL_alarmTriggered = true;
+publicVariable "SL_alarmTriggered";
 
 VehCSAT_IFV1 setCaptive false;
 VehCSAT_IFV2 setCaptive false;
