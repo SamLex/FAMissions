@@ -11,7 +11,7 @@
 
 _cre = player createDiaryRecord ["diary", ["Credits","
 <br/>
-*** Insert mission credits here. ***
+Lexer made this thing.
 <br/><br/>
 Made with F3 (http://www.ferstaberinde.com/f3/en/)
 "]];
@@ -23,7 +23,9 @@ Made with F3 (http://www.ferstaberinde.com/f3/en/)
 
 _adm = player createDiaryRecord ["diary", ["Administration","
 <br/>
-*** Insert information on administration and logistics here. ***
+There is some pre-spawned units in and around Malden Airbase. Feel free to use them how you see fit. Please leave the AA for the players to destroy though.
+<br/>
+You may see some civilian units appearing and then disappearing again if you use a 'Add all to Zeus' module. Don't worry about it, Comrade.
 "]];
 
 // ====================================================================================
@@ -35,19 +37,19 @@ _exe = player createDiaryRecord ["diary", ["Execution","
 <br/>
 <font size='18'>COMMANDER'S INTENT</font>
 <br/>
-*** Insert very short summary of plan here. ***
+Try to retake Malden Airbase while providing a fun experience for the players.
 <br/><br/>
 <font size='18'>MOVEMENT PLAN</font>
 <br/>
-*** Insert movement instructions here. ***
+Whatever tickles your fancy.
 <br/><br/>
 <font size='18'>FIRE SUPPORT PLAN</font>
 <br/>
-*** Insert fire support instructions here. ***
+Big booms?
 <br/><br/>
 <font size='18'>SPECIAL TASKS</font>
 <br/>
-*** Insert instructions for specific units here. ***
+Make it fun for the players. Don't spawn any new units once CSAT reinforcements have arrived.
 "]];
 
 // ====================================================================================
@@ -55,10 +57,15 @@ _exe = player createDiaryRecord ["diary", ["Execution","
 // NOTES: MISSION
 // The code below creates the mission sub-section of notes.
 
-_mis = player createDiaryRecord ["diary", ["Mission","
+_mis = player createDiaryRecord ["diary", ["Mission",format ["
 <br/>
-*** Insert the mission here. ***
-"]];
+Wait until the alarm (audio) has been triggered in Malden Airbase.
+Then try and retake Malden Airbase.
+You have %1 minutes to do so before CSAT reinforcements arrive.
+Once CSAT reinforcements have arrived, the mission is effectively over.
+Mission ends when all BLUFOR are dead or outwith Malden Airbase after the reinforcements have been triggered.
+You may need to encourage the CSAT reinforcements to finish off BLUFOR.
+", sl_param_mission_timer]]];
 
 // ====================================================================================
 
@@ -67,15 +74,15 @@ _mis = player createDiaryRecord ["diary", ["Mission","
 
 _sit = player createDiaryRecord ["diary", ["Situation","
 <br/>
-*** Insert general information about the situation here.***
+CSAT Viper are sneaking into Malden Airbase. You are to retake it.
 <br/><br/>
-<font size='18'>ENEMY FORCES</font>
+<font size='18'>ENEMY FORCES (players perpective)</font>
 <br/>
-*** Insert information about enemy forces here.***
+Just about anything NATO. Keep in mind the players are heavily armed and deep within NATO territory. So feel free to throw just about anything you think they can handle at them.
 <br/><br/>
-<font size='18'>FRIENDLY FORCES</font>
+<font size='18'>FRIENDLY FORCES  (players perpective)</font>
 <br/>
-*** Insert information about friendly forces here.***
+None until reinforcements arrive. This happens automatically.
 "]];
 
 // ====================================================================================
