@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1733;
+		nextID=1734;
 	};
 	class MarkerIDProvider
 	{
@@ -367,7 +367,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=138;
+		items=139;
 		class Item0
 		{
 			dataType="Object";
@@ -13611,6 +13611,26 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item138
+		{
+			dataType="Trigger";
+			position[]={8085.2441,29.57361,10125.193};
+			angle=1.5648097;
+			class Attributes
+			{
+				condition="this && SL_reinforcementsTriggered";
+				onActivation="[1] call f_fnc_mpEnd;";
+				sizeA=1000;
+				sizeB=500;
+				timeout[]={3,5,7};
+				activationType="NOT PRESENT";
+				activationBy="WEST";
+				isRectangle=1;
+				isServerOnly=1;
+			};
+			id=1733;
+			type="EmptyDetectorAreaR250";
 		};
 	};
 	class VehicleInVehicleLinks

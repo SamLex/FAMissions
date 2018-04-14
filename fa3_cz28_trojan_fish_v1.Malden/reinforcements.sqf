@@ -11,8 +11,6 @@
 	} forEach crew _unit;
 } forEach (vehicles select {_x getVariable "reinforcementUnit"});
 
-SL_reinforcementsTriggered = false;
-
 [] spawn {
 	while {!SL_reinforcementsTriggered} do {
 		{

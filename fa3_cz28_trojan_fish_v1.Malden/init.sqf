@@ -1,3 +1,28 @@
+if (isServer) then {
+	SL_reinforcementsTriggered = false;
+	SL_alarmTriggered = false;
+
+	["mkr_outpostGarrison", 40, west, 10, 0.25, "nato"] call ws_fnc_createGarrison;
+	["mkr_baseGarrison", 250, west, 30, 0.25, "nato"] call ws_fnc_createGarrison;
+	{
+		_x addCuratorEditableObjects [allUnits, true];
+	} forEach allCurators;
+	
+	fish1 setCaptive true;
+	fish1 allowDamage false;
+	VehCSAT_IFV1 setCaptive true;
+	VehCSAT_IFV1 attachTo [fish1];
+	execVM "fish1.sqf";
+	
+	fish2 setCaptive true;
+	fish1 allowDamage true;
+	VehCSAT_IFV2 setCaptive true;
+	VehCSAT_IFV2 attachTo [fish2];
+	execVM "fish2.sqf";
+	
+	execVM "reinforcements.sqf";
+};
+
 // ====================================================================================
 
 // F3 - Common Local Variables
@@ -6,7 +31,6 @@
 if(isServer) then {
 	f_script_setLocalVars = [] execVM "f\common\f_setLocalVars.sqf";
 };
-
 
 // ====================================================================================
 
@@ -198,7 +222,7 @@ f_var_viewDistance_crewOnly = true;
 // [BLUFOR,100,1] execVM "f\casualtiesCap\f_CasualtiesCapCheck.sqf";
 
 // OPFOR > CSAT
-// [OPFOR,100,1] execVM "f\casualtiesCap\f_CasualtiesCapCheck.sqf";
+[OPFOR,100,2] execVM "f\casualtiesCap\f_CasualtiesCapCheck.sqf";
 
 // INDEPENDENT > AAF
 // [INDEPENDENT,100,1] execVM "f\casualtiesCap\f_CasualtiesCapCheck.sqf";
@@ -211,22 +235,3 @@ f_var_viewDistance_crewOnly = true;
 // [[UnitName1, "UnitClass1"]] spawn f_fnc_disableThermals;
 
 // ====================================================================================
-
-if (isServer) then {
-	["mkr_outpostGarrison", 40, west, 10, 0.25, "nato"] call ws_fnc_createGarrison;
-	["mkr_baseGarrison", 500, west, 30, 0.25, "nato"] call ws_fnc_createGarrison;
-
-	fish1 setCaptive true;
-	fish1 allowDamage false;
-	VehCSAT_IFV1 setCaptive true;
-	VehCSAT_IFV1 attachTo [fish1];
-	execVM "fish1.sqf";
-	
-	fish2 setCaptive true;
-	fish1 allowDamage true;
-	VehCSAT_IFV2 setCaptive true;
-	VehCSAT_IFV2 attachTo [fish2];
-	execVM "fish2.sqf";
-	
-	execVM "reinforcements.sqf";
-};

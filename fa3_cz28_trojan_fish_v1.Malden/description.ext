@@ -252,9 +252,9 @@ class CfgDebriefing
 {
 	class End1
 	{
-		title = "Ending #1";
-		subtitle = "";
-		description = "*** Insert debriefing #1 here. ***";
+		title = "VICTORY";
+		subtitle = "Malden Airbase is now under CSAT control";
+		description = "Now to capture the rest of Malden...";
 		// pictureBackground = "";
 		// picture = "";
 		// pictureColor[] = {0.0,0.3,0.6,1};
@@ -262,54 +262,13 @@ class CfgDebriefing
 
 	class End2
 	{
-		title = "Ending #2";
-		subtitle = "";
-		description = "*** Insert debriefing #2 here. ***";
+		title = "TOTAL DEFEAT";
+		subtitle = "CSAT inflitration team was wiped out";
+		description = "Turns out that tactic only works with a wooden horse and stone walls.";
 		// pictureBackground = "";
 		// picture = "";
 		// pictureColor[] = {0.0,0.3,0.6,1};
 	};
-
-	class End3
-	{
-		title = "Ending #3";
-		subtitle = "";
-		description = "*** Insert debriefing #3 here. ***";
-		// pictureBackground = "";
-		// picture = "";
-		// pictureColor[] = {0.0,0.3,0.6,1};
-	};
-
-	class End4
-	{
-		title = "Ending #4";
-		subtitle = "";
-		description = "*** Insert debriefing #4 here. ***";
-		// pictureBackground = "";
-		// picture = "";
-		// pictureColor[] = {0.0,0.3,0.6,1};
-	};
-
-	class End5
-	{
-		title = "Ending #5";
-		subtitle = "";
-		description = "*** Insert debriefing #5 here. ***";
-		// pictureBackground = "";
-		// picture = "";
-		// pictureColor[] = {0.0,0.3,0.6,1};
-	};
-
-	class End6
-	{
-		title = "Ending #6";
-		subtitle = "";
-		description = "*** Insert debriefing #6 here. ***";
-		// pictureBackground = "";
-		// picture = "";
-		// pictureColor[] = {0.0,0.3,0.6,1};
-	};
-
 };
 
 
