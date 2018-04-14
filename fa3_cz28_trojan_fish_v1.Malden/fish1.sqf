@@ -64,7 +64,6 @@ fish1 animateDoor ["Door_1_source", 1];
 sleep 2.5;
 
 [fish1D, "Go! Go! Go!"] remoteExec ["sideChat", 0];
-fish1 allowDamage true;
 
 // Move the IFV outside the 'fish and eject the players. Game on!
 VehCSAT_IFV1 setPos (fish1 modelToWorld [0,-15,-6]);
@@ -73,3 +72,5 @@ detach VehCSAT_IFV1;
 	unassignVehicle _x;
 	_x action ["getOut", fish1];
 } forEach units GrpCSAT_CO;
+
+fish1 allowDamage true;
