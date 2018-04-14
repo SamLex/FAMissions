@@ -225,4 +225,6 @@ if (isServer) then {
 	VehCSAT_IFV2 setCaptive true;
 	VehCSAT_IFV2 attachTo [fish2];
 	execVM "fish2.sqf";
+	
+	execVM "reinforcements.sqf";
 };
