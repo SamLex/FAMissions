@@ -36,6 +36,7 @@ fish1 engineOn true;
 fish1D = fish1Crew createUnit ["O_Pilot_F", fish1, [], 0, "NONE"];
 fish1D moveInDriver fish1;
 fish1Crew createUnit ["O_Pilot_F", fish1, [], 0, "NONE"] moveInTurret [fish1, [0]];
+fish1 setCaptive true;
 
 // Wait for the landing to be done
 waitUntil {!isNil "SL_fish1_landDone"};
@@ -54,7 +55,8 @@ objNull,
 waitUntil {!isNil "SL_fish1_taxiDone"};
 
 // Kill the engines and wait a few seconds
-fish1 setFuel 0;
+//fish1 setFuel 0;
+fish1 engineOn false;
 sleep 5;
 
 // Open the door

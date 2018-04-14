@@ -13,6 +13,7 @@ fish2 engineOn true;
 fish2D = fish2Crew createUnit ["O_Pilot_F", fish2, [], 0, "NONE"];
 fish2D moveInDriver fish2;
 fish2Crew createUnit ["O_Pilot_F", fish2, [], 0, "NONE"] moveInTurret [fish2, [0]];
+fish2 setCaptive true;
 
 // Wait for the landing to be done
 waitUntil {!isNil "SL_fish2_landDone"};
@@ -27,7 +28,8 @@ waitUntil {!isNil "SL_fish2_landDone"};
 waitUntil {!isNil "SL_fish2_taxiDone"};
 
 // Kill the engines and wait a few seconds
-fish2 setFuel 0;
+//fish2 setFuel 0;
+fish2 engineOn false;
 sleep 20; // 15 seconds sync time with fish1
 
 // Open the door
@@ -46,3 +48,6 @@ detach VehCSAT_IFV2;
 
 sleep (random [3,5,7]);
 SL_alarmTriggered = true;
+
+VehCSAT_IFV1 setCaptive false;
+VehCSAT_IFV2 setCaptive false;
