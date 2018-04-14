@@ -213,6 +213,9 @@ f_var_viewDistance_crewOnly = true;
 // ====================================================================================
 
 if (isServer) then {
+	["mkr_outpostGarrison", 40, west, 10, 0.25, "nato"] call ws_fnc_createGarrison;
+	["mkr_baseGarrison", 500, west, 30, 0.25, "nato"] call ws_fnc_createGarrison;
+
 	VehCSAT_IFV1 attachTo [fish1];
 	execVM "fish1.sqf";
 	
